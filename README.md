@@ -139,7 +139,7 @@ If you use this code or data in your research, please cite:
   title={Learning to Ask: Feedback-Driven Question Generation for Autonomous Knowledge Acquisition},
   author={Aggarwal, Mohit},
   year={2026},
-  url={https://github.com/aggarwalmew/dream-layer}
+  url={https://github.com/aggarwamnew/dream-layer}
 }
 ```
 
