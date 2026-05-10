@@ -42,7 +42,7 @@
 \maketitle
 
 \begin{abstract}
-We present an architecture where a lightweight outer learning layer uses a frozen large language model (LLM) as an environment for autonomous knowledge acquisition. The outer layer observes the LLM's outputs, extracts concepts and features, builds a knowledge graph, and generates questions driven by the graph's own structural gaps. A feedback loop tracks which question strategies produce the most learning and adapts accordingly. In a four-way ablation study over 200 steps, we find that (1) the feedback-driven system produces \textbf{4.9$\times$ denser knowledge graphs} than structure-driven questioning without feedback, (2) every question strategy improves by 34--97\% when feedback is enabled, and (3) structure alone performs worse than random exploration, suggesting that adaptive strategy selection is essential for productive autonomous learning. All code and data are publicly available.
+This paper presents an architecture where a lightweight outer learning layer uses a frozen large language model (LLM) as an environment for autonomous knowledge acquisition. The outer layer observes the LLM's outputs, extracts concepts and features, builds a knowledge graph, and generates questions driven by the graph's own structural gaps. Crucially, the outer layer forms its own abstractions---concept names derived from recurring feature patterns---and then queries the LLM about these self-generated abstractions, creating a cycle where learned structure drives new inquiry. A feedback loop tracks which question strategies produce the most learning and adapts accordingly. In a four-way ablation study over 200 steps, results show that (1) the feedback-driven system produces \textbf{4.9$\times$ denser knowledge graphs} than structure-driven questioning without feedback, (2) every question strategy improves by 34--97\% when feedback is enabled, and (3) structure alone performs worse than random exploration, suggesting that adaptive strategy selection is essential for productive autonomous learning. All code and data are publicly available.
 \end{abstract}
 
 %% ============================================================
@@ -51,18 +51,18 @@ We present an architecture where a lightweight outer learning layer uses a froze
 
 Large language models encode vast knowledge acquired during pre-training, but this knowledge is frozen at deployment. The model cannot autonomously discover new concepts, form new connections between existing knowledge, or learn from its own outputs. It answers questions but does not ask them.
 
-We propose a different framing: rather than treating the LLM as a knowledge base to be queried, we treat it as an \emph{environment} to be explored. An outer learning layer---a lightweight neural network with its own state, memory, and learning objectives---interacts with the frozen LLM the way a curious agent interacts with a world. The outer layer observes, abstracts, questions, and integrates. The LLM simply responds.
+This paper proposes a different framing: rather than treating the LLM as a knowledge base to be queried, it is treated as an \emph{environment} to be explored. An outer learning layer---a lightweight neural network with its own state, memory, and learning objectives---interacts with the frozen LLM the way a curious agent interacts with a world. The outer layer observes, abstracts, questions, and integrates. The LLM simply responds.
 
-This framing is inspired by developmental psychology: a child does not passively receive knowledge but actively probes its environment, notices gaps in understanding, and generates questions that fill those gaps \cite{gopnik1999}. We do not claim the system \emph{is} a child or learns the way a child learns. The metaphor is useful for motivation but should not be mistaken for a claim about cognitive capabilities. What the system does is build co-occurrence statistics, test whether new text matches existing patterns, and learn which exploration strategies produce the most information gain.
+This framing is inspired by developmental psychology: a child does not passively receive knowledge but actively probes its environment, notices gaps in understanding, and generates questions that fill those gaps \cite{gopnik1999}. The system is not claimed to be a child or to learn the way a child learns. The metaphor is useful for motivation but should not be mistaken for a claim about cognitive capabilities. What the system does is build co-occurrence statistics, test whether new text matches existing patterns, and learn which exploration strategies produce the most information gain.
 
-The central empirical question is: \textbf{does it matter how questions are generated?} We compare four strategies in a controlled ablation study and find that it matters enormously. The feedback-driven system (which learns from past questioning success) produces knowledge graphs that are nearly five times denser than any alternative.
+The central empirical question is: \textbf{does it matter how questions are generated?} A controlled ablation study comparing four strategies shows that it matters enormously. The feedback-driven system (which learns from past questioning success) produces knowledge graphs that are nearly five times denser than any alternative.
 
 \subsection{Contributions}
 
 \begin{enumerate}[leftmargin=*]
-\item \textbf{Architecture:} We introduce an outer learning layer that uses a frozen LLM as an environment, separating the ``what to ask'' decision from the ``how to articulate'' capability.
-\item \textbf{Ablation study:} We compare four question generation strategies (random, template, structure-driven, feedback-driven) and show that feedback produces 4.9$\times$ more connections per concept.
-\item \textbf{Emergent meta-learning:} We document a strategy reversal phenomenon where the worst-performing strategy at step 20 becomes the best by step 200, driven entirely by the feedback loop adapting to the growing knowledge graph.
+\item \textbf{Architecture:} An outer learning layer that uses a frozen LLM as an environment, separating the ``what to ask'' decision from the ``how to articulate'' capability. The outer layer forms its own abstractions and queries the LLM about them.
+\item \textbf{Ablation study:} Four question generation strategies (random, template, structure-driven, feedback-driven) are compared, showing that feedback produces 4.9$\times$ more connections per concept.
+\item \textbf{Emergent meta-learning:} A strategy reversal phenomenon is documented where the worst-performing strategy at step 20 becomes the best by step 200, driven entirely by the feedback loop adapting to the growing knowledge graph.
 \item \textbf{Open implementation:} All code, data, and figures are publicly available under MIT licence.
 \end{enumerate}
 
@@ -89,6 +89,8 @@ Critically, the LLM's weights are never modified. It is the world, not the learn
 The outer layer maintains three components:
 
 \paragraph{ConceptNet.} A small neural network ($\sim$52K parameters) that maps sentence embeddings to concept-level representations. Concepts are discovered through a novelty threshold: when an observation's embedding is sufficiently dissimilar to all known concepts, a new concept is created (``neurogenesis''). Each concept accumulates features, activation counts, and connection edges.
+
+\paragraph{Abstract Formation.} A critical architectural detail: the outer layer does not merely store raw features. It forms \emph{abstractions}---concept names derived from the most frequently recurring features across experiences. These abstractions are then used as query terms when generating new questions. The system asks the LLM about concepts that exist only in the outer layer's own vocabulary, not in the original prompts. This creates a feedback cycle: accumulated knowledge produces abstractions, abstractions drive new questions, and answers to those questions refine the abstractions. The LLM is asked about entities it did not name---entities the outer layer invented from patterns in the LLM's own outputs.
 
 \paragraph{Knowledge Graph.} An undirected graph where nodes are concepts and edges represent shared features discovered through experience. Edge weights encode the number of shared features. The graph's structure drives question generation.
 
@@ -122,7 +124,7 @@ The transition between passive and active modes is driven by a surprise signal: 
 
 \subsection{Ablation Modes}
 
-We compare four configurations that progressively add components:
+Four configurations that progressively add components are compared:
 
 \begin{table}[H]
 \centering
@@ -235,7 +237,7 @@ The explanation: \texttt{connection} questions require existing edges in the kno
 
 \subsection{Why Structure Performs Worse Than Random}
 
-Counterintuitively, structure-driven questioning without feedback (62 connections) performs worse than random exploration (119 connections). We attribute this to \emph{exploration rut}: without feedback, the structure mode defaults to a fixed distribution over strategies, with \texttt{feature\_gap} dominating (14 uses vs.\ 4 for \texttt{connection}). Feature-gap questions are the least connected to existing knowledge---they ask about what the graph \emph{lacks}---so they tend to produce isolated facts rather than bridging connections.
+Counterintuitively, structure-driven questioning without feedback (62 connections) performs worse than random exploration (119 connections). This is attributed to \emph{exploration rut}: without feedback, the structure mode defaults to a fixed distribution over strategies, with \texttt{feature\_gap} dominating (14 uses vs.\ 4 for \texttt{connection}). Feature-gap questions are the least connected to existing knowledge---they ask about what the graph \emph{lacks}---so they tend to produce isolated facts rather than bridging connections.
 
 Random exploration, by contrast, occasionally stumbles into productive territory by accident. The absence of strategy imposes no constraint on exploration scope. This finding suggests that \textbf{informed exploration without adaptation is worse than uninformed exploration}, a result with implications for curriculum learning and active learning more broadly.
 
@@ -262,7 +264,7 @@ The architectural choice to treat the LLM as an environment rather than a subjec
 \subsection{Limitations}
 
 \begin{itemize}[leftmargin=*]
-\item \textbf{Single seed:} All runs use seed 42. We have not yet verified that results are robust across seeds.
+\item \textbf{Single seed:} All runs use seed 42. Results have not yet been verified as robust across seeds.
 \item \textbf{Single model:} Llama 3 8B only. Different base models may produce different dynamics.
 \item \textbf{Concept quality:} Concept names are derived from the most common feature in the cluster and are sometimes semantically imprecise (e.g., ``same'', ``like'').
 \item \textbf{No verification:} The system does not check whether the LLM's answers are correct. It trusts the environment. Incoherence detection is a necessary extension.
@@ -271,7 +273,7 @@ The architectural choice to treat the LLM as an environment rather than a subjec
 
 \subsection{The Recursive Insight}
 
-There is a recursive quality to this research that bears noting. The system we built---which reflects on its accumulated knowledge graph to generate questions that produce new knowledge---mirrors the research process itself. We began with a plan to study LoRA adapters on Talkie-13B, pivoted to surprise-driven exploration, then to concept learning, and finally to feedback-driven question generation. Each pivot was driven by reflecting on what we had learned and identifying the most productive next question. The outer layer's strategy reversal (from exploration to exploitation as structure accumulates) recapitulates the researcher's own trajectory.
+There is a recursive quality to this research that bears noting. The system---which reflects on its accumulated knowledge graph to generate questions that produce new knowledge---mirrors the research process itself. The project began with a plan to study LoRA adapters, pivoted to surprise-driven exploration, then to concept learning, and finally to feedback-driven question generation. Each pivot was driven by reflecting on accumulated results and identifying the most productive next question. The outer layer's strategy reversal (from exploration to exploitation as structure accumulates) recapitulates the researcher's own trajectory.
 
 This is not a claim about consciousness or understanding. It is an observation that the computational pattern---\emph{growing knowledge + structural reflection = emergent direction for new inquiry}---appears at multiple scales of the system.
 
@@ -280,13 +282,13 @@ This is not a claim about consciousness or understanding. It is an observation t
 \section{Related Work}
 \label{sec:related}
 
-\textbf{Curiosity-driven exploration} in reinforcement learning uses intrinsic motivation signals (prediction error, information gain, novelty) to guide agent behaviour \cite{pathak2017,burda2019}. Our approach differs in using a knowledge graph's structure rather than raw prediction error to define ``interesting'' directions.
+\textbf{Curiosity-driven exploration} in reinforcement learning uses intrinsic motivation signals (prediction error, information gain, novelty) to guide agent behaviour \cite{pathak2017,burda2019}. The present approach differs in using a knowledge graph's structure rather than raw prediction error to define ``interesting'' directions.
 
-\textbf{Active learning} selects training examples that maximise model improvement \cite{settles2009}. Our system extends this by generating queries rather than selecting from a pool.
+\textbf{Active learning} selects training examples that maximise model improvement \cite{settles2009}. The system presented here extends this by generating queries rather than selecting from a pool.
 
-\textbf{Knowledge graph construction} from text typically uses supervised information extraction \cite{ji2022}. Our system builds knowledge graphs through interaction rather than extraction, without labelled data or pre-defined relation types.
+\textbf{Knowledge graph construction} from text typically uses supervised information extraction \cite{ji2022}. The present system builds knowledge graphs through interaction rather than extraction, without labelled data or pre-defined relation types.
 
-\textbf{LLM-based agents} that use language models as reasoning engines for task completion \cite{yao2023} share our framing of the LLM as a tool. However, these agents pursue externally defined goals; our system pursues internally generated curiosity signals.
+\textbf{LLM-based agents} that use language models as reasoning engines for task completion \cite{yao2023} share the framing of the LLM as a tool. However, these agents pursue externally defined goals; the present system pursues internally generated curiosity signals.
 
 
 %% ============================================================
@@ -304,7 +306,7 @@ This is not a claim about consciousness or understanding. It is an observation t
 \section{Conclusion}
 \label{sec:conclusion}
 
-We presented a system where a lightweight outer layer autonomously builds knowledge by using a frozen LLM as an environment. A four-way ablation study demonstrates that how questions are generated matters enormously: feedback-driven strategy selection produces 4.9$\times$ denser knowledge graphs than structure-driven questioning without adaptation, and every individual strategy improves by 34--97\% when feedback is enabled.
+This paper presented a system where a lightweight outer layer autonomously builds knowledge by using a frozen LLM as an environment. The outer layer forms its own abstractions from accumulated experience and queries the LLM about these self-generated concepts, creating a cycle of abstraction and inquiry. A four-way ablation study demonstrates that how questions are generated matters enormously: feedback-driven strategy selection produces 4.9$\times$ denser knowledge graphs than structure-driven questioning without adaptation, and every individual strategy improves by 34--97\% when feedback is enabled.
 
 The most striking finding is that informed exploration without adaptation performs \emph{worse} than random exploration. Structure alone constrains the exploration space too narrowly. Feedback is what transforms structure from a liability into an advantage.
 
