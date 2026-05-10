@@ -1,0 +1,5294 @@
+[
+  {
+    "step": 1,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.0169925,
+    "concept_labels": [
+      "tree"
+    ],
+    "novelty": 0.03214294910430904,
+    "features": [
+      "web",
+      "damage",
+      "action",
+      "natural",
+      "choice",
+      "related",
+      "make",
+      "every",
+      "threads"
+    ],
+    "event": "\ud83d\udcce tree (sim=0.97)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 2,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.0286125,
+    "concept_labels": [
+      "bird"
+    ],
+    "novelty": 0.10906298160552974,
+    "features": [
+      "discuss",
+      "someone",
+      "insects",
+      "nature",
+      "consider",
+      "various",
+      "life",
+      "apply",
+      "especially",
+      "lives",
+      "learn"
+    ],
+    "event": "\ud83d\udcce bird (sim=0.89)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 3,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.2058430555555555,
+    "concept_labels": [
+      "tree"
+    ],
+    "novelty": 0.002796363830566362,
+    "features": [
+      "small",
+      "flowers",
+      "secrets",
+      "stretch",
+      "soil",
+      "beck",
+      "wind",
+      "plays",
+      "dreams",
+      "phony",
+      "home"
+    ],
+    "event": "\ud83d\udcce tree (sim=1.00)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 4,
+    "mode": "active",
+    "prompt": "Can animal be like bird?",
+    "mean_surprise": 0.82060125,
+    "concept_labels": [
+      "bird",
+      "fire",
+      "water",
+      "metal",
+      "animal",
+      "tree"
+    ],
+    "novelty": -0.01500015258789067,
+    "features": [
+      "living",
+      "like",
+      "different",
+      "certainly",
+      "bird",
+      "type",
+      "animal"
+    ],
+    "event": "\ud83d\udcce bird (sim=1.02)",
+    "loss": 1.984607458114624,
+    "strategy": "template_associate",
+    "info_gain": 4.52
+  },
+  {
+    "step": 5,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8408162499999999,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.1418535232543945,
+    "features": [
+      "number",
+      "lived",
+      "out",
+      "grow",
+      "built",
+      "people",
+      "uts",
+      "simple",
+      "came"
+    ],
+    "event": "\ud83d\udcce water (sim=0.86)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 6,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.75653875,
+    "concept_labels": [
+      "fire"
+    ],
+    "novelty": -0.023741829395294234,
+    "features": [
+      "ines",
+      "gift",
+      "judgment",
+      "holy",
+      "fire",
+      "his",
+      "spirit",
+      "sovereignty",
+      "hope"
+    ],
+    "event": "\ud83d\udcce fire (sim=1.02)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 7,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6679189873417721,
+    "concept_labels": [
+      "fire"
+    ],
+    "novelty": 0.057880532741546586,
+    "features": [
+      "century",
+      "aimed",
+      "safety",
+      "leading",
+      "new",
+      "effective",
+      "policies",
+      "governments",
+      "cars",
+      "first",
+      "private"
+    ],
+    "event": "\ud83d\udcce fire (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 8,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7263625,
+    "concept_labels": [
+      "animal"
+    ],
+    "novelty": 0.06083889007568355,
+    "features": [
+      "information",
+      "vast",
+      "learners",
+      "conveying",
+      "language",
+      "creating",
+      "provides",
+      "lingu",
+      "express",
+      "encompasses",
+      "istics"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 9,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.0410392405063291,
+    "concept_labels": [
+      "fire"
+    ],
+    "novelty": 0.15697283744812007,
+    "features": [
+      "time",
+      "like",
+      "stressed",
+      "changes",
+      "pass",
+      "slow",
+      "same",
+      "ecstatic",
+      "concept",
+      "state"
+    ],
+    "event": "\ud83d\udcce fire (sim=0.84)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 10,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.68657625,
+    "concept_labels": [
+      "metal"
+    ],
+    "novelty": 0.14260740280151363,
+    "features": [
+      "time",
+      "concept",
+      "notes",
+      "value",
+      "used",
+      "fiat",
+      "related",
+      "later",
+      "money",
+      "currency"
+    ],
+    "event": "\ud83d\udcce metal (sim=0.86)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 11,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7914628205128205,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.06549985408782955,
+    "features": [
+      "square",
+      "continues",
+      "meeting",
+      "drains",
+      "ies",
+      "ich",
+      "swiss",
+      "city",
+      "forms",
+      "flow",
+      "place"
+    ],
+    "event": "\ud83d\udcce water (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 12,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.2308679487179488,
+    "concept_labels": [
+      "animal"
+    ],
+    "novelty": 0.09530855417251582,
+    "features": [
+      "iable",
+      "omo",
+      "solving",
+      "unt",
+      "mathematic",
+      "ados",
+      "ian",
+      "nik",
+      "ens",
+      "oll",
+      "striving"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.90)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 13,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.04672375,
+    "concept_labels": [
+      "animal"
+    ],
+    "novelty": -0.025380957126617476,
+    "features": [
+      "structures",
+      "collection",
+      "bones",
+      "know",
+      "body",
+      "why",
+      "purpose",
+      "soul",
+      "may"
+    ],
+    "event": "\ud83d\udcce animal (sim=1.03)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 14,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5899962025316455,
+    "concept_labels": [
+      "fire"
+    ],
+    "novelty": 0.3491096913814544,
+    "features": [
+      "mathematical",
+      "quote",
+      "fried",
+      "gott",
+      "german",
+      "wilhelm",
+      "science",
+      "ian",
+      "advances",
+      "pioneer",
+      "helped"
+    ],
+    "event": "\ud83d\udcce fire (sim=0.65)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 15,
+    "mode": "active",
+    "prompt": "Describe water in detail.",
+    "mean_surprise": 0.4231425,
+    "concept_labels": [
+      "water",
+      "bird",
+      "fire",
+      "metal",
+      "animal",
+      "tree"
+    ],
+    "novelty": 0.14029146432876582,
+    "features": [
+      "living",
+      "proper",
+      "universal",
+      "answer",
+      "major",
+      "life",
+      "less",
+      "able",
+      "necessary",
+      "functioning"
+    ],
+    "event": "\ud83d\udcce water (sim=0.86)",
+    "loss": 2.1935062408447266,
+    "strategy": "template_explore",
+    "info_gain": 8.0
+  },
+  {
+    "step": 16,
+    "mode": "active",
+    "prompt": "Can animal like?",
+    "mean_surprise": 1.0687141025641027,
+    "concept_labels": [
+      "animal",
+      "bird",
+      "fire",
+      "metal"
+    ],
+    "novelty": -0.11330418586730961,
+    "features": [
+      "starts",
+      "answer",
+      "since",
+      "age",
+      "elephant",
+      "cause",
+      "dog",
+      "cancer",
+      "lion",
+      "specific",
+      "dogs"
+    ],
+    "event": "\ud83d\udcce animal (sim=1.11)",
+    "loss": 1.8748531341552734,
+    "strategy": "template_creative",
+    "info_gain": 7.17
+  },
+  {
+    "step": 17,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.1754846153846152,
+    "concept_labels": [
+      "fire"
+    ],
+    "novelty": 0.0730908632278442,
+    "features": [
+      "min",
+      "influenced",
+      "recall",
+      "factors",
+      "sense",
+      "reflection",
+      "reconstruct",
+      "perception",
+      "past",
+      "cognitive",
+      "filtered"
+    ],
+    "event": "\ud83d\udcce fire (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 18,
+    "mode": "active",
+    "prompt": "Tell me about fire.",
+    "mean_surprise": 0.889945,
+    "concept_labels": [
+      "fire",
+      "water",
+      "metal",
+      "animal"
+    ],
+    "novelty": -0.11224697828292851,
+    "features": [
+      "light",
+      "important",
+      "significant",
+      "chemical",
+      "fire",
+      "burns",
+      "major",
+      "daily",
+      "releases"
+    ],
+    "event": "\ud83d\udcce fire (sim=1.11)",
+    "loss": 1.5867574214935303,
+    "strategy": "template_explore",
+    "info_gain": 6.79
+  },
+  {
+    "step": 19,
+    "mode": "active",
+    "prompt": "What if bird could light?",
+    "mean_surprise": 1.2661025000000001,
+    "concept_labels": [
+      "metal",
+      "fire",
+      "water"
+    ],
+    "novelty": 0.10410721302032466,
+    "features": [
+      "time",
+      "light",
+      "mind",
+      "bul",
+      "makers",
+      "never",
+      "lighting",
+      "first"
+    ],
+    "event": "\ud83d\udcce metal (sim=0.90)",
+    "loss": 2.171375274658203,
+    "strategy": "template_creative",
+    "info_gain": 7.57
+  },
+  {
+    "step": 20,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.622820253164557,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.44907301664352417,
+    "features": [
+      "styles",
+      "back",
+      "welcoming",
+      "different",
+      "art",
+      "settlement",
+      "theaters",
+      "people",
+      "century",
+      "history",
+      "home"
+    ],
+    "event": "\ud83d\udcce water (sim=0.55)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 21,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.43597402597402596,
+    "concept_labels": [
+      "tree"
+    ],
+    "novelty": 0.4712262570858001,
+    "features": [
+      "rac",
+      "ages",
+      "center",
+      "bulg",
+      "during",
+      "arna",
+      "founded",
+      "known",
+      "later",
+      "century",
+      "occupied"
+    ],
+    "event": "\ud83d\udcce tree (sim=0.53)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 22,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.83251625,
+    "concept_labels": [
+      "animal"
+    ],
+    "novelty": 0.3412887454032898,
+    "features": [
+      "demonstrated",
+      "way",
+      "flower",
+      "simply",
+      "same",
+      "perhaps",
+      "persist",
+      "adapt",
+      "adap",
+      "ers"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.66)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 23,
+    "mode": "active",
+    "prompt": "Can bird be like animal?",
+    "mean_surprise": 0.94130625,
+    "concept_labels": [
+      "animal",
+      "bird",
+      "water"
+    ],
+    "novelty": 0.2350948452949524,
+    "features": [
+      "yes",
+      "unique",
+      "own",
+      "physical",
+      "aks",
+      "sense",
+      "make",
+      "features",
+      "terms",
+      "ability",
+      "conclusion"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.76)",
+    "loss": 1.6637216806411743,
+    "strategy": "template_associate",
+    "info_gain": 7.04
+  },
+  {
+    "step": 24,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5624962499999999,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.14071935415267944,
+    "features": [
+      "water",
+      "transformation",
+      "ize",
+      "within",
+      "emotional",
+      "understanding",
+      "burns",
+      "thoughts",
+      "symbol",
+      "fiery"
+    ],
+    "event": "\ud83d\udcce water (sim=0.86)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 25,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.58408125,
+    "concept_labels": [
+      "metal"
+    ],
+    "novelty": 0.3350490927696228,
+    "features": [
+      "happy",
+      "feel",
+      "cry",
+      "like",
+      "together",
+      "make",
+      "inspire",
+      "things",
+      "power",
+      "sad"
+    ],
+    "event": "\ud83d\udcce metal (sim=0.66)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 26,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6300749999999999,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.2998175024986267,
+    "features": [
+      "complex",
+      "social",
+      "fundamental",
+      "people",
+      "communicate",
+      "express",
+      "set",
+      "think",
+      "influenced",
+      "system"
+    ],
+    "event": "\ud83d\udcce water (sim=0.70)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 27,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7766831168831169,
+    "concept_labels": [
+      "animal"
+    ],
+    "novelty": 0.34628790616989136,
+    "features": [
+      "jean",
+      "work",
+      "arte",
+      "coward",
+      "any",
+      "way",
+      "agan",
+      "kind",
+      "science",
+      "great",
+      "knowledge"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.65)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 28,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.91840625,
+    "concept_labels": [
+      "metal"
+    ],
+    "novelty": 0.44935691356658936,
+    "features": [
+      "mental",
+      "complete",
+      "goals",
+      "required",
+      "physical",
+      "challenge",
+      "activity",
+      "level"
+    ],
+    "event": "\ud83d\udcce metal (sim=0.55)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 29,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8571225,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.36902910470962524,
+    "features": [
+      "work",
+      "mental",
+      "pandemic",
+      "crisis",
+      "health",
+      "worker",
+      "low",
+      "well"
+    ],
+    "event": "\ud83d\udcce water (sim=0.63)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 30,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.9483349999999999,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.440368115901947,
+    "features": [
+      "increase",
+      "shown",
+      "good",
+      "change",
+      "research",
+      "promote",
+      "health",
+      "beliefs",
+      "treat",
+      "ments",
+      "memory"
+    ],
+    "event": "\ud83d\udcce water (sim=0.56)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 31,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.0069325,
+    "concept_labels": [
+      "animal"
+    ],
+    "novelty": 0.04327583312988281,
+    "features": [
+      "humans",
+      "today",
+      "world",
+      "tools",
+      "fly",
+      "invent",
+      "less",
+      "create",
+      "explore"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 32,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.32189240506329114,
+    "concept_labels": [
+      "animal"
+    ],
+    "novelty": 0.29536592960357666,
+    "features": [
+      "called",
+      "itself",
+      "sized",
+      "out",
+      "dense",
+      "massive",
+      "fuel",
+      "causes",
+      "incredibly",
+      "gravity",
+      "neutron"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.70)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 33,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5192337499999999,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.1612270474433899,
+    "features": [
+      "solve",
+      "important",
+      "universal",
+      "identify",
+      "sense",
+      "ematics",
+      "science",
+      "understanding",
+      "place",
+      "thinking",
+      "key"
+    ],
+    "event": "\ud83d\udcce water (sim=0.84)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 34,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.9370125,
+    "concept_labels": [
+      "metal"
+    ],
+    "novelty": 0.3085050582885742,
+    "features": [
+      "without",
+      "receive",
+      "living",
+      "reason",
+      "existence",
+      "iment",
+      "source",
+      "sentiment",
+      "human",
+      "exist",
+      "love"
+    ],
+    "event": "\ud83d\udcce metal (sim=0.69)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 35,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8612299999999999,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.3504433035850525,
+    "features": [
+      "really",
+      "like",
+      "moment",
+      "help",
+      "new",
+      "feels",
+      "city",
+      "remember",
+      "everything",
+      "through"
+    ],
+    "event": "\ud83d\udcce water (sim=0.65)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 36,
+    "mode": "active",
+    "prompt": "Describe tree in detail.",
+    "mean_surprise": 0.7534680555555555,
+    "concept_labels": [
+      "animal",
+      "fire",
+      "water",
+      "metal"
+    ],
+    "novelty": 0.2823253273963928,
+    "features": [
+      "answer",
+      "long",
+      "tree",
+      "feet",
+      "total",
+      "conclusion",
+      "branches"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.72)",
+    "loss": 1.491487979888916,
+    "strategy": "template_explore",
+    "info_gain": 5.45
+  },
+  {
+    "step": 37,
+    "mode": "active",
+    "prompt": "What do animal and metal have in common?",
+    "mean_surprise": 0.40018875,
+    "concept_labels": [
+      "animal",
+      "metal"
+    ],
+    "novelty": 0.08498942852020264,
+    "features": [
+      "crushed",
+      "moo",
+      "playing",
+      "cows",
+      "fish",
+      "joke",
+      "group",
+      "ical",
+      "both",
+      "band",
+      "bear"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.92)",
+    "loss": 1.103523850440979,
+    "strategy": "template_associate",
+    "info_gain": 6.6
+  },
+  {
+    "step": 38,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.78788875,
+    "concept_labels": [
+      "fire"
+    ],
+    "novelty": 0.46843385696411133,
+    "features": [
+      "stranger",
+      "quiet",
+      "never",
+      "always",
+      "seen",
+      "environment",
+      "man",
+      "forest",
+      "day",
+      "grown"
+    ],
+    "event": "\ud83d\udcce fire (sim=0.53)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 39,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8333025,
+    "concept_labels": [
+      "animal"
+    ],
+    "novelty": 0.33017778396606445,
+    "features": [
+      "mere",
+      "trees",
+      "delicate",
+      "goes",
+      "longer",
+      "hou",
+      "moon",
+      "shadows",
+      "stark",
+      "ereal",
+      "sil"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.67)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 40,
+    "mode": "active",
+    "prompt": "Is there something that is both fire and tree?",
+    "mean_surprise": 0.81151625,
+    "concept_labels": [
+      "animal",
+      "fire",
+      "metal"
+    ],
+    "novelty": 0.18784618377685547,
+    "features": [
+      "common",
+      "cathedral",
+      "burning",
+      "tree",
+      "fire",
+      "happen",
+      "both",
+      "well",
+      "black",
+      "one"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.81)",
+    "loss": 0.9132551550865173,
+    "strategy": "template_creative",
+    "info_gain": 12.81
+  },
+  {
+    "step": 41,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.817740506329114,
+    "concept_labels": [
+      "like"
+    ],
+    "novelty": 0.1493627429008484,
+    "features": [
+      "connection",
+      "won",
+      "recording",
+      "ways",
+      "adams",
+      "touring",
+      "themselves",
+      "together",
+      "unexpected",
+      "ryan"
+    ],
+    "event": "\ud83d\udcce like (sim=0.85)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 42,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.32685125,
+    "concept_labels": [
+      "like"
+    ],
+    "novelty": 0.22238373756408691,
+    "features": [
+      "time",
+      "one",
+      "stranger",
+      "always",
+      "series",
+      "seconds",
+      "clock",
+      "same",
+      "hand",
+      "promise",
+      "home"
+    ],
+    "event": "\ud83d\udcce like (sim=0.78)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 43,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6577200000000001,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.22189468145370483,
+    "features": [
+      "without",
+      "helps",
+      "world",
+      "ize",
+      "role",
+      "plays",
+      "shape",
+      "express",
+      "meaningful",
+      "identity"
+    ],
+    "event": "\ud83d\udcce water (sim=0.78)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 44,
+    "mode": "active",
+    "prompt": "Describe tree in detail.",
+    "mean_surprise": 1.3255844155844156,
+    "concept_labels": [
+      "animal",
+      "like"
+    ],
+    "novelty": 0.05898892879486084,
+    "features": [
+      "data",
+      "nodes",
+      "tree",
+      "student",
+      "april",
+      "might",
+      "similar",
+      "hide"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.94)",
+    "loss": 0.8485835194587708,
+    "strategy": "template_explore",
+    "info_gain": 5.13
+  },
+  {
+    "step": 45,
+    "mode": "active",
+    "prompt": "What is proper?",
+    "mean_surprise": 0.9502192307692306,
+    "concept_labels": [
+      "like",
+      "water",
+      "metal",
+      "animal"
+    ],
+    "novelty": 0.15912902355194092,
+    "features": [
+      "highlights",
+      "proper",
+      "problem",
+      "find",
+      "chan",
+      "between",
+      "difficult",
+      "may",
+      "paradox"
+    ],
+    "event": "\ud83d\udcce like (sim=0.84)",
+    "loss": 2.683717966079712,
+    "strategy": "template_explore",
+    "info_gain": 7.85
+  },
+  {
+    "step": 46,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6430687500000001,
+    "concept_labels": [
+      "like"
+    ],
+    "novelty": 0.2375253438949585,
+    "features": [
+      "living",
+      "spark",
+      "humans",
+      "spent",
+      "hours",
+      "world",
+      "observing",
+      "molecules",
+      "science",
+      "biological",
+      "cells"
+    ],
+    "event": "\ud83d\udcce like (sim=0.76)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 47,
+    "mode": "active",
+    "prompt": "What if animal could type?",
+    "mean_surprise": 0.7911354430379748,
+    "concept_labels": [
+      "animal",
+      "like"
+    ],
+    "novelty": 0.06158888339996338,
+    "features": [
+      "communicating",
+      "kan",
+      "capable",
+      "named",
+      "nature",
+      "zee",
+      "communicate",
+      "his",
+      "through",
+      "relatively",
+      "human"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.94)",
+    "loss": 0.7457500696182251,
+    "strategy": "template_creative",
+    "info_gain": 6.89
+  },
+  {
+    "step": 48,
+    "mode": "active",
+    "prompt": "What do fire and like have in common?",
+    "mean_surprise": 0.37783,
+    "concept_labels": [
+      "like",
+      "metal",
+      "animal"
+    ],
+    "novelty": 0.11502784490585327,
+    "features": [
+      "moo",
+      "like",
+      "playing",
+      "why",
+      "flame",
+      "group",
+      "call",
+      "fire",
+      "ical",
+      "both"
+    ],
+    "event": "\ud83d\udcce like (sim=0.88)",
+    "loss": 2.45350980758667,
+    "strategy": "template_associate",
+    "info_gain": 13.0
+  },
+  {
+    "step": 49,
+    "mode": "active",
+    "prompt": "What do bird and animal have in common?",
+    "mean_surprise": 0.73485375,
+    "concept_labels": [
+      "animal",
+      "like",
+      "living"
+    ],
+    "novelty": 0.08211207389831543,
+    "features": [
+      "nest",
+      "common",
+      "humans",
+      "protected",
+      "animals",
+      "row",
+      "sense",
+      "den",
+      "rest",
+      "shelter",
+      "belonging"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.92)",
+    "loss": 0.9559672474861145,
+    "strategy": "template_associate",
+    "info_gain": 5.83
+  },
+  {
+    "step": 50,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.9577137499999999,
+    "concept_labels": [
+      "living"
+    ],
+    "novelty": 0.393618106842041,
+    "features": [
+      "developing",
+      "resources",
+      "threatened",
+      "natural",
+      "new",
+      "man",
+      "now",
+      "producing",
+      "life",
+      "able",
+      "themselves"
+    ],
+    "event": "\ud83d\udcce living (sim=0.61)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 51,
+    "mode": "active",
+    "prompt": "Can animal red?",
+    "mean_surprise": 0.550585,
+    "concept_labels": [
+      "animal",
+      "like",
+      "living"
+    ],
+    "novelty": 0.03219550848007202,
+    "features": [
+      "red",
+      "animal",
+      "substances",
+      "color",
+      "possible",
+      "certain",
+      "cannot",
+      "things",
+      "made",
+      "appear"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.97)",
+    "loss": 0.7827785611152649,
+    "strategy": "template_creative",
+    "info_gain": 6.05
+  },
+  {
+    "step": 52,
+    "mode": "active",
+    "prompt": "Can fire wood?",
+    "mean_surprise": 0.709275,
+    "concept_labels": [
+      "like",
+      "animal",
+      "living"
+    ],
+    "novelty": 0.19382309913635254,
+    "features": [
+      "places",
+      "yes",
+      "fuel",
+      "used",
+      "fire",
+      "commonly",
+      "wood",
+      "cut",
+      "sustainable"
+    ],
+    "event": "\ud83d\udcce like (sim=0.81)",
+    "loss": 2.629655122756958,
+    "strategy": "template_creative",
+    "info_gain": 7.11
+  },
+  {
+    "step": 53,
+    "mode": "active",
+    "prompt": "Can water be like fire?",
+    "mean_surprise": 0.6501925,
+    "concept_labels": [
+      "living",
+      "water",
+      "like"
+    ],
+    "novelty": 0.3520892262458801,
+    "features": [
+      "ishment",
+      "water",
+      "source",
+      "used",
+      "cause",
+      "same",
+      "absolutely",
+      "both",
+      "comfort",
+      "similar",
+      "flooding"
+    ],
+    "event": "\ud83d\udcce living (sim=0.65)",
+    "loss": 2.7820329666137695,
+    "strategy": "template_associate",
+    "info_gain": 8.75
+  },
+  {
+    "step": 54,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7397487500000001,
+    "concept_labels": [
+      "living"
+    ],
+    "novelty": 0.06896042823791504,
+    "features": [
+      "information",
+      "istics",
+      "includes",
+      "spoken",
+      "universal",
+      "signs",
+      "effectively",
+      "share",
+      "lingu",
+      "words",
+      "well"
+    ],
+    "event": "\ud83d\udcce living (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 55,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.619435,
+    "concept_labels": [
+      "like"
+    ],
+    "novelty": 0.2432737946510315,
+    "features": [
+      "without",
+      "vast",
+      "context",
+      "helps",
+      "together",
+      "role",
+      "dis",
+      "hold",
+      "ump",
+      "things",
+      "chaotic"
+    ],
+    "event": "\ud83d\udcce like (sim=0.76)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 56,
+    "mode": "active",
+    "prompt": "Can metal be like animal?",
+    "mean_surprise": 0.6975525,
+    "concept_labels": [
+      "like",
+      "animal",
+      "living"
+    ],
+    "novelty": 0.05336111783981323,
+    "features": [
+      "living",
+      "aming",
+      "unsettling",
+      "gle",
+      "looked",
+      "others",
+      "voice",
+      "around",
+      "his",
+      "conspir"
+    ],
+    "event": "\ud83d\udcce like (sim=0.95)",
+    "loss": 2.464198112487793,
+    "strategy": "template_associate",
+    "info_gain": 15.2
+  },
+  {
+    "step": 57,
+    "mode": "active",
+    "prompt": "Is there something that is both like and tree?",
+    "mean_surprise": 0.9260662500000001,
+    "concept_labels": [
+      "animal",
+      "like",
+      "living",
+      "same"
+    ],
+    "novelty": 0.06708729267120361,
+    "features": [
+      "inden",
+      "helps",
+      "know",
+      "any",
+      "definition",
+      "english",
+      "word",
+      "fits",
+      "finally",
+      "further"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.93)",
+    "loss": 0.9864894151687622,
+    "strategy": "template_creative",
+    "info_gain": 6.43
+  },
+  {
+    "step": 58,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.56991875,
+    "concept_labels": [
+      "same"
+    ],
+    "novelty": 0.19731301069259644,
+    "features": [
+      "chance",
+      "community",
+      "testament",
+      "must",
+      "human",
+      "resilience",
+      "always",
+      "long",
+      "times",
+      "tell",
+      "stay"
+    ],
+    "event": "\ud83d\udcce same (sim=0.80)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 59,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.58202875,
+    "concept_labels": [
+      "same"
+    ],
+    "novelty": 0.21826738119125366,
+    "features": [
+      "without",
+      "helps",
+      "today",
+      "technology",
+      "fundamental",
+      "tool",
+      "problems",
+      "science",
+      "solve",
+      "ematics",
+      "analyze"
+    ],
+    "event": "\ud83d\udcce same (sim=0.78)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 60,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.49647500000000006,
+    "concept_labels": [
+      "living"
+    ],
+    "novelty": 0.21965467929840088,
+    "features": [
+      "world",
+      "society",
+      "own",
+      "communicate",
+      "create",
+      "features",
+      "two",
+      "think",
+      "meaning",
+      "human",
+      "involves"
+    ],
+    "event": "\ud83d\udcce living (sim=0.78)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 61,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8691324999999999,
+    "concept_labels": [
+      "same"
+    ],
+    "novelty": 0.2813776731491089,
+    "features": [
+      "process",
+      "essential",
+      "ion",
+      "chemical",
+      "ways",
+      "actions",
+      "ust",
+      "major",
+      "chem",
+      "combust",
+      "industries"
+    ],
+    "event": "\ud83d\udcce same (sim=0.72)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 62,
+    "mode": "active",
+    "prompt": "Can bird shiny?",
+    "mean_surprise": 1.1333975,
+    "concept_labels": [
+      "animal",
+      "like",
+      "living",
+      "same"
+    ],
+    "novelty": 0.10698562860488892,
+    "features": [
+      "cool",
+      "any",
+      "know",
+      "found",
+      "help",
+      "seen",
+      "shore",
+      "don",
+      "think",
+      "similar"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.89)",
+    "loss": 0.8111609220504761,
+    "strategy": "template_creative",
+    "info_gain": 7.13
+  },
+  {
+    "step": 63,
+    "mode": "active",
+    "prompt": "What do you know about strong?",
+    "mean_surprise": 0.71230125,
+    "concept_labels": [
+      "same",
+      "like"
+    ],
+    "novelty": 0.3527398109436035,
+    "features": [
+      "know",
+      "use",
+      "weakness",
+      "absence",
+      "right",
+      "strength",
+      "tell",
+      "afraid",
+      "strong"
+    ],
+    "event": "\ud83d\udcce same (sim=0.65)",
+    "loss": 1.9694238901138306,
+    "strategy": "template_explore",
+    "info_gain": 5.61
+  },
+  {
+    "step": 64,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5526325,
+    "concept_labels": [
+      "science"
+    ],
+    "novelty": 0.09547889232635498,
+    "features": [
+      "presence",
+      "owed",
+      "owl",
+      "night",
+      "like",
+      "meeting",
+      "bill",
+      "moon",
+      "place",
+      "thin"
+    ],
+    "event": "\ud83c\udf31 GREW: science",
+    "loss": null,
+    "growth": "science"
+  },
+  {
+    "step": 65,
+    "mode": "active",
+    "prompt": "What if science could source?",
+    "mean_surprise": 1.8496099999999998,
+    "concept_labels": [
+      "science",
+      "living",
+      "same"
+    ],
+    "novelty": 0.05032682418823242,
+    "features": [
+      "going",
+      "resolve",
+      "world",
+      "formulated",
+      "scientific",
+      "nonetheless",
+      "used",
+      "situation",
+      "source",
+      "knowledge",
+      "first"
+    ],
+    "event": "\ud83d\udcce science (sim=0.95)",
+    "loss": 2.4328436851501465,
+    "strategy": "template_creative",
+    "info_gain": 9.95
+  },
+  {
+    "step": 66,
+    "mode": "active",
+    "prompt": "What do you know about daily?",
+    "mean_surprise": 1.12460875,
+    "concept_labels": [
+      "science",
+      "water",
+      "same"
+    ],
+    "novelty": 0.1757156252861023,
+    "features": [
+      "diapers",
+      "spend",
+      "spoiled",
+      "struggle",
+      "bubble",
+      "feeling",
+      "thing",
+      "life",
+      "probably",
+      "nothing"
+    ],
+    "event": "\ud83d\udcce science (sim=0.82)",
+    "loss": 1.9716782569885254,
+    "strategy": "template_explore",
+    "info_gain": 8.62
+  },
+  {
+    "step": 67,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6876912500000001,
+    "concept_labels": [
+      "living"
+    ],
+    "novelty": 0.21002203226089478,
+    "features": [
+      "called",
+      "ocean",
+      "any",
+      "temperature",
+      "near",
+      "parts",
+      "pressure",
+      "completely",
+      "unin",
+      "zing",
+      "hab"
+    ],
+    "event": "\ud83d\udcce living (sim=0.79)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 68,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.024805,
+    "concept_labels": [
+      "like"
+    ],
+    "novelty": 0.2032114863395691,
+    "features": [
+      "still",
+      "philosophy",
+      "components",
+      "pushes",
+      "seen",
+      "take",
+      "understanding",
+      "debated",
+      "life",
+      "era"
+    ],
+    "event": "\ud83d\udcce like (sim=0.80)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 69,
+    "mode": "active",
+    "prompt": "Is there something that is both fire and bird?",
+    "mean_surprise": 0.8186525,
+    "concept_labels": [
+      "like",
+      "animal",
+      "living",
+      "same",
+      "science"
+    ],
+    "novelty": 0.06662905216217041,
+    "features": [
+      "ashes",
+      "own",
+      "metaphor",
+      "phoenix",
+      "bird",
+      "used",
+      "years",
+      "myth",
+      "creature",
+      "hope",
+      "live"
+    ],
+    "event": "\ud83d\udcce like (sim=0.93)",
+    "loss": 1.7075985670089722,
+    "strategy": "template_creative",
+    "info_gain": 13.92
+  },
+  {
+    "step": 70,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.0337825,
+    "concept_labels": [
+      "living"
+    ],
+    "novelty": 0.40023529529571533,
+    "features": [
+      "dignity",
+      "world",
+      "share",
+      "life",
+      "every",
+      "right",
+      "live",
+      "together",
+      "prevent"
+    ],
+    "event": "\ud83d\udcce living (sim=0.60)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 71,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.3183089743589744,
+    "concept_labels": [
+      "living"
+    ],
+    "novelty": 0.3924993872642517,
+    "features": [
+      "today",
+      "goes",
+      "want",
+      "make",
+      "steve",
+      "feeling",
+      "later",
+      "same",
+      "apple",
+      "ivated",
+      "day"
+    ],
+    "event": "\ud83d\udcce living (sim=0.61)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 72,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6242125,
+    "concept_labels": [
+      "life"
+    ],
+    "novelty": 0.13322114944458008,
+    "features": [
+      "leaves",
+      "creatures",
+      "light",
+      "few",
+      "wonder",
+      "secret",
+      "might",
+      "reak",
+      "full",
+      "forest",
+      "fright"
+    ],
+    "event": "\ud83c\udf31 GREW: life",
+    "loss": null,
+    "growth": "life"
+  },
+  {
+    "step": 73,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8006825,
+    "concept_labels": [
+      "life"
+    ],
+    "novelty": 0.13517576456069946,
+    "features": [
+      "spark",
+      "know",
+      "world",
+      "bunch",
+      "magic",
+      "see",
+      "soul",
+      "experience",
+      "quite",
+      "functioning",
+      "else"
+    ],
+    "event": "\ud83d\udcce life (sim=0.86)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 74,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.1016575,
+    "concept_labels": [
+      "same"
+    ],
+    "novelty": 0.2932469844818115,
+    "features": [
+      "went",
+      "warm",
+      "fell",
+      "ling",
+      "said",
+      "voice",
+      "silence",
+      "sure",
+      "made",
+      "room",
+      "down"
+    ],
+    "event": "\ud83d\udcce same (sim=0.71)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 75,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.53710875,
+    "concept_labels": [
+      "life"
+    ],
+    "novelty": 0.18349993228912354,
+    "features": [
+      "experiences",
+      "building",
+      "world",
+      "own",
+      "social",
+      "conveying",
+      "language",
+      "communicate",
+      "culture",
+      "reflection",
+      "human"
+    ],
+    "event": "\ud83d\udcce life (sim=0.82)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 76,
+    "mode": "active",
+    "prompt": "Is same related to bird?",
+    "mean_surprise": 0.8769784810126583,
+    "concept_labels": [
+      "like",
+      "animal",
+      "living",
+      "life"
+    ],
+    "novelty": 0.18130236864089966,
+    "features": [
+      "bird",
+      "related",
+      "clues",
+      "same",
+      "agle"
+    ],
+    "event": "\ud83d\udcce like (sim=0.82)",
+    "loss": 2.388514518737793,
+    "strategy": "template_associate",
+    "info_gain": 4.88
+  },
+  {
+    "step": 77,
+    "mode": "active",
+    "prompt": "What if water could aming?",
+    "mean_surprise": 0.903225,
+    "concept_labels": [
+      "life",
+      "living",
+      "same",
+      "science"
+    ],
+    "novelty": 0.26851212978363037,
+    "features": [
+      "few",
+      "ringing",
+      "different",
+      "water",
+      "metal",
+      "ing",
+      "plate",
+      "possible",
+      "imaginative",
+      "loud",
+      "literal"
+    ],
+    "event": "\ud83d\udcce life (sim=0.73)",
+    "loss": 1.8909294605255127,
+    "strategy": "template_creative",
+    "info_gain": 9.0
+  },
+  {
+    "step": 78,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6836443037974683,
+    "concept_labels": [
+      "science"
+    ],
+    "novelty": 0.1930093765258789,
+    "features": [
+      "process",
+      "begin",
+      "stressed",
+      "anxiety",
+      "health",
+      "hopeful",
+      "people",
+      "less",
+      "tool",
+      "great",
+      "table"
+    ],
+    "event": "\ud83d\udcce science (sim=0.81)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 79,
+    "mode": "active",
+    "prompt": "Describe bird in detail.",
+    "mean_surprise": 0.53837625,
+    "concept_labels": [
+      "like",
+      "animal",
+      "living",
+      "same",
+      "life"
+    ],
+    "novelty": 0.1566944718360901,
+    "features": [
+      "discuss",
+      "capt",
+      "ious",
+      "physical",
+      "habitat",
+      "age",
+      "treat",
+      "ivated",
+      "migration",
+      "beautiful",
+      "impressive"
+    ],
+    "event": "\ud83d\udcce like (sim=0.84)",
+    "loss": 2.091216564178467,
+    "strategy": "template_explore",
+    "info_gain": 10.64
+  },
+  {
+    "step": 80,
+    "mode": "active",
+    "prompt": "Can animal beautiful?",
+    "mean_surprise": 0.5432625,
+    "concept_labels": [
+      "like",
+      "animal",
+      "living",
+      "same",
+      "life"
+    ],
+    "novelty": 0.10641908645629883,
+    "features": [
+      "animals",
+      "interesting",
+      "unique",
+      "additionally",
+      "physical",
+      "intricate",
+      "ides",
+      "elephant",
+      "ocks",
+      "beautiful",
+      "example"
+    ],
+    "event": "\ud83d\udcce like (sim=0.89)",
+    "loss": 1.6526633501052856,
+    "strategy": "template_creative",
+    "info_gain": 13.14
+  },
+  {
+    "step": 81,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.1059537499999998,
+    "concept_labels": [
+      "living"
+    ],
+    "novelty": 0.17407286167144775,
+    "features": [
+      "straightforward",
+      "bird",
+      "make",
+      "now",
+      "wings",
+      "fly",
+      "literally",
+      "question",
+      "need"
+    ],
+    "event": "\ud83d\udcce living (sim=0.83)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 82,
+    "mode": "active",
+    "prompt": "Can same be like bird?",
+    "mean_surprise": 1.507807594936709,
+    "concept_labels": [
+      "like",
+      "animal",
+      "living",
+      "same",
+      "life",
+      "world"
+    ],
+    "novelty": 0.14716088771820068,
+    "features": [
+      "like",
+      "answer",
+      "say",
+      "bird",
+      "thing",
+      "same",
+      "explanation"
+    ],
+    "event": "\ud83d\udcce like (sim=0.85)",
+    "loss": 1.6106749773025513,
+    "strategy": "template_associate",
+    "info_gain": 11.71
+  },
+  {
+    "step": 83,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8585571428571429,
+    "concept_labels": [
+      "science"
+    ],
+    "novelty": 0.250386118888855,
+    "features": [
+      "likelihood",
+      "significance",
+      "risk",
+      "assessment",
+      "defining",
+      "actions",
+      "material",
+      "risks",
+      "project"
+    ],
+    "event": "\ud83d\udcce science (sim=0.75)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 84,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8773362499999999,
+    "concept_labels": [
+      "world"
+    ],
+    "novelty": 0.21042853593826294,
+    "features": [
+      "standing",
+      "planet",
+      "center",
+      "fall",
+      "surface",
+      "earth",
+      "pulled",
+      "gravity",
+      "applies",
+      "drawn"
+    ],
+    "event": "\ud83d\udcce world (sim=0.79)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 85,
+    "mode": "active",
+    "prompt": "Is bird related to same?",
+    "mean_surprise": 1.47284375,
+    "concept_labels": [
+      "like",
+      "animal",
+      "living",
+      "same",
+      "life",
+      "world"
+    ],
+    "novelty": 0.059831976890563965,
+    "features": [
+      "ities",
+      "way",
+      "classification",
+      "ile",
+      "similarity",
+      "mean",
+      "wings",
+      "same",
+      "lot",
+      "relation"
+    ],
+    "event": "\ud83d\udcce like (sim=0.94)",
+    "loss": 1.318637490272522,
+    "strategy": "template_associate",
+    "info_gain": 12.47
+  },
+  {
+    "step": 86,
+    "mode": "active",
+    "prompt": "What is daily?",
+    "mean_surprise": 0.57821875,
+    "concept_labels": [
+      "world",
+      "living",
+      "same",
+      "science",
+      "life"
+    ],
+    "novelty": 0.14409786462783813,
+    "features": [
+      "sparked",
+      "means",
+      "ation",
+      "speculation",
+      "ists",
+      "contempl",
+      "article",
+      "lingu",
+      "daily",
+      "question"
+    ],
+    "event": "\ud83d\udcce world (sim=0.86)",
+    "loss": 2.9978933334350586,
+    "strategy": "template_explore",
+    "info_gain": 6.08
+  },
+  {
+    "step": 87,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6121430379746835,
+    "concept_labels": [
+      "same"
+    ],
+    "novelty": 0.27438873052597046,
+    "features": [
+      "begins",
+      "mass",
+      "own",
+      "however",
+      "core",
+      "massive",
+      "under",
+      "released",
+      "fuse",
+      "elements",
+      "collapse"
+    ],
+    "event": "\ud83d\udcce same (sim=0.73)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 88,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5665975000000001,
+    "concept_labels": [
+      "own"
+    ],
+    "novelty": 0.11298394203186035,
+    "features": [
+      "process",
+      "information",
+      "usually",
+      "eliminated",
+      "complex",
+      "ory",
+      "type",
+      "temporary",
+      "cognitive",
+      "temporarily",
+      "memory"
+    ],
+    "event": "\ud83c\udf31 GREW: own",
+    "loss": null,
+    "growth": "own"
+  },
+  {
+    "step": 89,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7074472972972974,
+    "concept_labels": [
+      "like"
+    ],
+    "novelty": 0.09469544887542725,
+    "features": [
+      "quiet",
+      "chir",
+      "rose",
+      "morning",
+      "ateful",
+      "gent",
+      "ping",
+      "ling",
+      "forest",
+      "silence",
+      "pine"
+    ],
+    "event": "\ud83d\udcce like (sim=0.91)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 90,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.653215,
+    "concept_labels": [
+      "like"
+    ],
+    "novelty": 0.15295499563217163,
+    "features": [
+      "out",
+      "own",
+      "eventually",
+      "core",
+      "fuel",
+      "temperature",
+      "rise",
+      "causing",
+      "collapse",
+      "burned"
+    ],
+    "event": "\ud83d\udcce like (sim=0.85)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 91,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8884518987341773,
+    "concept_labels": [
+      "world"
+    ],
+    "novelty": 0.09639495611190796,
+    "features": [
+      "number",
+      "result",
+      "trivial",
+      "powerful",
+      "comb",
+      "inator",
+      "principle",
+      "algebra",
+      "theory",
+      "mathematical"
+    ],
+    "event": "\ud83d\udcce world (sim=0.90)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 92,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.79228125,
+    "concept_labels": [
+      "world"
+    ],
+    "novelty": 0.11653995513916016,
+    "features": [
+      "help",
+      "tips",
+      "take",
+      "make",
+      "nature",
+      "full",
+      "three",
+      "risks",
+      "creative",
+      "authentic",
+      "live"
+    ],
+    "event": "\ud83d\udcce world (sim=0.88)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 93,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8861287499999999,
+    "concept_labels": [
+      "own"
+    ],
+    "novelty": 0.13926589488983154,
+    "features": [
+      "describes",
+      "using",
+      "albert",
+      "said",
+      "einstein",
+      "symmetry",
+      "reflected",
+      "true",
+      "aspect",
+      "shapes",
+      "mathematical"
+    ],
+    "event": "\ud83d\udcce own (sim=0.86)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 94,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8940400000000001,
+    "concept_labels": [
+      "same"
+    ],
+    "novelty": 0.18324071168899536,
+    "features": [
+      "happy",
+      "angry",
+      "powerful",
+      "vin",
+      "let",
+      "start",
+      "inspiring",
+      "don",
+      "wedding",
+      "together",
+      "emotions"
+    ],
+    "event": "\ud83d\udcce same (sim=0.82)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 95,
+    "mode": "active",
+    "prompt": "Is living related to tree?",
+    "mean_surprise": 0.8304657142857144,
+    "concept_labels": [
+      "like",
+      "living",
+      "same",
+      "life",
+      "world",
+      "own"
+    ],
+    "novelty": 0.0989999771118164,
+    "features": [
+      "living",
+      "rock",
+      "answer",
+      "yes",
+      "bird",
+      "related",
+      "fish",
+      "following",
+      "river",
+      "animal"
+    ],
+    "event": "\ud83d\udcce like (sim=0.90)",
+    "loss": 1.0724866390228271,
+    "strategy": "template_associate",
+    "info_gain": 5.83
+  },
+  {
+    "step": 96,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5083012499999999,
+    "concept_labels": [
+      "make"
+    ],
+    "novelty": 0.08475291728973389,
+    "features": [
+      "process",
+      "feel",
+      "still",
+      "environmental",
+      "events",
+      "understood",
+      "fully",
+      "thoughts",
+      "think",
+      "ability",
+      "past"
+    ],
+    "event": "\ud83c\udf31 GREW: make",
+    "loss": null,
+    "growth": "make"
+  },
+  {
+    "step": 97,
+    "mode": "active",
+    "prompt": "Is there something that is both fire and same?",
+    "mean_surprise": 0.9375075,
+    "concept_labels": [
+      "same",
+      "science",
+      "life",
+      "world",
+      "own",
+      "make"
+    ],
+    "novelty": 0.18682581186294556,
+    "features": [
+      "itself",
+      "know",
+      "reaction",
+      "profound",
+      "trying",
+      "particularly",
+      "combustion",
+      "don",
+      "source",
+      "things",
+      "often"
+    ],
+    "event": "\ud83d\udcce same (sim=0.81)",
+    "loss": 1.5058112144470215,
+    "strategy": "template_creative",
+    "info_gain": 8.54
+  },
+  {
+    "step": 98,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5983551282051283,
+    "concept_labels": [
+      "world"
+    ],
+    "novelty": 0.27146661281585693,
+    "features": [
+      "century",
+      "during",
+      "after",
+      "ths",
+      "under",
+      "location",
+      "settlement",
+      "antine",
+      "byz",
+      "conquered",
+      "destroyed"
+    ],
+    "event": "\ud83d\udcce world (sim=0.73)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 99,
+    "mode": "active",
+    "prompt": "What if tree could aks?",
+    "mean_surprise": 0.9420825,
+    "concept_labels": [
+      "like",
+      "living",
+      "same",
+      "life",
+      "world",
+      "own",
+      "make"
+    ],
+    "novelty": 0.05761361122131348,
+    "features": [
+      "called",
+      "prayer",
+      "questions",
+      "flower",
+      "tree",
+      "turning",
+      "sun",
+      "king",
+      "home"
+    ],
+    "event": "\ud83d\udcce like (sim=0.94)",
+    "loss": 1.1279784440994263,
+    "strategy": "template_creative",
+    "info_gain": 5.84
+  },
+  {
+    "step": 100,
+    "mode": "active",
+    "prompt": "Can science human?",
+    "mean_surprise": 0.7143587499999999,
+    "concept_labels": [
+      "world",
+      "like",
+      "living",
+      "same",
+      "science",
+      "life",
+      "own",
+      "make"
+    ],
+    "novelty": 0.09479254484176636,
+    "features": [
+      "results",
+      "debate",
+      "activity",
+      "construct",
+      "central",
+      "science",
+      "two",
+      "positions",
+      "human",
+      "ivist"
+    ],
+    "event": "\ud83d\udcce world (sim=0.91)",
+    "loss": 3.0692942142486572,
+    "strategy": "template_creative",
+    "info_gain": 10.21
+  },
+  {
+    "step": 101,
+    "mode": "active",
+    "prompt": "Is life related to fire?",
+    "mean_surprise": 0.68095375,
+    "concept_labels": [
+      "same",
+      "like",
+      "living",
+      "science",
+      "life",
+      "world",
+      "own",
+      "make"
+    ],
+    "novelty": 0.13502609729766846,
+    "features": [
+      "living",
+      "des",
+      "while",
+      "thrive",
+      "related",
+      "directly",
+      "adapted",
+      "fire",
+      "requirement",
+      "exist",
+      "concept"
+    ],
+    "event": "\ud83d\udcce same (sim=0.86)",
+    "loss": 1.0306037664413452,
+    "strategy": "template_associate",
+    "info_gain": 10.78
+  },
+  {
+    "step": 102,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.4898525,
+    "concept_labels": [
+      "make"
+    ],
+    "novelty": 0.0814744234085083,
+    "features": [
+      "without",
+      "rock",
+      "cloud",
+      "field",
+      "micro",
+      "tree",
+      "wind",
+      "bee",
+      "human",
+      "one"
+    ],
+    "event": "\ud83d\udcce make (sim=0.92)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 103,
+    "mode": "active",
+    "prompt": "What is belonging?",
+    "mean_surprise": 0.549115,
+    "concept_labels": [
+      "same",
+      "science",
+      "life",
+      "world",
+      "own",
+      "make"
+    ],
+    "novelty": 0.1519554853439331,
+    "features": [
+      "community",
+      "bel",
+      "ing",
+      "come",
+      "sense",
+      "ong",
+      "belonging",
+      "place"
+    ],
+    "event": "\ud83d\udcce same (sim=0.85)",
+    "loss": 1.020264744758606,
+    "strategy": "template_explore",
+    "info_gain": 6.85
+  },
+  {
+    "step": 104,
+    "mode": "active",
+    "prompt": "What do you know about water?",
+    "mean_surprise": 0.48763417721518987,
+    "concept_labels": [
+      "world",
+      "living",
+      "same",
+      "science",
+      "life",
+      "own",
+      "make"
+    ],
+    "novelty": 0.12292647361755371,
+    "features": [
+      "few",
+      "limited",
+      "water",
+      "universal",
+      "facts",
+      "survive",
+      "polar",
+      "abundant",
+      "surface",
+      "life"
+    ],
+    "event": "\ud83d\udcce world (sim=0.88)",
+    "loss": 2.77782940864563,
+    "strategy": "template_explore",
+    "info_gain": 21.5
+  },
+  {
+    "step": 105,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7218225,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.1368526816368103,
+    "features": [
+      "community",
+      "school",
+      "mission",
+      "goals",
+      "availability",
+      "related",
+      "strategic",
+      "policies",
+      "including",
+      "level",
+      "financial"
+    ],
+    "event": "\ud83d\udcce human (sim=0.86)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 106,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5279410256410256,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.17144989967346191,
+    "features": [
+      "ocean",
+      "meters",
+      "accurately",
+      "deepest",
+      "much",
+      "known",
+      "tallest",
+      "difficult",
+      "deeper",
+      "deep",
+      "depth"
+    ],
+    "event": "\ud83d\udcce human (sim=0.83)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 107,
+    "mode": "active",
+    "prompt": "Describe tree in detail.",
+    "mean_surprise": 0.5244074999999999,
+    "concept_labels": [
+      "like",
+      "living",
+      "same",
+      "world",
+      "own",
+      "make"
+    ],
+    "novelty": 0.09836208820343018,
+    "features": [
+      "discuss",
+      "ify",
+      "change",
+      "trees",
+      "ident",
+      "ating",
+      "mitig",
+      "conservation",
+      "features",
+      "highlight",
+      "key"
+    ],
+    "event": "\ud83d\udcce like (sim=0.90)",
+    "loss": 1.006512999534607,
+    "strategy": "template_explore",
+    "info_gain": 8.12
+  },
+  {
+    "step": 108,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.1773126582278481,
+    "concept_labels": [
+      "science"
+    ],
+    "novelty": 0.28981828689575195,
+    "features": [
+      "loses",
+      "process",
+      "work",
+      "discovery",
+      "reminds",
+      "quotation",
+      "new",
+      "making",
+      "above",
+      "duration",
+      "may"
+    ],
+    "event": "\ud83d\udcce science (sim=0.71)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 109,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.0913759493670885,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.09347879886627197,
+    "features": [
+      "ocean",
+      "out",
+      "water",
+      "resistance",
+      "under",
+      "dioxide",
+      "carbon",
+      "times",
+      "great",
+      "pressure"
+    ],
+    "event": "\ud83d\udcce human (sim=0.91)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 110,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.2930181818181818,
+    "concept_labels": [
+      "like"
+    ],
+    "novelty": 0.16048794984817505,
+    "features": [
+      "jacques",
+      "placed",
+      "healthy",
+      "balance",
+      "species",
+      "body",
+      "ste",
+      "don",
+      "affects",
+      "aure",
+      "lius"
+    ],
+    "event": "\ud83d\udcce like (sim=0.84)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 111,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8223625,
+    "concept_labels": [
+      "like"
+    ],
+    "novelty": 0.0905417799949646,
+    "features": [
+      "decided",
+      "escaped",
+      "learned",
+      "own",
+      "survive",
+      "rels",
+      "group",
+      "rabbits",
+      "hidden",
+      "zoo"
+    ],
+    "event": "\ud83d\udcce like (sim=0.91)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 112,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.700295,
+    "concept_labels": [
+      "related"
+    ],
+    "novelty": 0.17103064060211182,
+    "features": [
+      "time",
+      "growth",
+      "potential",
+      "higher",
+      "natural",
+      "new",
+      "city",
+      "infrastructure",
+      "initially",
+      "flood"
+    ],
+    "event": "\ud83c\udf31 GREW: related",
+    "loss": null,
+    "growth": "related"
+  },
+  {
+    "step": 113,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.60497875,
+    "concept_labels": [
+      "like"
+    ],
+    "novelty": 0.06657099723815918,
+    "features": [
+      "ancient",
+      "small",
+      "harvesting",
+      "world",
+      "elves",
+      "days",
+      "tower",
+      "resources",
+      "gentle",
+      "group",
+      "harmony"
+    ],
+    "event": "\ud83d\udcce like (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 114,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.966115,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.26350516080856323,
+    "features": [
+      "process",
+      "severity",
+      "problem",
+      "find",
+      "rapidly",
+      "considerations",
+      "critical",
+      "need",
+      "possible",
+      "well",
+      "launch"
+    ],
+    "event": "\ud83d\udcce human (sim=0.74)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 115,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.73632375,
+    "concept_labels": [
+      "same"
+    ],
+    "novelty": 0.16613739728927612,
+    "features": [
+      "data",
+      "like",
+      "transmitting",
+      "potential",
+      "web",
+      "critical",
+      "transmission",
+      "role",
+      "transmitted",
+      "financial"
+    ],
+    "event": "\ud83d\udcce same (sim=0.83)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 116,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.088575,
+    "concept_labels": [
+      "related"
+    ],
+    "novelty": 0.05526316165924072,
+    "features": [
+      "rules",
+      "desires",
+      "natural",
+      "directed",
+      "certain",
+      "wind",
+      "universe",
+      "human",
+      "similar",
+      "laws"
+    ],
+    "event": "\ud83d\udcce related (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 117,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.606306329113924,
+    "concept_labels": [
+      "like"
+    ],
+    "novelty": 0.09784120321273804,
+    "features": [
+      "species",
+      "connected",
+      "natural",
+      "effect",
+      "herb",
+      "affects",
+      "declines",
+      "park",
+      "example",
+      "whole",
+      "one"
+    ],
+    "event": "\ud83d\udcce like (sim=0.90)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 118,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.67842125,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.2135981321334839,
+    "features": [
+      "world",
+      "gives",
+      "society",
+      "blog",
+      "role",
+      "language",
+      "share",
+      "create",
+      "cultures",
+      "human",
+      "ability"
+    ],
+    "event": "\ud83d\udcce human (sim=0.79)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 119,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.39763461538461536,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.11297214031219482,
+    "features": [
+      "mar",
+      "filters",
+      "dark",
+      "deepest",
+      "sunlight",
+      "iana",
+      "feet",
+      "reaches",
+      "deep",
+      "rench"
+    ],
+    "event": "\ud83d\udcce human (sim=0.89)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 120,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.70244375,
+    "concept_labels": [
+      "new"
+    ],
+    "novelty": 0.12851548194885254,
+    "features": [
+      "eyes",
+      "jump",
+      "discovered",
+      "rabbit",
+      "never",
+      "new",
+      "known",
+      "followed",
+      "bright",
+      "little",
+      "one"
+    ],
+    "event": "\ud83c\udf31 GREW: new",
+    "loss": null,
+    "growth": "new"
+  },
+  {
+    "step": 121,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5832025,
+    "concept_labels": [
+      "same"
+    ],
+    "novelty": 0.10148966312408447,
+    "features": [
+      "few",
+      "asian",
+      "cultures",
+      "powerful",
+      "body",
+      "purification",
+      "buddhist",
+      "symbol",
+      "belief",
+      "source",
+      "systems"
+    ],
+    "event": "\ud83d\udcce same (sim=0.90)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 122,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.59570375,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.19806194305419922,
+    "features": [
+      "gently",
+      "animals",
+      "several",
+      "purposes",
+      "lush",
+      "villages",
+      "domestic",
+      "nearby",
+      "variety",
+      "river",
+      "source"
+    ],
+    "event": "\ud83d\udcce human (sim=0.80)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 123,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5054700000000001,
+    "concept_labels": [
+      "new"
+    ],
+    "novelty": 0.12223625183105469,
+    "features": [
+      "arks",
+      "hot",
+      "atomic",
+      "fundamental",
+      "later",
+      "particles",
+      "filled",
+      "finally",
+      "attracted",
+      "universe"
+    ],
+    "event": "\ud83d\udcce new (sim=0.88)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 124,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.64940875,
+    "concept_labels": [
+      "world"
+    ],
+    "novelty": 0.17195874452590942,
+    "features": [
+      "computer",
+      "needs",
+      "logical",
+      "provides",
+      "plays",
+      "various",
+      "biology",
+      "science",
+      "designed",
+      "role",
+      "illinois"
+    ],
+    "event": "\ud83d\udcce world (sim=0.83)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 125,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.96748125,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.07158017158508301,
+    "features": [
+      "part",
+      "like",
+      "world",
+      "too",
+      "mask",
+      "cave",
+      "feeling",
+      "explor",
+      "deep",
+      "ers"
+    ],
+    "event": "\ud83d\udcce human (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 126,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6639625,
+    "concept_labels": [
+      "same"
+    ],
+    "novelty": 0.1022455096244812,
+    "features": [
+      "humans",
+      "landscape",
+      "agriculture",
+      "purposes",
+      "role",
+      "powerful",
+      "benefits",
+      "ecosystems",
+      "beautiful",
+      "played",
+      "environment"
+    ],
+    "event": "\ud83d\udcce same (sim=0.90)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 127,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.082615,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.1537817120552063,
+    "features": [
+      "solved",
+      "pection",
+      "understood",
+      "kind",
+      "intros",
+      "imb",
+      "mystery",
+      "cannot",
+      "ued",
+      "whole"
+    ],
+    "event": "\ud83d\udcce human (sim=0.85)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 128,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.2424428571428572,
+    "concept_labels": [
+      "source"
+    ],
+    "novelty": 0.09211897850036621,
+    "features": [
+      "commit",
+      "prompt",
+      "used",
+      "fix",
+      "either",
+      "specified",
+      "git",
+      "message",
+      "interactive",
+      "ref"
+    ],
+    "event": "\ud83c\udf31 GREW: source",
+    "loss": null,
+    "growth": "source"
+  },
+  {
+    "step": 129,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.82494625,
+    "concept_labels": [
+      "same"
+    ],
+    "novelty": 0.09282588958740234,
+    "features": [
+      "part",
+      "gives",
+      "free",
+      "nurturing",
+      "inter",
+      "forest",
+      "halves",
+      "wild",
+      "fire",
+      "spirit"
+    ],
+    "event": "\ud83d\udcce same (sim=0.91)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 130,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.5291662337662337,
+    "concept_labels": [
+      "new"
+    ],
+    "novelty": 0.1221056580543518,
+    "features": [
+      "maintained",
+      "pass",
+      "leader",
+      "david",
+      "computer",
+      "stuff",
+      "jim",
+      "take",
+      "rey",
+      "shall",
+      "difficult"
+    ],
+    "event": "\ud83d\udcce new (sim=0.88)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 131,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.887307594936709,
+    "concept_labels": [
+      "own"
+    ],
+    "novelty": 0.3972610831260681,
+    "features": [
+      "black",
+      "sculpt",
+      "mirrored",
+      "hollow",
+      "kapoor",
+      "bine",
+      "metallic",
+      "sculpture",
+      "hall",
+      "tur",
+      "sucking"
+    ],
+    "event": "\ud83d\udcce own (sim=0.60)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 132,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.988475,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.1770714521408081,
+    "features": [
+      "living",
+      "suffering",
+      "shr",
+      "still",
+      "sentient",
+      "ined",
+      "pursuit",
+      "universally",
+      "fly",
+      "despite",
+      "declaration"
+    ],
+    "event": "\ud83d\udcce human (sim=0.82)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 133,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.57851125,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.06790333986282349,
+    "features": [
+      "organized",
+      "context",
+      "abol",
+      "ism",
+      "perform",
+      "makes",
+      "alive",
+      "thing",
+      "biology",
+      "organization",
+      "functions"
+    ],
+    "event": "\ud83d\udcce human (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 134,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.72753625,
+    "concept_labels": [
+      "related"
+    ],
+    "novelty": 0.27902543544769287,
+    "features": [
+      "living",
+      "carbohydrates",
+      "bio",
+      "makes",
+      "acids",
+      "opposed",
+      "chemistry",
+      "reactions",
+      "biological",
+      "organism"
+    ],
+    "event": "\ud83d\udcce related (sim=0.72)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 135,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.2961925,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.09381753206253052,
+    "features": [
+      "living",
+      "strong",
+      "change",
+      "enough",
+      "pulls",
+      "towards",
+      "same",
+      "mean",
+      "entire",
+      "love"
+    ],
+    "event": "\ud83d\udcce human (sim=0.91)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 136,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.72480125,
+    "concept_labels": [
+      "used"
+    ],
+    "novelty": 0.17995446920394897,
+    "features": [
+      "understand",
+      "composed",
+      "use",
+      "components",
+      "used",
+      "ways",
+      "speak",
+      "limits",
+      "various",
+      "language"
+    ],
+    "event": "\ud83c\udf31 GREW: used",
+    "loss": null,
+    "growth": "used"
+  },
+  {
+    "step": 137,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.35639625,
+    "concept_labels": [
+      "new"
+    ],
+    "novelty": 0.0769200325012207,
+    "features": [
+      "back",
+      "never",
+      "scientist",
+      "looked",
+      "built",
+      "longer",
+      "day",
+      "chased",
+      "earned",
+      "zest"
+    ],
+    "event": "\ud83d\udcce new (sim=0.92)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 138,
+    "mode": "active",
+    "prompt": "Can tree like?",
+    "mean_surprise": 0.9019550000000001,
+    "concept_labels": [
+      "same",
+      "own",
+      "make",
+      "human",
+      "related",
+      "new",
+      "source",
+      "used"
+    ],
+    "novelty": 0.09835493564605713,
+    "features": [
+      "feel",
+      "know",
+      "trying",
+      "try",
+      "make",
+      "think",
+      "bad",
+      "maybe"
+    ],
+    "event": "\ud83d\udcce same (sim=0.90)",
+    "loss": 1.0187479257583618,
+    "strategy": "template_creative",
+    "info_gain": 6.2
+  },
+  {
+    "step": 139,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8763759493670886,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.1762458086013794,
+    "features": [
+      "ancient",
+      "community",
+      "new",
+      "long",
+      "people",
+      "ander",
+      "sites",
+      "including",
+      "diverse",
+      "ruins",
+      "one"
+    ],
+    "event": "\ud83d\udcce human (sim=0.82)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 140,
+    "mode": "active",
+    "prompt": "What do you know about new?",
+    "mean_surprise": 1.2884225,
+    "concept_labels": [
+      "new",
+      "like",
+      "same",
+      "own",
+      "make",
+      "human",
+      "related",
+      "source",
+      "used"
+    ],
+    "novelty": 0.28678518533706665,
+    "features": [
+      "idea",
+      "makes",
+      "invention",
+      "way",
+      "reason",
+      "new",
+      "approach",
+      "reject"
+    ],
+    "event": "\ud83d\udcce new (sim=0.71)",
+    "loss": 3.5057551860809326,
+    "strategy": "template_explore",
+    "info_gain": 7.09
+  },
+  {
+    "step": 141,
+    "mode": "active",
+    "prompt": "What do you know about releases?",
+    "mean_surprise": 0.8206025,
+    "concept_labels": [
+      "used",
+      "like",
+      "same",
+      "world",
+      "own",
+      "make",
+      "human",
+      "related",
+      "new",
+      "source"
+    ],
+    "novelty": 0.19015634059906006,
+    "features": [
+      "package",
+      "different",
+      "help",
+      "walk",
+      "release",
+      "create",
+      "explain",
+      "test",
+      "members"
+    ],
+    "event": "\ud83d\udcce used (sim=0.81)",
+    "loss": 3.6362006664276123,
+    "strategy": "template_explore",
+    "info_gain": 9.72
+  },
+  {
+    "step": 142,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8271303797468355,
+    "concept_labels": [
+      "used"
+    ],
+    "novelty": 0.11915695667266846,
+    "features": [
+      "learning",
+      "vital",
+      "components",
+      "social",
+      "express",
+      "create",
+      "communication",
+      "language",
+      "role"
+    ],
+    "event": "\ud83d\udcce used (sim=0.88)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 143,
+    "mode": "active",
+    "prompt": "Can like water?",
+    "mean_surprise": 1.056245,
+    "concept_labels": [
+      "source",
+      "same",
+      "world",
+      "human",
+      "new",
+      "used"
+    ],
+    "novelty": 0.09167087078094482,
+    "features": [
+      "constantly",
+      "like",
+      "water",
+      "always",
+      "ish",
+      "calm",
+      "little",
+      "well",
+      "sought"
+    ],
+    "event": "\ud83d\udcce source (sim=0.91)",
+    "loss": 3.5253725051879883,
+    "strategy": "template_creative",
+    "info_gain": 9.96
+  },
+  {
+    "step": 144,
+    "mode": "active",
+    "prompt": "What if life could lighting?",
+    "mean_surprise": 1.5610670886075948,
+    "concept_labels": [
+      "related",
+      "like",
+      "same",
+      "own",
+      "make",
+      "human",
+      "new",
+      "used"
+    ],
+    "novelty": 0.14242351055145264,
+    "features": [
+      "time",
+      "size",
+      "drop",
+      "darkness",
+      "day",
+      "diameter",
+      "solar",
+      "simple",
+      "great",
+      "event"
+    ],
+    "event": "\ud83d\udcce related (sim=0.86)",
+    "loss": 3.5056350231170654,
+    "strategy": "template_creative",
+    "info_gain": 18.56
+  },
+  {
+    "step": 145,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.33974000000000004,
+    "concept_labels": [
+      "used"
+    ],
+    "novelty": 0.20778125524520874,
+    "features": [
+      "ocean",
+      "measure",
+      "deeper",
+      "sound",
+      "depth"
+    ],
+    "event": "\ud83d\udcce used (sim=0.79)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 146,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.9309708860759494,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.11111903190612793,
+    "features": [
+      "global",
+      "ious",
+      "world",
+      "perspectives",
+      "job",
+      "essential",
+      "sophia",
+      "full",
+      "chang",
+      "diversity",
+      "learn"
+    ],
+    "event": "\ud83d\udcce role (sim=0.89)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 147,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.9773462499999999,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.17860114574432373,
+    "features": [
+      "method",
+      "depending",
+      "move",
+      "instinct",
+      "main",
+      "however",
+      "natural",
+      "fish",
+      "various",
+      "true"
+    ],
+    "event": "\ud83d\udcce role (sim=0.82)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 148,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.76083625,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.0789574384689331,
+    "features": [
+      "music",
+      "impact",
+      "nostalgic",
+      "encouraging",
+      "uncertainty",
+      "excited",
+      "response",
+      "recognize",
+      "ace",
+      "emotions"
+    ],
+    "event": "\ud83d\udcce human (sim=0.92)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 149,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.508295,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.06185680627822876,
+    "features": [
+      "recreation",
+      "transportation",
+      "ics",
+      "role",
+      "pic",
+      "walking",
+      "scenic",
+      "played",
+      "history",
+      "heart"
+    ],
+    "event": "\ud83d\udcce role (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 150,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.85829375,
+    "concept_labels": [
+      "used"
+    ],
+    "novelty": 0.12243485450744629,
+    "features": [
+      "ideas",
+      "good",
+      "world",
+      "different",
+      "water",
+      "types",
+      "apart",
+      "true",
+      "things",
+      "place"
+    ],
+    "event": "\ud83d\udcce used (sim=0.88)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 151,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.941605,
+    "concept_labels": [
+      "source"
+    ],
+    "novelty": 0.23734509944915771,
+    "features": [
+      "recommend",
+      "product",
+      "find",
+      "lines",
+      "way",
+      "used",
+      "difference",
+      "difficult",
+      "little",
+      "wrinkles",
+      "clearer"
+    ],
+    "event": "\ud83d\udcce source (sim=0.76)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 152,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.1030275,
+    "concept_labels": [
+      "related"
+    ],
+    "novelty": 0.16518759727478027,
+    "features": [
+      "currents",
+      "given",
+      "bound",
+      "les",
+      "higher",
+      "wind",
+      "chains",
+      "earthly",
+      "become",
+      "lifts",
+      "smaller"
+    ],
+    "event": "\ud83d\udcce related (sim=0.83)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 153,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5782200000000001,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.22575807571411133,
+    "features": [
+      "explode",
+      "surrounded",
+      "space",
+      "star",
+      "event",
+      "outer",
+      "sing",
+      "universe",
+      "tiny",
+      "collapse"
+    ],
+    "event": "\ud83d\udcce role (sim=0.77)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 154,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.55058125,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.06822103261947632,
+    "features": [
+      "lies",
+      "predictions",
+      "vital",
+      "researchers",
+      "under",
+      "understanding",
+      "draw",
+      "tool",
+      "biology",
+      "science"
+    ],
+    "event": "\ud83d\udcce role (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 155,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.0689278481012658,
+    "concept_labels": [
+      "new"
+    ],
+    "novelty": 0.13928794860839844,
+    "features": [
+      "passes",
+      "partners",
+      "eyes",
+      "azing",
+      "forget",
+      "waiting",
+      "moment",
+      "alone",
+      "life",
+      "closer",
+      "whether"
+    ],
+    "event": "\ud83d\udcce new (sim=0.86)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 156,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.26815584415584415,
+    "concept_labels": [
+      "related"
+    ],
+    "novelty": 0.1650073528289795,
+    "features": [
+      "mass",
+      "ely",
+      "proportional",
+      "invers",
+      "force",
+      "between",
+      "distance",
+      "equation",
+      "objects"
+    ],
+    "event": "\ud83d\udcce related (sim=0.83)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 157,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8405423076923078,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.1868680715560913,
+    "features": [
+      "town",
+      "size",
+      "known",
+      "approximately",
+      "long",
+      "merging",
+      "saint",
+      "yards",
+      "east",
+      "countryside",
+      "vine"
+    ],
+    "event": "\ud83d\udcce role (sim=0.81)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 158,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.9987792207792209,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.13213694095611572,
+    "features": [
+      "mostly",
+      "page",
+      "good",
+      "travel",
+      "ist",
+      "ship",
+      "arthur",
+      "people",
+      "trouble",
+      "two",
+      "openh"
+    ],
+    "event": "\ud83d\udcce human (sim=0.87)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 159,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.72421625,
+    "concept_labels": [
+      "source"
+    ],
+    "novelty": 0.14673328399658203,
+    "features": [
+      "significant",
+      "perception",
+      "plays",
+      "create",
+      "reality",
+      "influenced",
+      "memory"
+    ],
+    "event": "\ud83d\udcce source (sim=0.85)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 160,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5263625000000001,
+    "concept_labels": [
+      "used"
+    ],
+    "novelty": 0.10345947742462158,
+    "features": [
+      "destroy",
+      "heat",
+      "impact",
+      "destructive",
+      "powerful",
+      "natural",
+      "long",
+      "habitats",
+      "fire",
+      "wild",
+      "shelter"
+    ],
+    "event": "\ud83d\udcce used (sim=0.90)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 161,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.0344151898734177,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.14370644092559814,
+    "features": [
+      "water",
+      "way",
+      "sure",
+      "take",
+      "get",
+      "long",
+      "spending",
+      "dose",
+      "daily",
+      "perfect",
+      "place"
+    ],
+    "event": "\ud83d\udcce role (sim=0.86)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 162,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.72753875,
+    "concept_labels": [
+      "related"
+    ],
+    "novelty": 0.08111637830734253,
+    "features": [
+      "clever",
+      "farmer",
+      "fox",
+      "ascal",
+      "ways",
+      "goose",
+      "food",
+      "his",
+      "waited",
+      "ful"
+    ],
+    "event": "\ud83d\udcce related (sim=0.92)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 163,
+    "mode": "active",
+    "prompt": "Tell me about related.",
+    "mean_surprise": 0.9644012500000001,
+    "concept_labels": [
+      "related",
+      "like",
+      "living",
+      "own",
+      "make",
+      "human",
+      "used",
+      "role"
+    ],
+    "novelty": 0.12228304147720337,
+    "features": [
+      "common",
+      "any",
+      "related",
+      "topics",
+      "question",
+      "additional"
+    ],
+    "event": "\ud83d\udcce related (sim=0.88)",
+    "loss": 2.7489070892333984,
+    "strategy": "template_explore",
+    "info_gain": 5.56
+  },
+  {
+    "step": 164,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.54668125,
+    "concept_labels": [
+      "used"
+    ],
+    "novelty": 0.17925357818603516,
+    "features": [
+      "out",
+      "own",
+      "hot",
+      "series",
+      "material",
+      "run",
+      "gravity",
+      "times",
+      "causing",
+      "greater",
+      "intense"
+    ],
+    "event": "\ud83d\udcce used (sim=0.82)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 165,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.671285,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.03577631711959839,
+    "features": [
+      "happy",
+      "mental",
+      "bring",
+      "improve",
+      "help",
+      "used",
+      "sense",
+      "awareness",
+      "belonging"
+    ],
+    "event": "\ud83d\udcce role (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 166,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.47460375,
+    "concept_labels": [
+      "used"
+    ],
+    "novelty": 0.18475687503814697,
+    "features": [
+      "presence",
+      "oxygen",
+      "chemical",
+      "combustion",
+      "fires",
+      "fire",
+      "three",
+      "source",
+      "wood"
+    ],
+    "event": "\ud83d\udcce used (sim=0.82)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 167,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.9162075,
+    "concept_labels": [
+      "like"
+    ],
+    "novelty": 0.25279080867767334,
+    "features": [
+      "cities",
+      "early",
+      "lived",
+      "empire",
+      "communities",
+      "movement",
+      "message",
+      "scattered",
+      "major",
+      "shape"
+    ],
+    "event": "\ud83d\udcce like (sim=0.75)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 168,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.781445,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.1480068564414978,
+    "features": [
+      "part",
+      "way",
+      "rather",
+      "respects",
+      "connected",
+      "effect",
+      "ripple",
+      "share",
+      "perspective",
+      "recognize",
+      "often"
+    ],
+    "event": "\ud83d\udcce role (sim=0.85)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 169,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.80664125,
+    "concept_labels": [
+      "same"
+    ],
+    "novelty": 0.12904304265975952,
+    "features": [
+      "nights",
+      "fuels",
+      "giving",
+      "alive",
+      "come",
+      "fire",
+      "envelop",
+      "belly",
+      "heart"
+    ],
+    "event": "\ud83d\udcce same (sim=0.87)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 170,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6066337500000001,
+    "concept_labels": [
+      "related"
+    ],
+    "novelty": 0.2978135347366333,
+    "features": [
+      "law",
+      "interesting",
+      "mass",
+      "newton",
+      "simplified",
+      "showed",
+      "explanation",
+      "every",
+      "itation"
+    ],
+    "event": "\ud83d\udcce related (sim=0.70)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 171,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.67822375,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.10053855180740356,
+    "features": [
+      "transformations",
+      "world",
+      "vital",
+      "however",
+      "aspect",
+      "others",
+      "almost",
+      "language",
+      "meaningful",
+      "lives",
+      "thinking"
+    ],
+    "event": "\ud83d\udcce role (sim=0.90)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 172,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.91747125,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.06686949729919434,
+    "features": [
+      "strive",
+      "humans",
+      "ards",
+      "act",
+      "drink",
+      "therefore",
+      "call",
+      "around",
+      "plants",
+      "breathe",
+      "everything"
+    ],
+    "event": "\ud83d\udcce role (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 173,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6219725,
+    "concept_labels": [
+      "new"
+    ],
+    "novelty": 0.2575686573982239,
+    "features": [
+      "harvard",
+      "fun",
+      "philosophy",
+      "always",
+      "lot",
+      "having",
+      "things"
+    ],
+    "event": "\ud83d\udcce new (sim=0.74)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 174,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.59999375,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.08074057102203369,
+    "features": [
+      "important",
+      "world",
+      "ourselves",
+      "technology",
+      "uses",
+      "way",
+      "own",
+      "communicate",
+      "provides",
+      "create",
+      "well"
+    ],
+    "event": "\ud83d\udcce role (sim=0.92)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 175,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.1648701298701298,
+    "concept_labels": [
+      "new"
+    ],
+    "novelty": 0.16953134536743164,
+    "features": [
+      "violent",
+      "fran\u00e7ois",
+      "unhappy",
+      "roch",
+      "manuel",
+      "uld",
+      "mankind",
+      "jealousy",
+      "share",
+      "expectations",
+      "one"
+    ],
+    "event": "\ud83d\udcce new (sim=0.83)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 176,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7184524999999999,
+    "concept_labels": [
+      "related"
+    ],
+    "novelty": 0.2478780746459961,
+    "features": [
+      "orbit",
+      "pull",
+      "mass",
+      "planets",
+      "massive",
+      "earth",
+      "moon",
+      "including",
+      "objects"
+    ],
+    "event": "\ud83d\udcce related (sim=0.75)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 177,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5794875,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.06491720676422119,
+    "features": [
+      "without",
+      "music",
+      "ourselves",
+      "communicate",
+      "tool",
+      "express",
+      "create",
+      "able",
+      "build",
+      "language"
+    ],
+    "event": "\ud83d\udcce role (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 178,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8388612500000001,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.10917848348617554,
+    "features": [
+      "emb",
+      "uary",
+      "dan",
+      "sea",
+      "sch",
+      "flows",
+      "river",
+      "gulf"
+    ],
+    "event": "\ud83d\udcce role (sim=0.89)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 179,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.07168625,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.13057297468185425,
+    "features": [
+      "object",
+      "instinct",
+      "someone",
+      "emotion",
+      "loving",
+      "primal",
+      "arises",
+      "share",
+      "including",
+      "deeper",
+      "love"
+    ],
+    "event": "\ud83d\udcce human (sim=0.87)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 180,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.67969,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.14822763204574585,
+    "features": [
+      "lead",
+      "powerful",
+      "indirectly",
+      "fire",
+      "injuries",
+      "cause",
+      "ind",
+      "both",
+      "human",
+      "property",
+      "irect"
+    ],
+    "event": "\ud83d\udcce human (sim=0.85)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 181,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8383787500000001,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.1394917368888855,
+    "features": [
+      "presence",
+      "centuries",
+      "ude",
+      "pain",
+      "perceive",
+      "defines",
+      "life",
+      "experience",
+      "capacity",
+      "one"
+    ],
+    "event": "\ud83d\udcce role (sim=0.86)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 182,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8439425,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.13035887479782104,
+    "features": [
+      "off",
+      "falling",
+      "center",
+      "forces",
+      "towards",
+      "earth",
+      "causes",
+      "object",
+      "keep",
+      "ground",
+      "one"
+    ],
+    "event": "\ud83d\udcce role (sim=0.87)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 183,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6776053333333333,
+    "concept_labels": [
+      "new"
+    ],
+    "novelty": 0.2800852060317993,
+    "features": [
+      "lodge",
+      "joshua",
+      "ough",
+      "drama",
+      "directed",
+      "sever",
+      "his",
+      "isaac",
+      "him",
+      "ial",
+      "kate"
+    ],
+    "event": "\ud83d\udcce new (sim=0.72)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 184,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5280275,
+    "concept_labels": [
+      "related"
+    ],
+    "novelty": 0.08230972290039062,
+    "features": [
+      "river",
+      "discovered",
+      "flowers",
+      "talked",
+      "already",
+      "high",
+      "two",
+      "sounds",
+      "oming",
+      "taking",
+      "along"
+    ],
+    "event": "\ud83d\udcce related (sim=0.92)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 185,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7373075,
+    "concept_labels": [
+      "source"
+    ],
+    "novelty": 0.14985382556915283,
+    "features": [
+      "els",
+      "fuels",
+      "metaphor",
+      "passion",
+      "powerful",
+      "fuel",
+      "intensity",
+      "ites",
+      "various",
+      "ical",
+      "izes"
+    ],
+    "event": "\ud83d\udcce source (sim=0.85)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 186,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8913215189873418,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.10452491044998169,
+    "features": [
+      "equations",
+      "important",
+      "best",
+      "physics",
+      "several",
+      "nav",
+      "ries",
+      "areas",
+      "met",
+      "sym",
+      "systems"
+    ],
+    "event": "\ud83d\udcce role (sim=0.90)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 187,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.04228125,
+    "concept_labels": [
+      "new"
+    ],
+    "novelty": 0.21886074542999268,
+    "features": [
+      "peaceful",
+      "mood",
+      "green",
+      "enjoy",
+      "melanch",
+      "ling",
+      "see",
+      "oly",
+      "shining",
+      "quickly",
+      "sound"
+    ],
+    "event": "\ud83d\udcce new (sim=0.78)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 188,
+    "mode": "active",
+    "prompt": "What is know?",
+    "mean_surprise": 1.264176712328767,
+    "concept_labels": [
+      "new",
+      "like",
+      "same",
+      "own",
+      "make",
+      "human",
+      "related",
+      "used",
+      "role"
+    ],
+    "novelty": 0.24087637662887573,
+    "features": [
+      "use",
+      "learning",
+      "iddle",
+      "material",
+      "unknown",
+      "script",
+      "carbon",
+      "advanced",
+      "statements",
+      "com",
+      "puzzle"
+    ],
+    "event": "\ud83d\udcce new (sim=0.76)",
+    "loss": 2.1681599617004395,
+    "strategy": "template_explore",
+    "info_gain": 9.36
+  },
+  {
+    "step": 189,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.4425064102564103,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.1465657353401184,
+    "features": [
+      "any",
+      "realize",
+      "deepest",
+      "much",
+      "approximately",
+      "iana",
+      "challenger",
+      "human",
+      "deep",
+      "rench"
+    ],
+    "event": "\ud83d\udcce human (sim=0.85)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 190,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.71132,
+    "concept_labels": [
+      "new"
+    ],
+    "novelty": 0.13209164142608643,
+    "features": [
+      "river",
+      "living",
+      "flux",
+      "future",
+      "feeling",
+      "yesterday",
+      "hopeless",
+      "everything",
+      "past"
+    ],
+    "event": "\ud83d\udcce new (sim=0.87)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 191,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.1984375,
+    "concept_labels": [
+      "related"
+    ],
+    "novelty": 0.11982762813568115,
+    "features": [
+      "aries",
+      "world",
+      "avi",
+      "reach",
+      "instance",
+      "fly",
+      "deprived",
+      "driven",
+      "year",
+      "birds",
+      "aged"
+    ],
+    "event": "\ud83d\udcce related (sim=0.88)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 192,
+    "mode": "active",
+    "prompt": "Tell me about used.",
+    "mean_surprise": 0.74266875,
+    "concept_labels": [
+      "role",
+      "like",
+      "own",
+      "make",
+      "human",
+      "related",
+      "new",
+      "source",
+      "used"
+    ],
+    "novelty": 0.10260945558547974,
+    "features": [
+      "music",
+      "song",
+      "book",
+      "title",
+      "game",
+      "used",
+      "movie",
+      "review"
+    ],
+    "event": "\ud83d\udcce role (sim=0.90)",
+    "loss": 1.0035679340362549,
+    "strategy": "template_explore",
+    "info_gain": 17.04
+  },
+  {
+    "step": 193,
+    "mode": "active",
+    "prompt": "What if own could related?",
+    "mean_surprise": 1.181860759493671,
+    "concept_labels": [
+      "new",
+      "same",
+      "human",
+      "source"
+    ],
+    "novelty": 0.1761777400970459,
+    "features": [
+      "common",
+      "understand",
+      "scenario",
+      "referring",
+      "assume",
+      "complex",
+      "own",
+      "self",
+      "case",
+      "question"
+    ],
+    "event": "\ud83d\udcce new (sim=0.82)",
+    "loss": 1.862288236618042,
+    "strategy": "template_creative",
+    "info_gain": 8.68
+  },
+  {
+    "step": 194,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7787087500000001,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.1511872410774231,
+    "features": [
+      "part",
+      "feelings",
+      "good",
+      "ourselves",
+      "ending",
+      "bringing",
+      "way",
+      "bring",
+      "making",
+      "otherwise",
+      "emotions"
+    ],
+    "event": "\ud83d\udcce human (sim=0.85)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 195,
+    "mode": "active",
+    "prompt": "Is there something that is both make and source?",
+    "mean_surprise": 0.7284354430379747,
+    "concept_labels": [
+      "new",
+      "same",
+      "own",
+      "make",
+      "human",
+      "related",
+      "used",
+      "role"
+    ],
+    "novelty": 0.3242229223251343,
+    "features": [
+      "few",
+      "examples",
+      "know",
+      "yes",
+      "companies",
+      "make",
+      "apple",
+      "source",
+      "maker"
+    ],
+    "event": "\ud83d\udcce new (sim=0.68)",
+    "loss": 1.6299000978469849,
+    "strategy": "template_creative",
+    "info_gain": 13.63
+  },
+  {
+    "step": 196,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.59199,
+    "concept_labels": [
+      "human"
+    ],
+    "novelty": 0.15407168865203857,
+    "features": [
+      "process",
+      "use",
+      "world",
+      "allowing",
+      "ones",
+      "development",
+      "things",
+      "sense",
+      "understanding",
+      "influence",
+      "forming"
+    ],
+    "event": "\ud83d\udcce human (sim=0.85)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 197,
+    "mode": "active",
+    "prompt": "What do same and make have in common?",
+    "mean_surprise": 0.9084925,
+    "concept_labels": [
+      "related",
+      "like",
+      "same",
+      "own",
+      "make",
+      "human",
+      "new",
+      "used",
+      "role"
+    ],
+    "novelty": 0.19621717929840088,
+    "features": [
+      "part",
+      "she",
+      "verbs",
+      "her",
+      "ake",
+      "suggested",
+      "sure",
+      "think",
+      "meaning",
+      "mother",
+      "else"
+    ],
+    "event": "\ud83d\udcce related (sim=0.80)",
+    "loss": 1.8538250923156738,
+    "strategy": "template_associate",
+    "info_gain": 9.01
+  },
+  {
+    "step": 198,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.57294625,
+    "concept_labels": [
+      "role"
+    ],
+    "novelty": 0.16418862342834473,
+    "features": [
+      "ideas",
+      "communicating",
+      "govern",
+      "school",
+      "way",
+      "mathematics",
+      "precise",
+      "matter",
+      "ambiguous",
+      "basis",
+      "laws"
+    ],
+    "event": "\ud83d\udcce role (sim=0.84)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 199,
+    "mode": "active",
+    "prompt": "Is there something that is both tree and human?",
+    "mean_surprise": 0.693165,
+    "concept_labels": [
+      "related",
+      "like",
+      "living",
+      "own",
+      "make",
+      "used",
+      "role"
+    ],
+    "novelty": 0.09168899059295654,
+    "features": [
+      "relation",
+      "something",
+      "tree",
+      "true",
+      "both",
+      "human"
+    ],
+    "event": "\ud83d\udcce related (sim=0.91)",
+    "loss": 1.0407681465148926,
+    "strategy": "template_creative",
+    "info_gain": 11.79
+  },
+  {
+    "step": 200,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7413820512820513,
+    "concept_labels": [
+      "source"
+    ],
+    "novelty": 0.1551162600517273,
+    "features": [
+      "process",
+      "increase",
+      "mental",
+      "connection",
+      "joy",
+      "health",
+      "emotions",
+      "play",
+      "positive",
+      "role",
+      "supporting"
+    ],
+    "event": "\ud83d\udcce source (sim=0.84)",
+    "loss": null,
+    "growth": null
+  }
+]

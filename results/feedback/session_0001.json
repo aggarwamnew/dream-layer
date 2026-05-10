@@ -1,0 +1,5626 @@
+[
+  {
+    "step": 1,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.4825125,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.05365998744964595,
+    "features": [
+      "several",
+      "infinitely",
+      "formed",
+      "sing",
+      "idea",
+      "ularity",
+      "point",
+      "stars",
+      "thought",
+      "galaxies",
+      "universe"
+    ],
+    "event": "\ud83d\udcce water (sim=0.95)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 2,
+    "mode": "active",
+    "prompt": "\"Is a shiny liquid a metal?\" (By the way, this is a classic example of a question that is hard to?",
+    "mean_surprise": 1.0226025,
+    "concept_labels": [
+      "metal",
+      "bird",
+      "fire",
+      "water",
+      "animal",
+      "tree"
+    ],
+    "novelty": -0.06762300729751591,
+    "features": [
+      "need",
+      "material",
+      "think",
+      "difficult",
+      "metal",
+      "good",
+      "now",
+      "thought",
+      "mean",
+      "evaluate"
+    ],
+    "event": "\ud83d\udcce metal (sim=1.07)",
+    "loss": 2.062392473220825,
+    "strategy": "combine",
+    "info_gain": 6.52
+  },
+  {
+    "step": 3,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8748049999999999,
+    "concept_labels": [
+      "animal"
+    ],
+    "novelty": 0.051913452148437456,
+    "features": [
+      "challenging",
+      "pressure",
+      "life",
+      "extreme",
+      "one",
+      "ocean",
+      "conditions",
+      "tell",
+      "diversity",
+      "incredible"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.95)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 4,
+    "mode": "active",
+    "prompt": "What is water?",
+    "mean_surprise": 0.78974375,
+    "concept_labels": [
+      "water",
+      "bird",
+      "fire",
+      "metal",
+      "animal",
+      "tree"
+    ],
+    "novelty": -0.04677097797393803,
+    "features": [
+      "molecule",
+      "mystery",
+      "question",
+      "understood",
+      "liquid",
+      "element",
+      "substance",
+      "water"
+    ],
+    "event": "\ud83d\udcce water (sim=1.05)",
+    "loss": 2.0200419425964355,
+    "strategy": "unvisited",
+    "info_gain": 4.59
+  },
+  {
+    "step": 5,
+    "mode": "active",
+    "prompt": "\"Is there a way to make it go away?\"?",
+    "mean_surprise": 0.7352537499999999,
+    "concept_labels": [
+      "animal",
+      "bird",
+      "fire",
+      "water",
+      "metal",
+      "tree"
+    ],
+    "novelty": 0.04820616245269771,
+    "features": [
+      "try",
+      "question",
+      "difference",
+      "instead",
+      "distinction",
+      "terms",
+      "mindfulness",
+      "feeling",
+      "away",
+      "avoid",
+      "wrong"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.95)",
+    "loss": 2.0020956993103027,
+    "strategy": "unvisited",
+    "info_gain": 8.84
+  },
+  {
+    "step": 6,
+    "mode": "active",
+    "prompt": "What is feathers and good?",
+    "mean_surprise": 1.1450200000000001,
+    "concept_labels": [
+      "bird",
+      "fire",
+      "water",
+      "metal",
+      "animal",
+      "tree"
+    ],
+    "novelty": 0.17522842884063716,
+    "features": [
+      "people",
+      "stuck",
+      "pair",
+      "well",
+      "north",
+      "feathers",
+      "world",
+      "together"
+    ],
+    "event": "\ud83d\udcce bird (sim=0.82)",
+    "loss": 2.2820658683776855,
+    "strategy": "combine",
+    "info_gain": 4.95
+  },
+  {
+    "step": 7,
+    "mode": "active",
+    "prompt": "\u201cWhy should I take this water bottle with me? Is it like a friend that doesn\u2019t mind my mistakes?\u201d?",
+    "mean_surprise": 0.99120875,
+    "concept_labels": [
+      "water",
+      "bird",
+      "fire",
+      "metal",
+      "animal",
+      "tree"
+    ],
+    "novelty": 0.21681427955627441,
+    "features": [
+      "provide",
+      "companions",
+      "give",
+      "personality",
+      "like",
+      "intelligence",
+      "bottle",
+      "don",
+      "animate",
+      "hip"
+    ],
+    "event": "\ud83d\udcce water (sim=0.78)",
+    "loss": 1.8473948240280151,
+    "strategy": "connection",
+    "info_gain": 6.49
+  },
+  {
+    "step": 8,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.9968775000000001,
+    "concept_labels": [
+      "fire"
+    ],
+    "novelty": 0.29135800600051875,
+    "features": [
+      "guards",
+      "protected",
+      "center",
+      "wealth",
+      "great",
+      "watched",
+      "city",
+      "palace",
+      "read",
+      "towers"
+    ],
+    "event": "\ud83d\udcce fire (sim=0.71)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 9,
+    "mode": "active",
+    "prompt": "\"What is alive?\" (Fig. 3.1). The teacher can use this opportunity to introduce the concept of life?",
+    "mean_surprise": 0.8561075949367087,
+    "concept_labels": [
+      "water",
+      "bird",
+      "fire",
+      "metal",
+      "animal",
+      "tree"
+    ],
+    "novelty": 0.20672941207885742,
+    "features": [
+      "using",
+      "terms",
+      "whether",
+      "death",
+      "any",
+      "between",
+      "concepts",
+      "represent",
+      "objects"
+    ],
+    "event": "\ud83d\udcce water (sim=0.79)",
+    "loss": 1.7379322052001953,
+    "strategy": "shared_feat",
+    "info_gain": 7.76
+  },
+  {
+    "step": 10,
+    "mode": "active",
+    "prompt": "Why are there so many names for the same thing? Why do some people use different names for the same?",
+    "mean_surprise": 0.587205,
+    "concept_labels": [
+      "water",
+      "bird",
+      "fire",
+      "metal",
+      "animal",
+      "tree"
+    ],
+    "novelty": 0.22725766897201538,
+    "features": [
+      "cultures",
+      "evolution",
+      "differently",
+      "find",
+      "same",
+      "confusing",
+      "ingu",
+      "river",
+      "different",
+      "great",
+      "few"
+    ],
+    "event": "\ud83d\udcce water (sim=0.77)",
+    "loss": 1.6766602993011475,
+    "strategy": "shared_feat",
+    "info_gain": 6.19
+  },
+  {
+    "step": 11,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.63134375,
+    "concept_labels": [
+      "animal"
+    ],
+    "novelty": 0.35436421632766724,
+    "features": [
+      "experience",
+      "domains",
+      "used",
+      "biological",
+      "behavior",
+      "beauty",
+      "different",
+      "physical",
+      "world",
+      "stars",
+      "phenomena"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.65)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 12,
+    "mode": "active",
+    "prompt": "\"Is there no other difference between heavy and animal?\"... The answer is: \"No, there is not.\" The?",
+    "mean_surprise": 0.9437450000000001,
+    "concept_labels": [
+      "water",
+      "bird",
+      "fire",
+      "metal",
+      "animal",
+      "tree"
+    ],
+    "novelty": 0.1754770278930664,
+    "features": [
+      "answer",
+      "sentence",
+      "question",
+      "word"
+    ],
+    "event": "\ud83d\udcce water (sim=0.82)",
+    "loss": 1.4886629581451416,
+    "strategy": "combine",
+    "info_gain": 4.34
+  },
+  {
+    "step": 13,
+    "mode": "active",
+    "prompt": "\u201cWhy?\u201d The question is never satisfied until it is answered. And the answer always gives rise to?",
+    "mean_surprise": 0.6766164556962025,
+    "concept_labels": [
+      "water",
+      "bird",
+      "fire",
+      "metal",
+      "animal",
+      "tree"
+    ],
+    "novelty": 0.14059066772460938,
+    "features": [
+      "question",
+      "try",
+      "yet",
+      "sense",
+      "place",
+      "why",
+      "way",
+      "despite",
+      "game",
+      "essence"
+    ],
+    "event": "\ud83d\udcce water (sim=0.86)",
+    "loss": 1.2927535772323608,
+    "strategy": "shared_feat",
+    "info_gain": 7.68
+  },
+  {
+    "step": 14,
+    "mode": "active",
+    "prompt": "What is question?",
+    "mean_surprise": 0.90936875,
+    "concept_labels": [
+      "animal",
+      "bird",
+      "fire",
+      "water",
+      "metal",
+      "tree"
+    ],
+    "novelty": 0.31023550033569336,
+    "features": [
+      "people",
+      "uncertain",
+      "lot",
+      "one",
+      "requires",
+      "multiple",
+      "above",
+      "don",
+      "makes"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.69)",
+    "loss": 2.027265787124634,
+    "strategy": "shared_feat",
+    "info_gain": 9.81
+  },
+  {
+    "step": 15,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.68837125,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.09781157970428467,
+    "features": [
+      "fections",
+      "sexual",
+      "willingness",
+      "own",
+      "forgive",
+      "accept",
+      "healed",
+      "sacrifice",
+      "heal"
+    ],
+    "event": "\ud83d\udcce water (sim=0.90)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 16,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8226525,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.12676012516021729,
+    "features": [
+      "feel",
+      "people",
+      "group",
+      "etic",
+      "find",
+      "connected",
+      "united",
+      "common",
+      "comfortable"
+    ],
+    "event": "\ud83d\udcce water (sim=0.87)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 17,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.9535177215189873,
+    "concept_labels": [
+      "animal"
+    ],
+    "novelty": 0.3488970994949341,
+    "features": [
+      "complementary",
+      "yang",
+      "interaction",
+      "ites",
+      "principle",
+      "appreciate",
+      "inter",
+      "understanding",
+      "present",
+      "four",
+      "ing"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.65)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 18,
+    "mode": "active",
+    "prompt": "\"Why do you go fishing for water?\" This is an interesting example of how we often take certain?",
+    "mean_surprise": 0.258095,
+    "concept_labels": [
+      "water",
+      "bird",
+      "fire",
+      "metal",
+      "animal",
+      "tree"
+    ],
+    "novelty": 0.23028892278671265,
+    "features": [
+      "item",
+      "sep"
+    ],
+    "event": "\ud83d\udcce water (sim=0.77)",
+    "loss": 1.0963460206985474,
+    "strategy": "shared_feat",
+    "info_gain": 1.2
+  },
+  {
+    "step": 19,
+    "mode": "active",
+    "prompt": "\"How can metal be a bird?\" and is perplexed. But a child who knows that metal involves thought and?",
+    "mean_surprise": 1.2338900000000002,
+    "concept_labels": [
+      "water",
+      "bird",
+      "fire",
+      "metal",
+      "animal"
+    ],
+    "novelty": 0.11625635623931885,
+    "features": [
+      "question",
+      "answer",
+      "thinking",
+      "word",
+      "describe",
+      "bird",
+      "child",
+      "assuming",
+      "correct",
+      "wrong",
+      "correctly"
+    ],
+    "event": "\ud83d\udcce water (sim=0.88)",
+    "loss": 0.9857925772666931,
+    "strategy": "combine",
+    "info_gain": 7.83
+  },
+  {
+    "step": 20,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.9139569620253165,
+    "concept_labels": [
+      "animal"
+    ],
+    "novelty": 0.3164480924606323,
+    "features": [
+      "scope",
+      "table",
+      "conduct",
+      "questions",
+      "characteristics",
+      "research",
+      "summarizes",
+      "rigor"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.68)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 21,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6879850000000001,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.10777390003204346,
+    "features": [
+      "today",
+      "barriers",
+      "bring",
+      "inspire",
+      "cannot",
+      "language",
+      "comfort",
+      "evoke",
+      "forget",
+      "words",
+      "bust"
+    ],
+    "event": "\ud83d\udcce water (sim=0.89)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 22,
+    "mode": "active",
+    "prompt": "\u201cWhat is a bird in the world?\u201d (Kataoka, 2004, p. 214). The child is not asking about the physical?",
+    "mean_surprise": 0.957905,
+    "concept_labels": [
+      "water",
+      "bird",
+      "animal"
+    ],
+    "novelty": 0.10344994068145752,
+    "features": [
+      "student",
+      "asks",
+      "similarly",
+      "larger",
+      "characteristics",
+      "bird",
+      "comprehend",
+      "locate",
+      "function",
+      "world",
+      "role"
+    ],
+    "event": "\ud83d\udcce water (sim=0.90)",
+    "loss": 0.9287456274032593,
+    "strategy": "combine",
+    "info_gain": 8.56
+  },
+  {
+    "step": 23,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.73397625,
+    "concept_labels": [
+      "animal"
+    ],
+    "novelty": 0.3286978006362915,
+    "features": [
+      "math",
+      "universal",
+      "sense",
+      "fundamental",
+      "einstein",
+      "part",
+      "language",
+      "world",
+      "universe",
+      "tool",
+      "incredible"
+    ],
+    "event": "\ud83d\udcce animal (sim=0.67)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 24,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6298775,
+    "concept_labels": [
+      "world_people_stuck"
+    ],
+    "novelty": 0.05198460817337036,
+    "features": [
+      "beaches",
+      "destination",
+      "popular",
+      "strong",
+      "distinct",
+      "city",
+      "beautiful",
+      "unique",
+      "views",
+      "water"
+    ],
+    "event": "\ud83c\udf31 GREW: world_people_stuck",
+    "loss": null,
+    "growth": "world_people_stuck"
+  },
+  {
+    "step": 25,
+    "mode": "active",
+    "prompt": "\"Why can't birds fly or why can't people move?\" I want to find a simple answer?",
+    "mean_surprise": 0.87138375,
+    "concept_labels": [
+      "world_people_stuck",
+      "bird",
+      "water",
+      "animal"
+    ],
+    "novelty": 0.03916233777999878,
+    "features": [
+      "down",
+      "years",
+      "terms",
+      "lift",
+      "simple",
+      "one",
+      "flight",
+      "certain",
+      "trait"
+    ],
+    "event": "\ud83d\udcce world_people_stuck (sim=0.96)",
+    "loss": 2.384953498840332,
+    "strategy": "shared_feat",
+    "info_gain": 9.77
+  },
+  {
+    "step": 26,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5941481012658227,
+    "concept_labels": [
+      "world_people_stuck"
+    ],
+    "novelty": 0.1507958173751831,
+    "features": [
+      "collapses",
+      "mass",
+      "material",
+      "astronomers",
+      "core",
+      "least",
+      "out",
+      "intense",
+      "star",
+      "until",
+      "gravity"
+    ],
+    "event": "\ud83d\udcce world_people_stuck (sim=0.85)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 27,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.60986125,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.2751557230949402,
+    "features": [
+      "magic",
+      "whisper",
+      "ancient",
+      "tales",
+      "keep",
+      "share",
+      "trees",
+      "apt",
+      "attention",
+      "creatures",
+      "ing"
+    ],
+    "event": "\ud83d\udcce water (sim=0.72)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 28,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7433708860759494,
+    "concept_labels": [
+      "water"
+    ],
+    "novelty": 0.18956005573272705,
+    "features": [
+      "training",
+      "popular",
+      "son",
+      "two",
+      "highly",
+      "brun",
+      "robert",
+      "course",
+      "online",
+      "led",
+      "aki"
+    ],
+    "event": "\ud83d\udcce water (sim=0.81)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 29,
+    "mode": "active",
+    "prompt": "\"What is it?\" His mother replies: \"Fire is something that is not quite alive, but it does not die?",
+    "mean_surprise": 0.8204075,
+    "concept_labels": [
+      "world_people_stuck",
+      "water",
+      "animal"
+    ],
+    "novelty": 0.061076343059539795,
+    "features": [
+      "need",
+      "fire",
+      "smiles",
+      "like",
+      "mother",
+      "thinks",
+      "person",
+      "attention",
+      "asks",
+      "child"
+    ],
+    "event": "\ud83d\udcce world_people_stuck (sim=0.94)",
+    "loss": 1.8429758548736572,
+    "strategy": "unvisited",
+    "info_gain": 8.32
+  },
+  {
+    "step": 30,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.78555,
+    "concept_labels": [
+      "world_people_stuck"
+    ],
+    "novelty": 0.0834689736366272,
+    "features": [
+      "build",
+      "perceive",
+      "unable",
+      "without",
+      "memory",
+      "create",
+      "form",
+      "beings",
+      "failures"
+    ],
+    "event": "\ud83d\udcce world_people_stuck (sim=0.92)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 31,
+    "mode": "active",
+    "prompt": "why are these people stuck in this world? What is on the other side, who is responsible for this??",
+    "mean_surprise": 1.1977499999999999,
+    "concept_labels": [
+      "water",
+      "animal",
+      "world_people_stuck"
+    ],
+    "novelty": 0.11836433410644531,
+    "features": [
+      "feel",
+      "matter",
+      "obstacles",
+      "raising",
+      "way",
+      "mysterious",
+      "search",
+      "close",
+      "until",
+      "anxious",
+      "determined"
+    ],
+    "event": "\ud83d\udcce water (sim=0.88)",
+    "loss": 1.0915573835372925,
+    "strategy": "shared_feat",
+    "info_gain": 6.8
+  },
+  {
+    "step": 32,
+    "mode": "active",
+    "prompt": "\u201cWhat is the world like?\u201d?",
+    "mean_surprise": 0.846020253164557,
+    "concept_labels": [
+      "world_people_stuck",
+      "water",
+      "animal"
+    ],
+    "novelty": 0.05076801776885986,
+    "features": [
+      "midst",
+      "question",
+      "age",
+      "asked",
+      "ask",
+      "challenges",
+      "pandemic",
+      "rapid",
+      "world",
+      "change",
+      "natural"
+    ],
+    "event": "\ud83d\udcce world_people_stuck (sim=0.95)",
+    "loss": 1.2112953662872314,
+    "strategy": "combine",
+    "info_gain": 15.95
+  },
+  {
+    "step": 33,
+    "mode": "active",
+    "prompt": "\"Why do you think the people who made the 1000-year-old metal thing also made the 1000-year-old?",
+    "mean_surprise": 1.029267088607595,
+    "concept_labels": [
+      "world_people_stuck",
+      "water",
+      "animal",
+      "question_try_wrong"
+    ],
+    "novelty": 0.09085875749588013,
+    "features": [
+      "think",
+      "his",
+      "metal",
+      "scr",
+      "like",
+      "years",
+      "something",
+      "tribes",
+      "don",
+      "maybe",
+      "ing"
+    ],
+    "event": "\ud83d\udcce world_people_stuck (sim=0.91)",
+    "loss": 1.175642967224121,
+    "strategy": "combine",
+    "info_gain": 12.13
+  },
+  {
+    "step": 34,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.0145487499999999,
+    "concept_labels": [
+      "question_try_wrong"
+    ],
+    "novelty": 0.07363778352737427,
+    "features": [
+      "individual",
+      "ourselves",
+      "become",
+      "rise",
+      "ascend",
+      "realize",
+      "part",
+      "self",
+      "consciousness",
+      "stars",
+      "limitless"
+    ],
+    "event": "\ud83d\udcce question_try_wrong (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 35,
+    "mode": "active",
+    "prompt": "'Why does it go on and on for so long?' - yet when I see it, I think of all the things my parents?",
+    "mean_surprise": 0.9916974999999999,
+    "concept_labels": [
+      "question_try_wrong",
+      "water",
+      "animal",
+      "world_people_stuck"
+    ],
+    "novelty": 0.11666727066040039,
+    "features": [
+      "others",
+      "through",
+      "love",
+      "made",
+      "school",
+      "first",
+      "chilly",
+      "vietnam",
+      "still",
+      "perspective",
+      "autumn"
+    ],
+    "event": "\ud83d\udcce question_try_wrong (sim=0.88)",
+    "loss": 2.872514247894287,
+    "strategy": "unvisited",
+    "info_gain": 7.09
+  },
+  {
+    "step": 36,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.89872625,
+    "concept_labels": [
+      "world_people_stuck"
+    ],
+    "novelty": 0.09712082147598267,
+    "features": [
+      "inkle",
+      "goes",
+      "love",
+      "sky",
+      "party",
+      "play",
+      "along",
+      "make",
+      "festive",
+      "cares",
+      "dance"
+    ],
+    "event": "\ud83d\udcce world_people_stuck (sim=0.90)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 37,
+    "mode": "active",
+    "prompt": "'What is metal, and why does it cost so much? When is it not metal?'?",
+    "mean_surprise": 0.9011725,
+    "concept_labels": [
+      "question_try_wrong",
+      "water",
+      "animal",
+      "world_people_stuck"
+    ],
+    "novelty": 0.09442615509033203,
+    "features": [
+      "complex",
+      "provide",
+      "naturally",
+      "category",
+      "metal",
+      "sense",
+      "influence",
+      "first",
+      "general",
+      "much"
+    ],
+    "event": "\ud83d\udcce question_try_wrong (sim=0.91)",
+    "loss": 2.60561466217041,
+    "strategy": "combine",
+    "info_gain": 9.9
+  },
+  {
+    "step": 38,
+    "mode": "active",
+    "prompt": "What is makes and mysterious?",
+    "mean_surprise": 0.8499000000000001,
+    "concept_labels": [
+      "question_try_wrong",
+      "water",
+      "animal",
+      "world_people_stuck"
+    ],
+    "novelty": 0.028179287910461426,
+    "features": [
+      "cultures",
+      "question",
+      "mystery",
+      "answer",
+      "might",
+      "biases",
+      "different",
+      "seem",
+      "eted",
+      "beautiful",
+      "trivial"
+    ],
+    "event": "\ud83d\udcce question_try_wrong (sim=0.97)",
+    "loss": 2.181448459625244,
+    "strategy": "combine",
+    "info_gain": 15.95
+  },
+  {
+    "step": 39,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8601575,
+    "concept_labels": [
+      "world_people_stuck"
+    ],
+    "novelty": 0.12274426221847534,
+    "features": [
+      "strength",
+      "think",
+      "past",
+      "factors",
+      "original",
+      "nature",
+      "sense",
+      "static",
+      "emotions",
+      "time",
+      "ever"
+    ],
+    "event": "\ud83d\udcce world_people_stuck (sim=0.88)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 40,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6388430379746836,
+    "concept_labels": [
+      "sense_question_try"
+    ],
+    "novelty": 0.049501657485961914,
+    "features": [
+      "better",
+      "help",
+      "sense",
+      "bring",
+      "awareness",
+      "music",
+      "forms",
+      "raise"
+    ],
+    "event": "\ud83c\udf31 GREW: sense_question_try",
+    "loss": null,
+    "growth": "sense_question_try"
+  },
+  {
+    "step": 41,
+    "mode": "active",
+    "prompt": "What is fire?",
+    "mean_surprise": 1.12987,
+    "concept_labels": [
+      "sense_question_try",
+      "water",
+      "world_people_stuck",
+      "question_try_wrong"
+    ],
+    "novelty": 0.07040554285049438,
+    "features": [
+      "ize",
+      "reality",
+      "dark",
+      "ieties",
+      "fire",
+      "out",
+      "struggle",
+      "sense",
+      "overwhelmed",
+      "fears",
+      "tool"
+    ],
+    "event": "\ud83d\udcce sense_question_try (sim=0.93)",
+    "loss": 1.8244171142578125,
+    "strategy": "unvisited",
+    "info_gain": 14.73
+  },
+  {
+    "step": 42,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.82822125,
+    "concept_labels": [
+      "sense_question_try"
+    ],
+    "novelty": 0.021986663341522217,
+    "features": [
+      "rock",
+      "things",
+      "hold",
+      "see",
+      "watch",
+      "sensations",
+      "life",
+      "abstract",
+      "time",
+      "world",
+      "pick"
+    ],
+    "event": "\ud83d\udcce sense_question_try (sim=0.98)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 43,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.1749987499999999,
+    "concept_labels": [
+      "world_people_stuck"
+    ],
+    "novelty": 0.13186383247375488,
+    "features": [
+      "fascinating",
+      "air",
+      "solve",
+      "asked",
+      "ground",
+      "lift",
+      "told",
+      "haunted",
+      "asking",
+      "weigh",
+      "around"
+    ],
+    "event": "\ud83d\udcce world_people_stuck (sim=0.87)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 44,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.05914358974359,
+    "concept_labels": [
+      "world_people_stuck"
+    ],
+    "novelty": 0.2066054344177246,
+    "features": [
+      "experience",
+      "working",
+      "assist",
+      "hours",
+      "ability",
+      "between",
+      "job",
+      "candidate",
+      "team",
+      "software",
+      "least"
+    ],
+    "event": "\ud83d\udcce world_people_stuck (sim=0.79)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 45,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.22509625,
+    "concept_labels": [
+      "question_try_wrong"
+    ],
+    "novelty": 0.06045299768447876,
+    "features": [
+      "reflection",
+      "like",
+      "view",
+      "failure",
+      "soul",
+      "bird",
+      "eye",
+      "human",
+      "world"
+    ],
+    "event": "\ud83d\udcce question_try_wrong (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 46,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6848291139240507,
+    "concept_labels": [
+      "question_try_wrong"
+    ],
+    "novelty": 0.07012927532196045,
+    "features": [
+      "relationship",
+      "considered",
+      "status",
+      "nature",
+      "parties",
+      "uci",
+      "agency",
+      "however",
+      "family",
+      "ary"
+    ],
+    "event": "\ud83d\udcce question_try_wrong (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 47,
+    "mode": "active",
+    "prompt": "How can a bird fly? A science teacher tries to explain the concept of gravity and lift in simple?",
+    "mean_surprise": 0.91307875,
+    "concept_labels": [
+      "sense_question_try",
+      "water",
+      "world_people_stuck",
+      "question_try_wrong"
+    ],
+    "novelty": 0.05999588966369629,
+    "features": [
+      "session",
+      "flying",
+      "upward",
+      "lift",
+      "downward",
+      "understandable",
+      "bird",
+      "fly",
+      "flies",
+      "students",
+      "helps"
+    ],
+    "event": "\ud83d\udcce sense_question_try (sim=0.94)",
+    "loss": 1.0651568174362183,
+    "strategy": "feature_gap",
+    "info_gain": 11.01
+  },
+  {
+    "step": 48,
+    "mode": "active",
+    "prompt": "\"What is this?\" A wise old man replies: \"This is fire, which is both beautiful and destructive. It?",
+    "mean_surprise": 0.8452137499999999,
+    "concept_labels": [
+      "sense_question_try",
+      "world_people_stuck",
+      "question_try_wrong"
+    ],
+    "novelty": 0.10919559001922607,
+    "features": [
+      "group",
+      "symbol",
+      "ish",
+      "ugl",
+      "good",
+      "evil",
+      "mirror",
+      "revealing",
+      "man",
+      "uality",
+      "nour"
+    ],
+    "event": "\ud83d\udcce sense_question_try (sim=0.89)",
+    "loss": 0.9227131009101868,
+    "strategy": "unvisited",
+    "info_gain": 12.45
+  },
+  {
+    "step": 49,
+    "mode": "active",
+    "prompt": "\u201cWhen will it be the right time for me to try it?\u201d?",
+    "mean_surprise": 0.88945375,
+    "concept_labels": [
+      "question_try_wrong",
+      "water",
+      "world_people_stuck",
+      "sense_question_try",
+      "like_don_provide"
+    ],
+    "novelty": 0.09523248672485352,
+    "features": [
+      "question",
+      "answer",
+      "right",
+      "life",
+      "one",
+      "types",
+      "share",
+      "make",
+      "growth",
+      "personal"
+    ],
+    "event": "\ud83d\udcce question_try_wrong (sim=0.90)",
+    "loss": 2.0930941104888916,
+    "strategy": "combine",
+    "info_gain": 15.39
+  },
+  {
+    "step": 50,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5555712500000001,
+    "concept_labels": [
+      "like_don_provide"
+    ],
+    "novelty": 0.041012585163116455,
+    "features": [
+      "heard",
+      "full",
+      "forest",
+      "igs",
+      "dangers",
+      "rust",
+      "wary",
+      "trees",
+      "ling",
+      "whispered",
+      "belong"
+    ],
+    "event": "\ud83d\udcce like_don_provide (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 51,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.77295375,
+    "concept_labels": [
+      "like_don_provide"
+    ],
+    "novelty": 0.11227649450302124,
+    "features": [
+      "fire",
+      "throughout",
+      "fuels",
+      "burning",
+      "within",
+      "soul",
+      "ished",
+      "burn",
+      "felt"
+    ],
+    "event": "\ud83d\udcce like_don_provide (sim=0.89)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 52,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.704885,
+    "concept_labels": [
+      "sense_question_try"
+    ],
+    "novelty": 0.25223052501678467,
+    "features": [
+      "ory",
+      "science",
+      "gives",
+      "depict",
+      "show",
+      "fire",
+      "perennial",
+      "sound",
+      "life",
+      "topic",
+      "common"
+    ],
+    "event": "\ud83d\udcce sense_question_try (sim=0.75)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 53,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.33857499999999996,
+    "concept_labels": [
+      "question_try_wrong"
+    ],
+    "novelty": 0.027873516082763672,
+    "features": [
+      "electrons",
+      "atoms",
+      "made",
+      "vacuum",
+      "pro",
+      "world",
+      "tons"
+    ],
+    "event": "\ud83d\udcce question_try_wrong (sim=0.97)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 54,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.49922125,
+    "concept_labels": [
+      "question_try_wrong"
+    ],
+    "novelty": 0.02658247947692871,
+    "features": [
+      "central",
+      "philosophy",
+      "non",
+      "problem",
+      "concern",
+      "psychology",
+      "mind",
+      "physical",
+      "spirit",
+      "while"
+    ],
+    "event": "\ud83d\udcce question_try_wrong (sim=0.97)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 55,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8387650000000001,
+    "concept_labels": [
+      "sense_question_try"
+    ],
+    "novelty": 0.03865838050842285,
+    "features": [
+      "others",
+      "spark",
+      "yet",
+      "might",
+      "good",
+      "grow",
+      "different",
+      "philosophical",
+      "world",
+      "around"
+    ],
+    "event": "\ud83d\udcce sense_question_try (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 56,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6478233766233766,
+    "concept_labels": [
+      "different_cultures_world"
+    ],
+    "novelty": 0.05472284555435181,
+    "features": [
+      "luther",
+      "give",
+      "friend",
+      "arge",
+      "unknown",
+      "love",
+      "best",
+      "opposite",
+      "toughest",
+      "king",
+      "something"
+    ],
+    "event": "\ud83c\udf31 GREW: different_cultures_world",
+    "loss": null,
+    "growth": "different_cultures_world"
+  },
+  {
+    "step": 57,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.85918125,
+    "concept_labels": [
+      "different_cultures_world"
+    ],
+    "novelty": 0.05714845657348633,
+    "features": [
+      "science",
+      "solve",
+      "applicable",
+      "helped",
+      "aspects",
+      "helping",
+      "problems",
+      "role",
+      "technology",
+      "mathematics",
+      "tool"
+    ],
+    "event": "\ud83d\udcce different_cultures_world (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 58,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.70605875,
+    "concept_labels": [
+      "sense_question_try"
+    ],
+    "novelty": 0.04482841491699219,
+    "features": [
+      "things",
+      "range",
+      "complex",
+      "provide",
+      "essential",
+      "cosystem",
+      "mamm",
+      "embedded",
+      "made",
+      "micro",
+      "physical"
+    ],
+    "event": "\ud83d\udcce sense_question_try (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 59,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.8971358974358974,
+    "concept_labels": [
+      "sense_question_try"
+    ],
+    "novelty": 0.10494011640548706,
+    "features": [
+      "wonderful",
+      "imagination",
+      "far",
+      "hundred",
+      "app",
+      "flying",
+      "thest",
+      "ach",
+      "one",
+      "luigi",
+      "skill"
+    ],
+    "event": "\ud83d\udcce sense_question_try (sim=0.90)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 60,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6863312500000001,
+    "concept_labels": [
+      "different_cultures_world"
+    ],
+    "novelty": 0.05009591579437256,
+    "features": [
+      "visually",
+      "powerful",
+      "audiences",
+      "influential",
+      "films",
+      "emmanuel",
+      "ivated",
+      "one",
+      "movie",
+      "time",
+      "classic"
+    ],
+    "event": "\ud83d\udcce different_cultures_world (sim=0.95)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 61,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.61005625,
+    "concept_labels": [
+      "sense_question_try"
+    ],
+    "novelty": 0.053289055824279785,
+    "features": [
+      "people",
+      "goes",
+      "alive",
+      "company",
+      "sky",
+      "streets",
+      "turns",
+      "takes",
+      "city",
+      "form",
+      "night"
+    ],
+    "event": "\ud83d\udcce sense_question_try (sim=0.95)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 62,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7046037974683544,
+    "concept_labels": [
+      "like_don_provide"
+    ],
+    "novelty": 0.07991045713424683,
+    "features": [
+      "destroyed",
+      "called",
+      "city",
+      "century",
+      "during",
+      "later",
+      "ton",
+      "earthquakes",
+      "capital"
+    ],
+    "event": "\ud83d\udcce like_don_provide (sim=0.92)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 63,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.02705,
+    "concept_labels": [
+      "sense_question_try"
+    ],
+    "novelty": 0.04563498497009277,
+    "features": [
+      "low",
+      "bright",
+      "light",
+      "shall",
+      "one",
+      "flight",
+      "day",
+      "meet",
+      "night"
+    ],
+    "event": "\ud83d\udcce sense_question_try (sim=0.95)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 64,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.52196625,
+    "concept_labels": [
+      "one_life_flight"
+    ],
+    "novelty": 0.06864851713180542,
+    "features": [
+      "waves",
+      "friends",
+      "low",
+      "walked",
+      "decided",
+      "boat",
+      "overhead",
+      "sound",
+      "cool",
+      "three",
+      "ulls"
+    ],
+    "event": "\ud83c\udf31 GREW: one_life_flight",
+    "loss": null,
+    "growth": "one_life_flight"
+  },
+  {
+    "step": 65,
+    "mode": "active",
+    "prompt": "What would happen if everyone was stuck in one place for a moment, and then suddenly everyone was?",
+    "mean_surprise": 1.0011637500000001,
+    "concept_labels": [
+      "one_life_flight",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world"
+    ],
+    "novelty": 0.051485300064086914,
+    "features": [
+      "used",
+      "stuck",
+      "come",
+      "stop",
+      "directions",
+      "ness",
+      "stood",
+      "shared",
+      "dream",
+      "still",
+      "collective"
+    ],
+    "event": "\ud83d\udcce one_life_flight (sim=0.95)",
+    "loss": 2.791796922683716,
+    "strategy": "feature_gap",
+    "info_gain": 11.1
+  },
+  {
+    "step": 66,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6174775,
+    "concept_labels": [
+      "different_cultures_world"
+    ],
+    "novelty": 0.0436171293258667,
+    "features": [
+      "things",
+      "help",
+      "might",
+      "therapeutic",
+      "sense",
+      "create",
+      "ways",
+      "music",
+      "understand",
+      "together"
+    ],
+    "event": "\ud83d\udcce different_cultures_world (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 67,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.50663875,
+    "concept_labels": [
+      "sense_question_try"
+    ],
+    "novelty": 0.05151569843292236,
+    "features": [
+      "complex",
+      "often",
+      "metaphor",
+      "interconnected",
+      "ness",
+      "connected",
+      "life",
+      "web",
+      "helps",
+      "connection"
+    ],
+    "event": "\ud83d\udcce sense_question_try (sim=0.95)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 68,
+    "mode": "active",
+    "prompt": "why do humans and animals behave similarly? The answer is that both humans and animals are driven?",
+    "mean_surprise": 0.9017525,
+    "concept_labels": [
+      "sense_question_try",
+      "world_people_stuck",
+      "question_try_wrong",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight"
+    ],
+    "novelty": 0.04942965507507324,
+    "features": [
+      "circumstances",
+      "needs",
+      "another",
+      "animals",
+      "adapting",
+      "culture",
+      "ness",
+      "both",
+      "common",
+      "while",
+      "instincts"
+    ],
+    "event": "\ud83d\udcce sense_question_try (sim=0.95)",
+    "loss": 1.4945757389068604,
+    "strategy": "connection",
+    "info_gain": 9.0
+  },
+  {
+    "step": 69,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.9081962499999999,
+    "concept_labels": [
+      "like_don_provide"
+    ],
+    "novelty": 0.0897066593170166,
+    "features": [
+      "mass",
+      "hope",
+      "space",
+      "didn",
+      "know",
+      "questions",
+      "any",
+      "proportional",
+      "force",
+      "orbits",
+      "slight"
+    ],
+    "event": "\ud83d\udcce like_don_provide (sim=0.91)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 70,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.44745749999999995,
+    "concept_labels": [
+      "sense_question_try"
+    ],
+    "novelty": 0.0533524751663208,
+    "features": [
+      "people",
+      "powerful",
+      "strong",
+      "inspired",
+      "enjoyed",
+      "happy",
+      "building",
+      "music",
+      "language",
+      "relationships",
+      "together"
+    ],
+    "event": "\ud83d\udcce sense_question_try (sim=0.95)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 71,
+    "mode": "active",
+    "prompt": "but why it fly? An adult human studies about bird and says: it fly because there are no trees that?",
+    "mean_surprise": 1.7999166666666666,
+    "concept_labels": [
+      "like_don_provide",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "different_cultures_world",
+      "one_life_flight"
+    ],
+    "novelty": 0.08216863870620728,
+    "features": [
+      "matter",
+      "interesting",
+      "weight",
+      "like",
+      "light",
+      "bones",
+      "way",
+      "super",
+      "hollow"
+    ],
+    "event": "\ud83d\udcce like_don_provide (sim=0.92)",
+    "loss": 1.7145925760269165,
+    "strategy": "feature_gap",
+    "info_gain": 8.2
+  },
+  {
+    "step": 72,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.28074358974358976,
+    "concept_labels": [
+      "people_together_stuck"
+    ],
+    "novelty": 0.10373926162719727,
+    "features": [
+      "challenger",
+      "called",
+      "rench",
+      "really",
+      "located",
+      "deepest",
+      "deep",
+      "big",
+      "thought",
+      "deeper",
+      "iana"
+    ],
+    "event": "\ud83c\udf31 GREW: people_together_stuck",
+    "loss": null,
+    "growth": "people_together_stuck"
+  },
+  {
+    "step": 73,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7727974683544304,
+    "concept_labels": [
+      "people_together_stuck"
+    ],
+    "novelty": 0.11972653865814209,
+    "features": [
+      "ceiling",
+      "sculpture",
+      "hamilton",
+      "created",
+      "made",
+      "lightweight",
+      "stuart",
+      "consists",
+      "suspended",
+      "intended",
+      "glowing"
+    ],
+    "event": "\ud83d\udcce people_together_stuck (sim=0.88)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 74,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.54932,
+    "concept_labels": [
+      "people_together_stuck"
+    ],
+    "novelty": 0.05363965034484863,
+    "features": [
+      "eventually",
+      "enough",
+      "blows",
+      "important",
+      "supern",
+      "own",
+      "collapse",
+      "star",
+      "during",
+      "exploded"
+    ],
+    "event": "\ud83d\udcce people_together_stuck (sim=0.95)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 75,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8363371794871796,
+    "concept_labels": [
+      "one_life_flight"
+    ],
+    "novelty": 0.1440032720565796,
+    "features": [
+      "said",
+      "finding",
+      "take",
+      "partner",
+      "needs",
+      "right",
+      "first",
+      "now",
+      "focus",
+      "look"
+    ],
+    "event": "\ud83d\udcce one_life_flight (sim=0.86)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 76,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.76005875,
+    "concept_labels": [
+      "one_life_flight"
+    ],
+    "novelty": 0.04394352436065674,
+    "features": [
+      "feel",
+      "question",
+      "field",
+      "qualities",
+      "whether",
+      "way",
+      "determine",
+      "one",
+      "else",
+      "philosophers",
+      "centuries"
+    ],
+    "event": "\ud83d\udcce one_life_flight (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 77,
+    "mode": "active",
+    "prompt": "What is one and cultures?",
+    "mean_surprise": 0.8873037500000001,
+    "concept_labels": [
+      "people_together_stuck",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight"
+    ],
+    "novelty": 0.045528948307037354,
+    "features": [
+      "magnitude",
+      "concept",
+      "foundation",
+      "unity",
+      "define",
+      "idea",
+      "number",
+      "point",
+      "one",
+      "ularity",
+      "origin"
+    ],
+    "event": "\ud83d\udcce people_together_stuck (sim=0.95)",
+    "loss": 2.588088035583496,
+    "strategy": "combine",
+    "info_gain": 18.99
+  },
+  {
+    "step": 78,
+    "mode": "active",
+    "prompt": "\"What is that? What does it mean?\"?",
+    "mean_surprise": 1.2176632911392407,
+    "concept_labels": [
+      "different_cultures_world",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "one_life_flight",
+      "people_together_stuck"
+    ],
+    "novelty": 0.05024123191833496,
+    "features": [
+      "student",
+      "engaged",
+      "teacher",
+      "might",
+      "conversation",
+      "mundane",
+      "exploration",
+      "following",
+      "mean",
+      "straightforward",
+      "example"
+    ],
+    "event": "\ud83d\udcce different_cultures_world (sim=0.95)",
+    "loss": 3.1234922409057617,
+    "strategy": "feature_gap",
+    "info_gain": 8.82
+  },
+  {
+    "step": 79,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.636915,
+    "concept_labels": [
+      "people_together_stuck"
+    ],
+    "novelty": 0.03599214553833008,
+    "features": [
+      "gers",
+      "drinking",
+      "trail",
+      "jog",
+      "providing",
+      "major",
+      "offering",
+      "unique",
+      "views",
+      "heart",
+      "itself"
+    ],
+    "event": "\ud83d\udcce people_together_stuck (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 80,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.56776875,
+    "concept_labels": [
+      "city_guards_protected"
+    ],
+    "novelty": 0.05429530143737793,
+    "features": [
+      "lower",
+      "lava",
+      "cultural",
+      "austria",
+      "river",
+      "upper",
+      "forms",
+      "city",
+      "historical"
+    ],
+    "event": "\ud83c\udf31 GREW: city_guards_protected",
+    "loss": null,
+    "growth": "city_guards_protected"
+  },
+  {
+    "step": 81,
+    "mode": "active",
+    "prompt": "\"How the tree grows so high?\" A curious student wonders: \"Why do plants absorb water?\" Thus,?",
+    "mean_surprise": 0.79355,
+    "concept_labels": [
+      "sense_question_try",
+      "world_people_stuck",
+      "question_try_wrong",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected"
+    ],
+    "novelty": 0.08966422080993652,
+    "features": [
+      "need",
+      "called",
+      "plants",
+      "help",
+      "absorb",
+      "release",
+      "process",
+      "survive",
+      "shelter",
+      "water"
+    ],
+    "event": "\ud83d\udcce sense_question_try (sim=0.91)",
+    "loss": 2.197779655456543,
+    "strategy": "feature_gap",
+    "info_gain": 8.29
+  },
+  {
+    "step": 82,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5317417721518987,
+    "concept_labels": [
+      "people_together_stuck"
+    ],
+    "novelty": 0.08727800846099854,
+    "features": [
+      "matter",
+      "mass",
+      "exp",
+      "core",
+      "els",
+      "becoming",
+      "collapse",
+      "explosion",
+      "known",
+      "least"
+    ],
+    "event": "\ud83d\udcce people_together_stuck (sim=0.91)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 83,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.1155275,
+    "concept_labels": [
+      "one_life_flight"
+    ],
+    "novelty": 0.07580339908599854,
+    "features": [
+      "past",
+      "absorb",
+      "story",
+      "streets",
+      "part",
+      "nothing",
+      "walking",
+      "converge",
+      "buildings",
+      "connection"
+    ],
+    "event": "\ud83d\udcce one_life_flight (sim=0.92)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 84,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.4872430379746835,
+    "concept_labels": [
+      "people_together_stuck"
+    ],
+    "novelty": 0.10699492692947388,
+    "features": [
+      "molecular",
+      "gas",
+      "own",
+      "energy",
+      "release",
+      "first",
+      "causing",
+      "collapse",
+      "various",
+      "stellar",
+      "giant"
+    ],
+    "event": "\ud83d\udcce people_together_stuck (sim=0.89)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 85,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8569052631578948,
+    "concept_labels": [
+      "different_cultures_world"
+    ],
+    "novelty": 0.06007122993469238,
+    "features": [
+      "people",
+      "things",
+      "universal",
+      "beautiful",
+      "before",
+      "unknown",
+      "bring",
+      "language",
+      "played",
+      "john"
+    ],
+    "event": "\ud83d\udcce different_cultures_world (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 86,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.694725,
+    "concept_labels": [
+      "one_life_flight"
+    ],
+    "novelty": 0.06027251482009888,
+    "features": [
+      "forest",
+      "like",
+      "seen",
+      "deep",
+      "recently",
+      "eyes",
+      "mysterious",
+      "explore",
+      "bizarre",
+      "home",
+      "vast"
+    ],
+    "event": "\ud83d\udcce one_life_flight (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 87,
+    "mode": "active",
+    "prompt": "\"Can I make like_don_provide in my kitchen?\" You do not have an answer for this question. It seems?",
+    "mean_surprise": 1.01064375,
+    "concept_labels": [
+      "different_cultures_world",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected"
+    ],
+    "novelty": 0.14657855033874512,
+    "features": [
+      "people",
+      "kitchen",
+      "decide",
+      "similar",
+      "help",
+      "type",
+      "based",
+      "soup",
+      "vide",
+      "asking"
+    ],
+    "event": "\ud83d\udcce different_cultures_world (sim=0.85)",
+    "loss": 2.6085355281829834,
+    "strategy": "feature_gap",
+    "info_gain": 14.51
+  },
+  {
+    "step": 88,
+    "mode": "active",
+    "prompt": "\"like_don_provide\". com_people_can_get_stuck_in_a_dream_like_dream_stuck_people. It is shown that a?",
+    "mean_surprise": 0.825832,
+    "concept_labels": [
+      "one_life_flight",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "people_together_stuck",
+      "city_guards_protected"
+    ],
+    "novelty": 0.061173975467681885,
+    "features": [
+      "stuck",
+      "provide",
+      "phrase",
+      "like",
+      "don",
+      "meaning",
+      "means"
+    ],
+    "event": "\ud83d\udcce one_life_flight (sim=0.94)",
+    "loss": 1.4564131498336792,
+    "strategy": "feature_gap",
+    "info_gain": 23.53
+  },
+  {
+    "step": 89,
+    "mode": "active",
+    "prompt": "\"Water, water, but what is water?\" The wise one replies: \"Water is the mirror of the mind.\" The?",
+    "mean_surprise": 0.6645987499999999,
+    "concept_labels": [
+      "provide_like_don",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected"
+    ],
+    "novelty": 0.05542349815368652,
+    "features": [
+      "wise",
+      "reflection",
+      "amazed",
+      "everything",
+      "one",
+      "self",
+      "essence",
+      "asks",
+      "exists"
+    ],
+    "event": "\ud83d\udcce provide_like_don (sim=0.94)",
+    "loss": 2.796670913696289,
+    "strategy": "connection",
+    "info_gain": 19.56
+  },
+  {
+    "step": 90,
+    "mode": "active",
+    "prompt": "What is essence?",
+    "mean_surprise": 1.1162062499999998,
+    "concept_labels": [
+      "provide_like_don",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected"
+    ],
+    "novelty": 0.04991734027862549,
+    "features": [
+      "reason",
+      "eternal",
+      "necessary",
+      "underlying",
+      "independent",
+      "must",
+      "changing",
+      "something",
+      "essence",
+      "defining",
+      "minds"
+    ],
+    "event": "\ud83d\udcce provide_like_don (sim=0.95)",
+    "loss": 2.2974343299865723,
+    "strategy": "shared_feat",
+    "info_gain": 8.72
+  },
+  {
+    "step": 91,
+    "mode": "active",
+    "prompt": "\"Why are people stuck and water are connected through terms?\" We now have an opportunity to engage?",
+    "mean_surprise": 1.083205,
+    "concept_labels": [
+      "one_life_flight",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don"
+    ],
+    "novelty": 0.14887404441833496,
+    "features": [
+      "feel",
+      "question",
+      "ask",
+      "same",
+      "clues",
+      "questions",
+      "big",
+      "started",
+      "giving",
+      "uck"
+    ],
+    "event": "\ud83d\udcce one_life_flight (sim=0.85)",
+    "loss": 1.6758196353912354,
+    "strategy": "connection",
+    "info_gain": 14.58
+  },
+  {
+    "step": 92,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.08700875,
+    "concept_labels": [
+      "people_together_stuck"
+    ],
+    "novelty": 0.08624392747879028,
+    "features": [
+      "enemies",
+      "gotten",
+      "heads",
+      "two",
+      "out",
+      "ner",
+      "shy",
+      "ted",
+      "until",
+      "hang",
+      "jen"
+    ],
+    "event": "\ud83d\udcce people_together_stuck (sim=0.91)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 93,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.66024375,
+    "concept_labels": [
+      "provide_like_don"
+    ],
+    "novelty": 0.06107872724533081,
+    "features": [
+      "science",
+      "art",
+      "fundamental",
+      "language",
+      "different",
+      "world",
+      "understand",
+      "ematics",
+      "tool"
+    ],
+    "event": "\ud83d\udcce provide_like_don (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 94,
+    "mode": "active",
+    "prompt": "\"What did you do with the water?\" The child is curious about the action involved in water, and the?",
+    "mean_surprise": 0.7722100000000001,
+    "concept_labels": [
+      "provide_like_don",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected"
+    ],
+    "novelty": 0.04792064428329468,
+    "features": [
+      "question",
+      "done",
+      "word",
+      "ball",
+      "wants",
+      "asking",
+      "child",
+      "water"
+    ],
+    "event": "\ud83d\udcce provide_like_don (sim=0.95)",
+    "loss": 1.7220377922058105,
+    "strategy": "shared_feat",
+    "info_gain": 21.07
+  },
+  {
+    "step": 95,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.578995,
+    "concept_labels": [
+      "city_guards_protected"
+    ],
+    "novelty": 0.18300986289978027,
+    "features": [
+      "destination",
+      "popular",
+      "important",
+      "rich",
+      "history",
+      "situated",
+      "roman",
+      "castle",
+      "autonomous",
+      "str",
+      "name"
+    ],
+    "event": "\ud83d\udcce city_guards_protected (sim=0.82)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 96,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.56308,
+    "concept_labels": [
+      "language_bring_universal"
+    ],
+    "novelty": 0.1698043942451477,
+    "features": [
+      "science",
+      "essential",
+      "area",
+      "include",
+      "own",
+      "development",
+      "innovations",
+      "specific",
+      "involves",
+      "techniques",
+      "mathematics"
+    ],
+    "event": "\ud83c\udf31 GREW: language_bring_universal",
+    "loss": null,
+    "growth": "language_bring_universal"
+  },
+  {
+    "step": 97,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.88506,
+    "concept_labels": [
+      "one_life_flight"
+    ],
+    "novelty": 0.05588895082473755,
+    "features": [
+      "appeared",
+      "brought",
+      "light",
+      "within",
+      "first",
+      "ordial",
+      "elled",
+      "time",
+      "universe",
+      "around"
+    ],
+    "event": "\ud83d\udcce one_life_flight (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 98,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.073251948051948,
+    "concept_labels": [
+      "provide_like_don"
+    ],
+    "novelty": 0.05904042720794678,
+    "features": [
+      "sci",
+      "special",
+      "equal",
+      "ley",
+      "always",
+      "ant",
+      "ern",
+      "time",
+      "element",
+      "ando",
+      "kind"
+    ],
+    "event": "\ud83d\udcce provide_like_don (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 99,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7988518987341772,
+    "concept_labels": [
+      "language_bring_universal"
+    ],
+    "novelty": 0.08859896659851074,
+    "features": [
+      "implementation",
+      "nature",
+      "organization",
+      "culture",
+      "new",
+      "decisions",
+      "one",
+      "program",
+      "ure",
+      "few"
+    ],
+    "event": "\ud83d\udcce language_bring_universal (sim=0.91)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 100,
+    "mode": "active",
+    "prompt": "What is the difference between metal and different cultures in the world?",
+    "mean_surprise": 1.2023375,
+    "concept_labels": [
+      "provide_like_don",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "language_bring_universal"
+    ],
+    "novelty": 0.04751104116439819,
+    "features": [
+      "possible",
+      "foster",
+      "portraying",
+      "without",
+      "opposing",
+      "equitable",
+      "ious",
+      "world",
+      "defining",
+      "discuss"
+    ],
+    "event": "\ud83d\udcce provide_like_don (sim=0.95)",
+    "loss": 0.9511196613311768,
+    "strategy": "shared_feat",
+    "info_gain": 18.2
+  },
+  {
+    "step": 101,
+    "mode": "active",
+    "prompt": "'What is it like?' Then the parent is faced with the difficult task of explaining a complex?",
+    "mean_surprise": 1.1787351351351352,
+    "concept_labels": [
+      "one_life_flight",
+      "question_try_wrong",
+      "sense_question_try",
+      "different_cultures_world",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal"
+    ],
+    "novelty": 0.22244608402252197,
+    "features": [
+      "open",
+      "disappointed",
+      "wish",
+      "listened",
+      "probably",
+      "way",
+      "handled",
+      "less",
+      "defensive",
+      "situation",
+      "understanding"
+    ],
+    "event": "\ud83d\udcce one_life_flight (sim=0.78)",
+    "loss": 1.6652864217758179,
+    "strategy": "unvisited",
+    "info_gain": 7.28
+  },
+  {
+    "step": 102,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.61396625,
+    "concept_labels": [
+      "language_bring_universal"
+    ],
+    "novelty": 0.06371927261352539,
+    "features": [
+      "better",
+      "community",
+      "people",
+      "experiences",
+      "provide",
+      "transcend",
+      "joy",
+      "process",
+      "self",
+      "music",
+      "together"
+    ],
+    "event": "\ud83d\udcce language_bring_universal (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 103,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.70575625,
+    "concept_labels": [
+      "provide_like_don"
+    ],
+    "novelty": 0.05748647451400757,
+    "features": [
+      "group",
+      "entrance",
+      "cave",
+      "fair",
+      "love",
+      "hidden",
+      "magical",
+      "takes",
+      "respectful",
+      "ies",
+      "heart"
+    ],
+    "event": "\ud83d\udcce provide_like_don (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 104,
+    "mode": "active",
+    "prompt": "What is fire?",
+    "mean_surprise": 0.49179000000000006,
+    "concept_labels": [
+      "people_together_stuck",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal"
+    ],
+    "novelty": 0.17862749099731445,
+    "features": [
+      "several",
+      "production",
+      "intensity",
+      "fire",
+      "source",
+      "based",
+      "light",
+      "one",
+      "common",
+      "caused",
+      "classified"
+    ],
+    "event": "\ud83d\udcce people_together_stuck (sim=0.82)",
+    "loss": 2.549945831298828,
+    "strategy": "unvisited",
+    "info_gain": 29.6
+  },
+  {
+    "step": 105,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7986325,
+    "concept_labels": [
+      "language_bring_universal"
+    ],
+    "novelty": 0.06657528877258301,
+    "features": [
+      "matter",
+      "field",
+      "lected",
+      "causes",
+      "electric",
+      "interaction",
+      "current",
+      "proportional",
+      "thought"
+    ],
+    "event": "\ud83d\udcce language_bring_universal (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 106,
+    "mode": "active",
+    "prompt": "\u201dIs it really a tree?\u201d?",
+    "mean_surprise": 1.179788157894737,
+    "concept_labels": [
+      "provide_like_don",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "language_bring_universal",
+      "world_different_bird"
+    ],
+    "novelty": 0.03642392158508301,
+    "features": [
+      "object",
+      "sense",
+      "say",
+      "based",
+      "classical",
+      "definition",
+      "apply",
+      "situation",
+      "tree",
+      "isn",
+      "standard"
+    ],
+    "event": "\ud83d\udcce provide_like_don (sim=0.96)",
+    "loss": 1.001085877418518,
+    "strategy": "unvisited",
+    "info_gain": 21.28
+  },
+  {
+    "step": 107,
+    "mode": "active",
+    "prompt": "\"Why are you stuck in this world?\" and \"Why do you want to leave this water?\" are the same or?",
+    "mean_surprise": 1.147555,
+    "concept_labels": [
+      "world_different_bird",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal"
+    ],
+    "novelty": 0.02731800079345703,
+    "features": [
+      "answers",
+      "like",
+      "same",
+      "doing",
+      "watching",
+      "movie",
+      "different",
+      "asking"
+    ],
+    "event": "\ud83d\udcce world_different_bird (sim=0.97)",
+    "loss": 3.2593305110931396,
+    "strategy": "shared_feat",
+    "info_gain": 32.95
+  },
+  {
+    "step": 108,
+    "mode": "active",
+    "prompt": "\"How do birds fly?\" We grown-ups can explain in simple words that birds fly by flapping their?",
+    "mean_surprise": 0.46415875,
+    "concept_labels": [
+      "people_together_stuck",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird"
+    ],
+    "novelty": 0.10083132982254028,
+    "features": [
+      "air",
+      "lifts",
+      "pressure",
+      "wing",
+      "bird",
+      "apping",
+      "opposes",
+      "faster"
+    ],
+    "event": "\ud83d\udcce people_together_stuck (sim=0.90)",
+    "loss": 2.988410234451294,
+    "strategy": "feature_gap",
+    "info_gain": 12.8
+  },
+  {
+    "step": 109,
+    "mode": "active",
+    "prompt": "\"What is the difference between bird and sense question?\" The child is not familiar with the word?",
+    "mean_surprise": 0.19794,
+    "concept_labels": [
+      "provide_like_don",
+      "world_people_stuck",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "language_bring_universal",
+      "world_different_bird"
+    ],
+    "novelty": 0.021971702575683594,
+    "features": [
+      "familiar",
+      "difference",
+      "sense",
+      "word",
+      "between",
+      "bird",
+      "child"
+    ],
+    "event": "\ud83d\udcce provide_like_don (sim=0.98)",
+    "loss": 0.8176976442337036,
+    "strategy": "shared_feat",
+    "info_gain": 14.7
+  },
+  {
+    "step": 110,
+    "mode": "active",
+    "prompt": "'Why do we need water in our body?' 'A question can i answer: 'Water provides essential nutrient to?",
+    "mean_surprise": 1.49374875,
+    "concept_labels": [
+      "provide_like_don",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "language_bring_universal",
+      "world_different_bird"
+    ],
+    "novelty": 0.05514490604400635,
+    "features": [
+      "joints",
+      "water",
+      "maintaining",
+      "temperature",
+      "plays",
+      "bodily",
+      "good",
+      "job",
+      "form",
+      "role",
+      "dear"
+    ],
+    "event": "\ud83d\udcce provide_like_don (sim=0.94)",
+    "loss": 0.8617019653320312,
+    "strategy": "shared_feat",
+    "info_gain": 9.09
+  },
+  {
+    "step": 111,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.9258824999999999,
+    "concept_labels": [
+      "language_bring_universal"
+    ],
+    "novelty": 0.04227757453918457,
+    "features": [
+      "effective",
+      "express",
+      "professional",
+      "ideas",
+      "create",
+      "life",
+      "convey",
+      "between",
+      "explore",
+      "role",
+      "relationships"
+    ],
+    "event": "\ud83d\udcce language_bring_universal (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 112,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.923245,
+    "concept_labels": [
+      "time_strength_think"
+    ],
+    "novelty": 0.03217804431915283,
+    "features": [
+      "try",
+      "differences",
+      "lot",
+      "celebrate",
+      "ideas",
+      "divide",
+      "new",
+      "kinds",
+      "ways",
+      "learn",
+      "willing"
+    ],
+    "event": "\ud83c\udf31 GREW: time_strength_think",
+    "loss": null,
+    "growth": "time_strength_think"
+  },
+  {
+    "step": 113,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.07609090909090908,
+    "concept_labels": [
+      "time_strength_think"
+    ],
+    "novelty": 0.06557083129882812,
+    "features": [
+      "said",
+      "face",
+      "earth",
+      "darkness",
+      "created",
+      "without",
+      "god",
+      "heavens",
+      "void",
+      "form"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 114,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7986518987341772,
+    "concept_labels": [
+      "provide_like_don"
+    ],
+    "novelty": 0.09587204456329346,
+    "features": [
+      "animals",
+      "economy",
+      "electric",
+      "power",
+      "significant",
+      "part",
+      "est",
+      "despite",
+      "baltic",
+      "home",
+      "sea"
+    ],
+    "event": "\ud83d\udcce provide_like_don (sim=0.90)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 115,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.1924051282051282,
+    "concept_labels": [
+      "time_strength_think"
+    ],
+    "novelty": 0.08254551887512207,
+    "features": [
+      "need",
+      "unlock",
+      "blockchain",
+      "verified",
+      "recorded",
+      "capability",
+      "limitations",
+      "transactions",
+      "stopping",
+      "benefit",
+      "imposed"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.92)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 116,
+    "mode": "active",
+    "prompt": "\"How do they do it?\". An adult citizen looks on with a mix of awe and suspicion as the?",
+    "mean_surprise": 1.32465375,
+    "concept_labels": [
+      "time_strength_think",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird"
+    ],
+    "novelty": 0.06857812404632568,
+    "features": [
+      "conformity",
+      "powerful",
+      "own",
+      "bold",
+      "ive",
+      "que",
+      "mundane",
+      "exist",
+      "vers",
+      "youth",
+      "citizen"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.93)",
+    "loss": 1.9853272438049316,
+    "strategy": "feature_gap",
+    "info_gain": 9.42
+  },
+  {
+    "step": 117,
+    "mode": "active",
+    "prompt": "\"How do they do it?\" \"What do they do?\" They are both interested in it and want to find out more.?",
+    "mean_surprise": 1.3118961538461538,
+    "concept_labels": [
+      "world_different_bird",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "time_strength_think"
+    ],
+    "novelty": 0.09155315160751343,
+    "features": [
+      "working",
+      "done",
+      "committed",
+      "always",
+      "doing",
+      "work",
+      "moving",
+      "paying",
+      "seem"
+    ],
+    "event": "\ud83d\udcce world_different_bird (sim=0.91)",
+    "loss": 2.8398375511169434,
+    "strategy": "shared_feat",
+    "info_gain": 9.71
+  },
+  {
+    "step": 118,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.41726538461538465,
+    "concept_labels": [
+      "world_different_bird"
+    ],
+    "novelty": 0.10412812232971191,
+    "features": [
+      "challenger",
+      "possible",
+      "estimates",
+      "deepest",
+      "deep",
+      "seven",
+      "ocean",
+      "almost",
+      "feet",
+      "ever",
+      "thought"
+    ],
+    "event": "\ud83d\udcce world_different_bird (sim=0.90)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 119,
+    "mode": "active",
+    "prompt": "'Why are we so like the world?' This question creates a chain reaction of thought that links the?",
+    "mean_surprise": 1.03749875,
+    "concept_labels": [
+      "time_strength_think",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird"
+    ],
+    "novelty": 0.03256708383560181,
+    "features": [
+      "need",
+      "question",
+      "mystery",
+      "individual",
+      "sense",
+      "acknowledges",
+      "encourages",
+      "within",
+      "moreover",
+      "contemplate"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.97)",
+    "loss": 1.5255627632141113,
+    "strategy": "connection",
+    "info_gain": 22.54
+  },
+  {
+    "step": 120,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.47910250000000004,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.23366814851760864,
+    "features": [
+      "may",
+      "source",
+      "through",
+      "relax",
+      "sense",
+      "bring",
+      "emotions",
+      "healing",
+      "music",
+      "ace",
+      "known"
+    ],
+    "event": "\ud83c\udf31 GREW: sense_question_tool",
+    "loss": null,
+    "growth": "sense_question_tool"
+  },
+  {
+    "step": 121,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7617200000000001,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.11263024806976318,
+    "features": [
+      "old",
+      "emergency",
+      "unt",
+      "place",
+      "whether",
+      "first",
+      "topic",
+      "one",
+      "understand",
+      "known",
+      "importance"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.89)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 122,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.016015,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.09064918756484985,
+    "features": [
+      "initial",
+      "equations",
+      "possible",
+      "well",
+      "likely",
+      "way",
+      "forcing",
+      "use",
+      "related",
+      "solutions",
+      "algebra"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.91)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 123,
+    "mode": "active",
+    "prompt": "\"Is there something that makes the stars shine?\" A curious adult has never heard of the concept of?",
+    "mean_surprise": 0.8215447368421053,
+    "concept_labels": [
+      "time_strength_think",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool"
+    ],
+    "novelty": 0.07401138544082642,
+    "features": [
+      "dark",
+      "light",
+      "atoms",
+      "intense",
+      "place",
+      "black",
+      "shine",
+      "stars",
+      "releasing",
+      "gravity"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.93)",
+    "loss": 1.4800819158554077,
+    "strategy": "unvisited",
+    "info_gain": 14.32
+  },
+  {
+    "step": 124,
+    "mode": "active",
+    "prompt": "\"What is the most... read more?",
+    "mean_surprise": 1.5844381578947369,
+    "concept_labels": [
+      "sense_question_tool",
+      "sense_question_try",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think"
+    ],
+    "novelty": 0.2598634958267212,
+    "features": [
+      "ert",
+      "http",
+      "cities",
+      "ities",
+      "index",
+      "thu",
+      "des",
+      "jan",
+      "home",
+      "main"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.74)",
+    "loss": 2.9863743782043457,
+    "strategy": "feature_gap",
+    "info_gain": 7.08
+  },
+  {
+    "step": 125,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6747075,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.03409302234649658,
+    "features": [
+      "wisdom",
+      "forest",
+      "bright",
+      "merry",
+      "wind",
+      "eyes",
+      "whispers",
+      "begins",
+      "trees",
+      "world"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.97)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 126,
+    "mode": "active",
+    "prompt": "what does that mean? We cannot know what that means because it is a false question. If we cannot?",
+    "mean_surprise": 0.996875,
+    "concept_labels": [
+      "world_different_bird",
+      "question_try_wrong",
+      "sense_question_try",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "time_strength_think",
+      "sense_question_tool"
+    ],
+    "novelty": 0.03753232955932617,
+    "features": [
+      "speaking",
+      "trying",
+      "say",
+      "know",
+      "yes",
+      "understand",
+      "paradox"
+    ],
+    "event": "\ud83d\udcce world_different_bird (sim=0.96)",
+    "loss": 2.917935848236084,
+    "strategy": "combine",
+    "info_gain": 6.7
+  },
+  {
+    "step": 127,
+    "mode": "active",
+    "prompt": "\"How can you find a place to live when_liked_you_like_this?\" It is difficult to explain that?",
+    "mean_surprise": 1.270867088607595,
+    "concept_labels": [
+      "time_strength_think",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool"
+    ],
+    "novelty": 0.05659782886505127,
+    "features": [
+      "important",
+      "help",
+      "ask",
+      "good",
+      "lesson",
+      "feeling",
+      "sad",
+      "don"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.94)",
+    "loss": 1.13542640209198,
+    "strategy": "feature_gap",
+    "info_gain": 31.57
+  },
+  {
+    "step": 128,
+    "mode": "active",
+    "prompt": "may I have a question or do you have a question for me? Can I ask you something? Is it okay if I?",
+    "mean_surprise": 0.7423833333333334,
+    "concept_labels": [
+      "world_different_bird",
+      "question_try_wrong",
+      "sense_question_try",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "time_strength_think",
+      "sense_question_tool"
+    ],
+    "novelty": 0.0812002420425415,
+    "features": [
+      "formal",
+      "ask",
+      "polite",
+      "way",
+      "mind",
+      "options",
+      "something",
+      "gramm",
+      "sentences",
+      "asking",
+      "correct"
+    ],
+    "event": "\ud83d\udcce world_different_bird (sim=0.92)",
+    "loss": 2.655719518661499,
+    "strategy": "shared_feat",
+    "info_gain": 21.84
+  },
+  {
+    "step": 129,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.0018449999999999,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.06515836715698242,
+    "features": [
+      "mah",
+      "ancient",
+      "similarly",
+      "way",
+      "ana",
+      "various",
+      "ras",
+      "mantra",
+      "discovered",
+      "objects"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 130,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.320605,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.05622541904449463,
+    "features": [
+      "looked",
+      "developed",
+      "indeed",
+      "neighbors",
+      "sense",
+      "grown",
+      "first",
+      "ways",
+      "learned",
+      "perspectives",
+      "year"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 131,
+    "mode": "active",
+    "prompt": "'Do I get older and older? Is it nature or nurture that makes me who I am? Will I always be the?",
+    "mean_surprise": 1.1451696202531645,
+    "concept_labels": [
+      "way_question_feel",
+      "question_try_wrong",
+      "sense_question_try",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "sense_question_tool"
+    ],
+    "novelty": 0.05108976364135742,
+    "features": [
+      "through",
+      "answers",
+      "might",
+      "fault",
+      "good",
+      "course",
+      "loved",
+      "questions",
+      "lying",
+      "completely",
+      "means"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.95)",
+    "loss": 2.511577844619751,
+    "strategy": "shared_feat",
+    "info_gain": 27.25
+  },
+  {
+    "step": 132,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.13368625,
+    "concept_labels": [
+      "way_question_feel"
+    ],
+    "novelty": 0.0345187783241272,
+    "features": [
+      "body",
+      "temple",
+      "little",
+      "like",
+      "atoms",
+      "always",
+      "ells",
+      "man"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.97)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 133,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.9963862499999999,
+    "concept_labels": [
+      "time_strength_think"
+    ],
+    "novelty": 0.06469833850860596,
+    "features": [
+      "getting",
+      "balance",
+      "dioxide",
+      "contributor",
+      "reasons",
+      "unlimited",
+      "impacting",
+      "atmosphere",
+      "land",
+      "change",
+      "while"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 134,
+    "mode": "active",
+    "prompt": "What is a. Title: Importance of Creatures. The importance of. Importance of creatures. This is an.?",
+    "mean_surprise": 0.3333925,
+    "concept_labels": [
+      "sense_question_tool",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "way_question_feel"
+    ],
+    "novelty": 0.06704103946685791,
+    "features": [
+      "creatures",
+      "title",
+      "important",
+      "importance"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.93)",
+    "loss": 2.54085636138916,
+    "strategy": "feature_gap",
+    "info_gain": 4.4
+  },
+  {
+    "step": 135,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6982412499999999,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.12682712078094482,
+    "features": [
+      "ian",
+      "through",
+      "iles",
+      "after",
+      "finally",
+      "river",
+      "\u0142aw",
+      "city",
+      "unique",
+      "raz",
+      "natural"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.87)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 136,
+    "mode": "active",
+    "prompt": "\u201cWhy don\u2019t we have a water job?\u201d?",
+    "mean_surprise": 1.1107569620253164,
+    "concept_labels": [
+      "time_strength_think",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool",
+      "way_question_feel"
+    ],
+    "novelty": 0.058603525161743164,
+    "features": [
+      "line",
+      "take",
+      "highlights",
+      "management",
+      "properly",
+      "resource",
+      "fact",
+      "granted",
+      "taken",
+      "water"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.94)",
+    "loss": 1.777673602104187,
+    "strategy": "combine",
+    "info_gain": 12.61
+  },
+  {
+    "step": 137,
+    "mode": "active",
+    "prompt": "What is the basis for the differences in like or dislike among different cultures? A parent or?",
+    "mean_surprise": 0.9659759493670886,
+    "concept_labels": [
+      "way_question_feel",
+      "sense_question_try",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "sense_question_tool"
+    ],
+    "novelty": 0.052520930767059326,
+    "features": [
+      "cultures",
+      "may",
+      "treated",
+      "parent",
+      "difference",
+      "unesco",
+      "according",
+      "way",
+      "different",
+      "dislike"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.95)",
+    "loss": 1.366982102394104,
+    "strategy": "connection",
+    "info_gain": 17.97
+  },
+  {
+    "step": 138,
+    "mode": "active",
+    "prompt": "What is a tree? What is water?",
+    "mean_surprise": 0.33622625,
+    "concept_labels": [
+      "sense_question_tool",
+      "question_try_wrong",
+      "sense_question_try",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "way_question_feel"
+    ],
+    "novelty": 0.04778337478637695,
+    "features": [
+      "flower",
+      "star",
+      "river",
+      "tree",
+      "cloud",
+      "bird",
+      "mountain"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.95)",
+    "loss": 1.6041288375854492,
+    "strategy": "combine",
+    "info_gain": 16.2
+  },
+  {
+    "step": 139,
+    "mode": "active",
+    "prompt": "Tell me about sense_question_tool.",
+    "mean_surprise": 0.9942582278481014,
+    "concept_labels": [
+      "time_strength_think",
+      "question_try_wrong",
+      "like_don_provide",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool",
+      "way_question_feel"
+    ],
+    "novelty": 0.08004015684127808,
+    "features": [
+      "think",
+      "sens",
+      "familiar",
+      "possible",
+      "might",
+      "like",
+      "please",
+      "sense",
+      "new",
+      "talked",
+      "tool"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.92)",
+    "loss": 1.8793630599975586,
+    "strategy": "fallback",
+    "info_gain": 38.09
+  },
+  {
+    "step": 140,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.84149625,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.05274534225463867,
+    "features": [
+      "conventions",
+      "wild",
+      "unt",
+      "care",
+      "amed",
+      "inations",
+      "clearing",
+      "led",
+      "don",
+      "incl",
+      "domestic"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.95)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 141,
+    "mode": "active",
+    "prompt": "\u201cIs there life on other planets?\u201d A curious adult wonders about one_life_flight and asks: \u201cIs there?",
+    "mean_surprise": 0.56367125,
+    "concept_labels": [
+      "way_question_feel",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "sense_question_tool"
+    ],
+    "novelty": 0.044622063636779785,
+    "features": [
+      "ets",
+      "help",
+      "might",
+      "ness",
+      "oplan",
+      "life",
+      "discovered",
+      "ponder",
+      "explore",
+      "scientists",
+      "while"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.96)",
+    "loss": 1.2445274591445923,
+    "strategy": "feature_gap",
+    "info_gain": 16.16
+  },
+  {
+    "step": 142,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.3444443037974685,
+    "concept_labels": [
+      "time_strength_think"
+    ],
+    "novelty": 0.036374449729919434,
+    "features": [
+      "character",
+      "science",
+      "izations",
+      "discourse",
+      "argument",
+      "debate",
+      "battle",
+      "one",
+      "between",
+      "political"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 143,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6458999999999999,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.04080629348754883,
+    "features": [
+      "ating",
+      "wildlife",
+      "fish",
+      "surrounded",
+      "lovers",
+      "bears",
+      "life",
+      "river",
+      "lake",
+      "home"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 144,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.49950875000000006,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.03835463523864746,
+    "features": [
+      "others",
+      "express",
+      "ideas",
+      "part",
+      "share",
+      "language",
+      "role",
+      "form",
+      "allows",
+      "world",
+      "around"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 145,
+    "mode": "active",
+    "prompt": "Can you fly? A father replies: We are already in the air, but we do not feel it. We are already in?",
+    "mean_surprise": 0.19423125,
+    "concept_labels": [
+      "way_question_feel",
+      "sense_question_try",
+      "one_life_flight",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "sense_question_tool"
+    ],
+    "novelty": 0.055483222007751465,
+    "features": [
+      "feel",
+      "air",
+      "already",
+      "father",
+      "fly",
+      "replies"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.94)",
+    "loss": 1.2336899042129517,
+    "strategy": "feature_gap",
+    "info_gain": 9.1
+  },
+  {
+    "step": 146,
+    "mode": "active",
+    "prompt": "\"What is a different bird?\" That is a question and demands an answer. So they are both?",
+    "mean_surprise": 1.3777275,
+    "concept_labels": [
+      "time_strength_think",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool",
+      "way_question_feel"
+    ],
+    "novelty": 0.044348716735839844,
+    "features": [
+      "assumption",
+      "demands",
+      "response",
+      "phrase",
+      "answer",
+      "actually",
+      "point",
+      "ellipt",
+      "tricky",
+      "bird",
+      "rhetorical"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.96)",
+    "loss": 1.7845375537872314,
+    "strategy": "shared_feat",
+    "info_gain": 23.48
+  },
+  {
+    "step": 147,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7708962500000001,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.03964197635650635,
+    "features": [
+      "body",
+      "happens",
+      "fascinated",
+      "systems",
+      "soul",
+      "death",
+      "part",
+      "life",
+      "various",
+      "continue",
+      "around"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 148,
+    "mode": "active",
+    "prompt": "\u201cCan you tell me a story?\u201d The child's language is in italics. * Provides language input for the?",
+    "mean_surprise": 1.0921825,
+    "concept_labels": [
+      "sense_question_tool",
+      "sense_question_try",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "city_guards_protected",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "way_question_feel"
+    ],
+    "novelty": 0.04069674015045166,
+    "features": [
+      "prevent",
+      "may",
+      "set",
+      "trying",
+      "respond",
+      "system",
+      "designed",
+      "language",
+      "sentences",
+      "child"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.96)",
+    "loss": 1.440571665763855,
+    "strategy": "shared_feat",
+    "info_gain": 16.59
+  },
+  {
+    "step": 149,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7052337837837838,
+    "concept_labels": [
+      "time_strength_think"
+    ],
+    "novelty": 0.08292865753173828,
+    "features": [
+      "wild",
+      "whisper",
+      "leaves",
+      "ancient",
+      "forest",
+      "power",
+      "woods",
+      "ing",
+      "heart",
+      "key"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.92)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 150,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5236325,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.027250468730926514,
+    "features": [
+      "ability",
+      "life",
+      "convey",
+      "emotions",
+      "language",
+      "role",
+      "understand",
+      "able",
+      "tool",
+      "vital"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.97)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 151,
+    "mode": "active",
+    "prompt": "\"Is the whole world different for a bird?\" which is different from the language_bring_universal.?",
+    "mean_surprise": 1.16386625,
+    "concept_labels": [
+      "time_strength_think",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool",
+      "way_question_feel"
+    ],
+    "novelty": 0.02928227186203003,
+    "features": [
+      "iversal",
+      "two",
+      "understanding",
+      "ring",
+      "way",
+      "meta",
+      "bird",
+      "physical",
+      "emotional",
+      "describes",
+      "therefore"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.97)",
+    "loss": 1.7313662767410278,
+    "strategy": "shared_feat",
+    "info_gain": 18.76
+  },
+  {
+    "step": 152,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.0687770270270271,
+    "concept_labels": [
+      "way_question_feel"
+    ],
+    "novelty": 0.25994133949279785,
+    "features": [
+      "sub",
+      "ation",
+      "cases",
+      "simple",
+      "occurrence",
+      "different",
+      "fracture",
+      "frequency",
+      "remaining",
+      "location"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.74)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 153,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.55058,
+    "concept_labels": [
+      "time_strength_think"
+    ],
+    "novelty": 0.02360057830810547,
+    "features": [
+      "definitions",
+      "decide",
+      "concept",
+      "app",
+      "dead",
+      "led",
+      "different",
+      "living",
+      "means",
+      "philosophers",
+      "implications"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.98)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 154,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.45698227848101264,
+    "concept_labels": [
+      "time_strength_think"
+    ],
+    "novelty": 0.07532393932342529,
+    "features": [
+      "missouri",
+      "illinois",
+      "second",
+      "towns",
+      "through",
+      "river",
+      "louis",
+      "east",
+      "mississippi"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.92)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 155,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.2832050000000002,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.08869314193725586,
+    "features": [
+      "little",
+      "see",
+      "strategies",
+      "challenging",
+      "however",
+      "life",
+      "realized",
+      "apply",
+      "time",
+      "manage",
+      "understanding"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.91)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 156,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.67412,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.022045671939849854,
+    "features": [
+      "develop",
+      "community",
+      "things",
+      "teacher",
+      "another",
+      "recognize",
+      "showing",
+      "cooperation",
+      "great",
+      "together"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.98)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 157,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.61718125,
+    "concept_labels": [
+      "time_strength_think"
+    ],
+    "novelty": 0.04310178756713867,
+    "features": [
+      "granted",
+      "dedication",
+      "powerful",
+      "communities",
+      "sentimental",
+      "guarantee",
+      "choice",
+      "individuals",
+      "transform",
+      "ism",
+      "ured"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 158,
+    "mode": "active",
+    "prompt": "\"Why is there something rather than nothing?\". An answer that is not based on feeling is not?",
+    "mean_surprise": 0.8543925,
+    "concept_labels": [
+      "way_question_feel",
+      "one_life_flight",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "sense_question_tool"
+    ],
+    "novelty": 0.03374898433685303,
+    "features": [
+      "stuck",
+      "under",
+      "fundamental",
+      "know",
+      "cycle",
+      "seem",
+      "metaph",
+      "don",
+      "philosophical",
+      "understanding",
+      "ysical"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.97)",
+    "loss": 1.3555293083190918,
+    "strategy": "shared_feat",
+    "info_gain": 24.95
+  },
+  {
+    "step": 159,
+    "mode": "active",
+    "prompt": "How do you know that the two words are related? How do you decide that they are synonyms?",
+    "mean_surprise": 0.65800125,
+    "concept_labels": [
+      "time_strength_think",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool",
+      "way_question_feel"
+    ],
+    "novelty": 0.034670233726501465,
+    "features": [
+      "context",
+      "information",
+      "background",
+      "consider",
+      "know",
+      "word",
+      "analyzing",
+      "questions",
+      "surrounding",
+      "onyms",
+      "tired"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.97)",
+    "loss": 1.4577709436416626,
+    "strategy": "shared_feat",
+    "info_gain": 18.76
+  },
+  {
+    "step": 160,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6468556962025316,
+    "concept_labels": [
+      "way_question_feel"
+    ],
+    "novelty": 0.09667706489562988,
+    "features": [
+      "collapses",
+      "chemical",
+      "come",
+      "supern",
+      "surface",
+      "brightness",
+      "own",
+      "end",
+      "elling",
+      "typically",
+      "stars"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.90)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 161,
+    "mode": "active",
+    "prompt": "What's the difference between provide_like_don and sense_question_tool? I know it seems silly, but?",
+    "mean_surprise": 0.83789,
+    "concept_labels": [
+      "time_strength_think",
+      "different_cultures_world",
+      "one_life_flight",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool",
+      "way_question_feel"
+    ],
+    "novelty": 0.07345801591873169,
+    "features": [
+      "repo",
+      "two",
+      "difference",
+      "trying",
+      "based",
+      "sure",
+      "tools",
+      "why",
+      "user",
+      "sentences"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.93)",
+    "loss": 1.2590290307998657,
+    "strategy": "connection",
+    "info_gain": 25.84
+  },
+  {
+    "step": 162,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.94647875,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.09377408027648926,
+    "features": [
+      "resilient",
+      "think",
+      "expand",
+      "cells",
+      "become",
+      "open",
+      "thinking",
+      "brains",
+      "new",
+      "brain",
+      "neurons"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.91)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 163,
+    "mode": "active",
+    "prompt": "\"Why are there different birds in the world?\" One would hope that the answers to such a question?",
+    "mean_surprise": 0.72753375,
+    "concept_labels": [
+      "time_strength_think",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool",
+      "way_question_feel"
+    ],
+    "novelty": 0.13129019737243652,
+    "features": [
+      "conducive",
+      "considerable",
+      "result",
+      "environments",
+      "however",
+      "truth",
+      "record",
+      "rept",
+      "birds",
+      "straightforward"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.87)",
+    "loss": 1.2527137994766235,
+    "strategy": "combine",
+    "info_gain": 6.23
+  },
+  {
+    "step": 164,
+    "mode": "active",
+    "prompt": "\"What is the relationship between sense and reason?\" 12?",
+    "mean_surprise": 0.645795,
+    "concept_labels": [
+      "way_question_feel",
+      "one_life_flight",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "sense_question_tool"
+    ],
+    "novelty": 0.04465377330780029,
+    "features": [
+      "question",
+      "history",
+      "whether",
+      "needed",
+      "one",
+      "different",
+      "world",
+      "classic",
+      "present",
+      "correct"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.96)",
+    "loss": 1.4931355714797974,
+    "strategy": "shared_feat",
+    "info_gain": 35.15
+  },
+  {
+    "step": 165,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.71406375,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.04053604602813721,
+    "features": [
+      "complex",
+      "self",
+      "language",
+      "meaningful",
+      "social",
+      "early",
+      "time",
+      "enabling",
+      "world",
+      "role",
+      "crucial"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 166,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.58163875,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.09368294477462769,
+    "features": [
+      "past",
+      "information",
+      "fundamental",
+      "plays",
+      "process",
+      "emotions",
+      "learn",
+      "role",
+      "rec",
+      "understand",
+      "allows"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.91)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 167,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7113358974358974,
+    "concept_labels": [
+      "time_strength_think"
+    ],
+    "novelty": 0.24175310134887695,
+    "features": [
+      "temple",
+      "dedicated",
+      "vibrant",
+      "complex",
+      "important",
+      "agara",
+      "current",
+      "century",
+      "rulers",
+      "philosophers",
+      "known"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.76)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 168,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5691437500000001,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.12516164779663086,
+    "features": [
+      "imagination",
+      "range",
+      "spark",
+      "symbol",
+      "fire",
+      "often",
+      "literature",
+      "creativity",
+      "drive",
+      "classic"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.87)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 169,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.915915,
+    "concept_labels": [
+      "time_strength_think"
+    ],
+    "novelty": 0.024109065532684326,
+    "features": [
+      "honest",
+      "sac",
+      "realistic",
+      "good",
+      "love",
+      "uplifting",
+      "incredibly",
+      "makes",
+      "meal"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.98)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 170,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.0710912499999998,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.06922167539596558,
+    "features": [
+      "curved",
+      "follow",
+      "class",
+      "trying",
+      "high",
+      "create",
+      "any",
+      "program",
+      "direction",
+      "around"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 171,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7106425,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.08254659175872803,
+    "features": [
+      "people",
+      "climb",
+      "told",
+      "run",
+      "mountains",
+      "running",
+      "walk"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.92)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 172,
+    "mode": "active",
+    "prompt": "'Why do all these people have different hair colors?' - this is actually. That my mother is a?",
+    "mean_surprise": 1.17021125,
+    "concept_labels": [
+      "way_question_feel",
+      "one_life_flight",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "sense_question_tool"
+    ],
+    "novelty": 0.01928997039794922,
+    "features": [
+      "special",
+      "everyone",
+      "father",
+      "mother",
+      "same",
+      "person",
+      "else",
+      "makes"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.98)",
+    "loss": 1.6463088989257812,
+    "strategy": "shared_feat",
+    "info_gain": 10.97
+  },
+  {
+    "step": 173,
+    "mode": "active",
+    "prompt": "\u201cWhat is it like to be a bird_sing?\u201d?",
+    "mean_surprise": 1.0565645569620252,
+    "concept_labels": [
+      "time_strength_think",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool",
+      "way_question_feel"
+    ],
+    "novelty": 0.023366928100585938,
+    "features": [
+      "using",
+      "his",
+      "series",
+      "playful",
+      "attempting",
+      "bird",
+      "begins",
+      "attempt",
+      "man",
+      "describe"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.98)",
+    "loss": 0.8992584943771362,
+    "strategy": "feature_gap",
+    "info_gain": 6.06
+  },
+  {
+    "step": 174,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.7786125,
+    "concept_labels": [
+      "way_question_feel"
+    ],
+    "novelty": 0.02046799659729004,
+    "features": [
+      "feel",
+      "theories",
+      "reproduce",
+      "debate",
+      "something",
+      "public",
+      "perspectives",
+      "centuries",
+      "famous",
+      "scientists",
+      "itself"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.98)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 175,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.61965,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.060645997524261475,
+    "features": [
+      "ile",
+      "space",
+      "david",
+      "carl",
+      "ultimate",
+      "book",
+      "written",
+      "describe",
+      "bert",
+      "universe",
+      "tool"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 176,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.6392562500000001,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.0684441328048706,
+    "features": [
+      "feel",
+      "feelings",
+      "complex",
+      "thoughts",
+      "build",
+      "communication",
+      "way",
+      "share",
+      "role",
+      "environment",
+      "vital"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 177,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5494090909090908,
+    "concept_labels": [
+      "time_strength_think"
+    ],
+    "novelty": 0.02703249454498291,
+    "features": [
+      "things",
+      "david",
+      "two",
+      "quotes",
+      "henry",
+      "world",
+      "around"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.97)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 178,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.582025,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.07139849662780762,
+    "features": [
+      "came",
+      "group",
+      "benny",
+      "mort",
+      "animal",
+      "lily",
+      "strange",
+      "adventures",
+      "remember",
+      "known",
+      "long"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 179,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.45771750000000005,
+    "concept_labels": [
+      "time_strength_think"
+    ],
+    "novelty": 0.03820985555648804,
+    "features": [
+      "often",
+      "tend",
+      "ness",
+      "shared",
+      "commitment",
+      "affection",
+      "feeling",
+      "ection",
+      "common",
+      "erness",
+      "sacrifice"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 180,
+    "mode": "active",
+    "prompt": "\"But what about the first one? Why did the people in the first one have to be stuck together?\"?",
+    "mean_surprise": 0.15418125,
+    "concept_labels": [
+      "sense_question_tool",
+      "people_together_stuck",
+      "city_guards_protected",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "way_question_feel"
+    ],
+    "novelty": 0.1648181676864624,
+    "features": [],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.84)",
+    "loss": 1.410762071609497,
+    "strategy": "shared_feat",
+    "info_gain": 0.0
+  },
+  {
+    "step": 181,
+    "mode": "active",
+    "prompt": "\"Can we tell the difference between birds and birds?\"? A teacher tries to explain: \"Birds and birds?",
+    "mean_surprise": 1.1008725,
+    "concept_labels": [
+      "time_strength_think",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool",
+      "way_question_feel"
+    ],
+    "novelty": 0.04187864065170288,
+    "features": [
+      "ictory",
+      "like",
+      "contr",
+      "someone",
+      "named",
+      "self",
+      "something",
+      "liar",
+      "adox",
+      "classification",
+      "paradox"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.96)",
+    "loss": 0.9808301329612732,
+    "strategy": "shared_feat",
+    "info_gain": 12.7
+  },
+  {
+    "step": 182,
+    "mode": "active",
+    "prompt": "'What is this little beast that it is said to be so terrible and to be so far from the earth?' The?",
+    "mean_surprise": 0.8849612499999999,
+    "concept_labels": [
+      "time_strength_think",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool",
+      "way_question_feel"
+    ],
+    "novelty": 0.03575313091278076,
+    "features": [
+      "ible",
+      "express",
+      "invisible",
+      "app",
+      "incom",
+      "unknown",
+      "communic",
+      "ensible",
+      "able"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.96)",
+    "loss": 1.0089350938796997,
+    "strategy": "unvisited",
+    "info_gain": 5.78
+  },
+  {
+    "step": 183,
+    "mode": "active",
+    "prompt": "\u201cWhat should I know about the people_together_stuck common?\u201d?",
+    "mean_surprise": 0.7893957142857143,
+    "concept_labels": [
+      "way_question_feel",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "sense_question_tool"
+    ],
+    "novelty": 0.05536389350891113,
+    "features": [
+      "people",
+      "gether",
+      "valid",
+      "get",
+      "game",
+      "common",
+      "confirm",
+      "uck"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.94)",
+    "loss": 1.7832176685333252,
+    "strategy": "combine",
+    "info_gain": 7.09
+  },
+  {
+    "step": 184,
+    "mode": "active",
+    "prompt": "is there a tree with roots and a forest with a tree?\" (Lakoff and Johnson 1999, p. 47)?",
+    "mean_surprise": 0.9476575,
+    "concept_labels": [
+      "way_question_feel",
+      "one_life_flight",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "sense_question_tool"
+    ],
+    "novelty": 0.027620315551757812,
+    "features": [
+      "off",
+      "linguistic",
+      "perceive",
+      "good",
+      "biases",
+      "language",
+      "johnson",
+      "equally",
+      "roots",
+      "real",
+      "lak"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.97)",
+    "loss": 1.440829873085022,
+    "strategy": "combine",
+    "info_gain": 16.55
+  },
+  {
+    "step": 185,
+    "mode": "active",
+    "prompt": "What is made and defensive?",
+    "mean_surprise": 0.37386231884057974,
+    "concept_labels": [
+      "sense_question_tool",
+      "people_together_stuck",
+      "city_guards_protected",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think"
+    ],
+    "novelty": 0.17260229587554932,
+    "features": [
+      "line",
+      "ensive",
+      "made",
+      "end",
+      "tab",
+      "figure",
+      "def"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.83)",
+    "loss": 0.9037124514579773,
+    "strategy": "combine",
+    "info_gain": 6.2
+  },
+  {
+    "step": 186,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.5537124999999999,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.038827359676361084,
+    "features": [
+      "powerful",
+      "hope",
+      "past",
+      "fire",
+      "same",
+      "ancestors",
+      "unlocking",
+      "burn",
+      "key"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.96)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 187,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.69687375,
+    "concept_labels": [
+      "way_question_feel"
+    ],
+    "novelty": 0.11768436431884766,
+    "features": [
+      "think",
+      "help",
+      "let",
+      "lesson",
+      "choose",
+      "process",
+      "positive",
+      "negative",
+      "went",
+      "remember"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.88)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 188,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.859873417721519,
+    "concept_labels": [
+      "way_question_feel"
+    ],
+    "novelty": 0.051914334297180176,
+    "features": [
+      "destruction",
+      "little",
+      "surface",
+      "must",
+      "humans",
+      "generations",
+      "work",
+      "array",
+      "covers",
+      "unfortunately",
+      "great"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.95)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 189,
+    "mode": "active",
+    "prompt": "\u201cIs there a word for something that is both universal and familiar?\u201d?",
+    "mean_surprise": 0.80068125,
+    "concept_labels": [
+      "time_strength_think",
+      "one_life_flight",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool",
+      "way_question_feel"
+    ],
+    "novelty": 0.07262396812438965,
+    "features": [
+      "full",
+      "familiar",
+      "speaks",
+      "same",
+      "humans",
+      "both",
+      "part",
+      "one",
+      "time",
+      "human"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.93)",
+    "loss": 1.417184591293335,
+    "strategy": "combine",
+    "info_gain": 19.3
+  },
+  {
+    "step": 190,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.0192337500000002,
+    "concept_labels": [
+      "way_question_feel"
+    ],
+    "novelty": 0.07880854606628418,
+    "features": [
+      "using",
+      "people",
+      "air",
+      "may",
+      "past",
+      "through",
+      "flown",
+      "like",
+      "ability",
+      "artificial",
+      "minds"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.92)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 191,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8476549999999999,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.026773571968078613,
+    "features": [
+      "fascinating",
+      "ize",
+      "harmony",
+      "magical",
+      "river",
+      "rust",
+      "birds",
+      "live",
+      "trees",
+      "ling",
+      "heart"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.97)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 192,
+    "mode": "active",
+    "prompt": "\u201dWhat _strength_ means?\u201d Answer with an example: \u201c_Strength_ is like _muscle_ in our body. When we?",
+    "mean_surprise": 1.2241027397260273,
+    "concept_labels": [
+      "sense_question_tool",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "way_question_feel"
+    ],
+    "novelty": 0.058030009269714355,
+    "features": [
+      "strength",
+      "teacher",
+      "symbol",
+      "challenging",
+      "like",
+      "start",
+      "means",
+      "put",
+      "helps",
+      "example"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.94)",
+    "loss": 0.7890039682388306,
+    "strategy": "feature_gap",
+    "info_gain": 18.72
+  },
+  {
+    "step": 193,
+    "mode": "active",
+    "prompt": "\"What will happen if like me, be able to fly in the sky\" ( difference of bird and human)?",
+    "mean_surprise": 1.6146462499999998,
+    "concept_labels": [
+      "time_strength_think",
+      "people_together_stuck",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool",
+      "way_question_feel"
+    ],
+    "novelty": 0.035002708435058594,
+    "features": [
+      "things",
+      "opportunity",
+      "simply",
+      "expression",
+      "experiment",
+      "sky",
+      "practice",
+      "plan",
+      "bird",
+      "grasp",
+      "thought"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.96)",
+    "loss": 0.9930665493011475,
+    "strategy": "feature_gap",
+    "info_gain": 7.21
+  },
+  {
+    "step": 194,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.244235,
+    "concept_labels": [
+      "time_strength_think"
+    ],
+    "novelty": 0.06064659357070923,
+    "features": [
+      "yet",
+      "ancient",
+      "two",
+      "respective",
+      "growing",
+      "power",
+      "celestial",
+      "divine",
+      "matched"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.94)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 195,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8287100000000001,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.06689488887786865,
+    "features": [
+      "culture",
+      "create",
+      "humans",
+      "way",
+      "development",
+      "symbols",
+      "represent",
+      "understanding",
+      "role",
+      "tool",
+      "key"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.93)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 196,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8646480519480519,
+    "concept_labels": [
+      "way_question_feel"
+    ],
+    "novelty": 0.13046318292617798,
+    "features": [
+      "called",
+      "ged",
+      "depreci",
+      "exchange",
+      "decided",
+      "government",
+      "dollar",
+      "philippine",
+      "peso",
+      "corruption"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.87)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 197,
+    "mode": "active",
+    "prompt": "\"Is it true that the metal can strong? \" The answer is: \"Yes, the metal can be strong.\" The child?",
+    "mean_surprise": 0.86494125,
+    "concept_labels": [
+      "sense_question_tool",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "time_strength_think",
+      "way_question_feel"
+    ],
+    "novelty": 0.060078978538513184,
+    "features": [
+      "she",
+      "rock",
+      "needs",
+      "strong",
+      "information",
+      "say",
+      "early",
+      "child",
+      "beginning"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.94)",
+    "loss": 1.3105313777923584,
+    "strategy": "feature_gap",
+    "info_gain": 13.26
+  },
+  {
+    "step": 198,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 0.8223835443037975,
+    "concept_labels": [
+      "sense_question_tool"
+    ],
+    "novelty": 0.32867199182510376,
+    "features": [
+      "protected",
+      "ions",
+      "walls",
+      "fortress",
+      "steep",
+      "important",
+      "commerce",
+      "surrounding",
+      "attacks",
+      "feet",
+      "rocky"
+    ],
+    "event": "\ud83d\udcce sense_question_tool (sim=0.67)",
+    "loss": null,
+    "growth": null
+  },
+  {
+    "step": 199,
+    "mode": "active",
+    "prompt": "\"Is this try or did it come from a tree?\"?",
+    "mean_surprise": 0.927916,
+    "concept_labels": [
+      "time_strength_think",
+      "provide_like_don",
+      "language_bring_universal",
+      "world_different_bird",
+      "sense_question_tool",
+      "way_question_feel"
+    ],
+    "novelty": 0.06482529640197754,
+    "features": [
+      "try",
+      "come",
+      "tree"
+    ],
+    "event": "\ud83d\udcce time_strength_think (sim=0.94)",
+    "loss": 1.4615225791931152,
+    "strategy": "shared_feat",
+    "info_gain": 10.23
+  },
+  {
+    "step": 200,
+    "mode": "passive",
+    "prompt": "[passive observation]",
+    "mean_surprise": 1.6003975000000001,
+    "concept_labels": [
+      "way_question_feel"
+    ],
+    "novelty": 0.10574483871459961,
+    "features": [
+      "piece",
+      "things",
+      "after",
+      "fresh",
+      "sand",
+      "stick",
+      "pain",
+      "glass",
+      "sharp",
+      "now"
+    ],
+    "event": "\ud83d\udcce way_question_feel (sim=0.89)",
+    "loss": null,
+    "growth": null
+  }
+]
