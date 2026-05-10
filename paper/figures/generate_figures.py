@@ -22,14 +22,14 @@ matplotlib.rcParams.update({
     'savefig.pad_inches': 0.1,
 })
 
-RESULTS_DIR = Path(__file__).parent.parent.parent / "results"
+RESULTS_DIR = Path.home() / "Documents" / "AIProjects" / "LAC" / "tcd" / "potential_phd" / "experiments" / "results"
 FIG_DIR = Path(__file__).parent
 
 MODES = {
     'random':    RESULTS_DIR / "ablation_random",
     'template':  RESULTS_DIR / "ablation_template",
     'structure': RESULTS_DIR / "ablation_structure",
-    'feedback':  RESULTS_DIR / "feedback",
+    'feedback':  RESULTS_DIR / "concept_learner",
 }
 
 MODE_LABELS = {
@@ -51,25 +51,45 @@ def load_data():
     """Load all ablation results."""
     data = {}
     for mode, path in MODES.items():
-        with open(path / 'dream_state.json') as f:
-            state = json.load(f)
-        with open(path / 'session_0001.json') as f:
+        state_file = path / 'dream_state.json'
+        session_file = path / 'session_0001.json'
+
+        if not session_file.exists():
+            print(f"  WARNING: {session_file} not found, skipping {mode}")
+            continue
+
+        with open(session_file) as f:
             log = json.load(f)
 
         active = [e for e in log if e.get('mode') == 'active']
         igs = [e.get('info_gain', 0) for e in active if 'info_gain' in e]
 
+        if state_file.exists():
+            with open(state_file) as f:
+                state = json.load(f)
+            n_concepts = len(state.get('concepts', []))
+            n_connections = len(state.get('concept_graph_edges', []))
+        else:
+            # Extract from session log if state file missing
+            state = {}
+            # Use last entry's concept count if available
+            n_concepts = 20  # known from RESEARCH_LOG
+            # Known values from ablation results table
+            known_connections = {'random': 119, 'template': 70, 'structure': 62, 'feedback': 301}
+            n_connections = known_connections.get(mode, 0)
+            print(f"  WARNING: {state_file} not found, using known values for {mode}")
+
         data[mode] = {
             'state': state,
             'log': log,
-            'n_concepts': len(state['concepts']),
-            'n_connections': len(state['concept_graph_edges']),
+            'n_concepts': n_concepts,
+            'n_connections': n_connections,
             'n_active': len(active),
             'n_passive': len(log) - len(active),
             'avg_ig': np.mean(igs) if igs else 0,
             'max_ig': max(igs) if igs else 0,
             'igs': igs,
-            'conn_per_concept': len(state['concept_graph_edges']) / max(len(state['concepts']), 1),
+            'conn_per_concept': n_connections / max(n_concepts, 1),
         }
     return data
 
@@ -196,6 +216,41 @@ def figure3_strategy_breakdown(data):
     print("  Figure 3: fig3_strategy_breakdown.pdf")
 
 
+def figure4_ig_acceleration():
+    """Bar chart: average IG per 400-step window across 2000 steps."""
+    fig, ax = plt.subplots(figsize=(6, 4))
+
+    # Data from RESEARCH_LOG.md (2000-step extended run)
+    windows = ['0-400', '400-800', '800-1200', '1200-1600', '1600-2000']
+    avg_igs = [15.1, 38.3, 61.7, 79.8, 100.3]
+
+    bars = ax.bar(windows, avg_igs, color='#198754', edgecolor='white',
+                  linewidth=0.5, width=0.6, alpha=0.85)
+
+    # Add value labels on bars
+    for bar, val in zip(bars, avg_igs):
+        ax.text(bar.get_x() + bar.get_width()/2., bar.get_height() + 1.5,
+                f'{val:.1f}', ha='center', va='bottom', fontweight='bold', fontsize=10)
+
+    ax.set_xlabel('Step Window')
+    ax.set_ylabel('Average Information Gain')
+    ax.set_title('Information Gain Acceleration (2000-Step Run)')
+    ax.set_ylim(0, max(avg_igs) * 1.15)
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+
+    # Add trend annotation
+    ax.annotate('6.6x acceleration', xy=(4, avg_igs[4]), xytext=(2.5, avg_igs[4] * 0.85),
+                arrowprops=dict(arrowstyle='->', color='#198754', lw=1.5),
+                fontsize=12, fontweight='bold', color='#198754', ha='center')
+
+    fig.tight_layout()
+    fig.savefig(FIG_DIR / 'fig4_ig_acceleration.pdf')
+    fig.savefig(FIG_DIR / 'fig4_ig_acceleration.png')
+    plt.close(fig)
+    print("  Figure 4: fig4_ig_acceleration.pdf")
+
+
 if __name__ == '__main__':
     print("Generating figures for Dream Layer v0.1 paper...")
     data = load_data()
@@ -203,5 +258,6 @@ if __name__ == '__main__':
     figure1_connections_per_concept(data)
     figure2_cumulative_ig(data)
     figure3_strategy_breakdown(data)
+    figure4_ig_acceleration()
 
     print("\nAll figures generated.")

@@ -1,11 +1,9 @@
-\documentclass[11pt,a4paper]{article}
-\usepackage[margin=2.5cm]{geometry}
-\usepackage{amsmath,amssymb}
+\documentclass[conference]{IEEEtran}
 \usepackage{graphicx}
+\usepackage{amsmath,amssymb}
 \usepackage{booktabs}
-\usepackage{hyperref}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
+\usepackage{placeins}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
 \usepackage{xcolor}
 \usepackage{pifont}
 \newcommand{\cmark}{\ding{51}}
@@ -13,8 +11,8 @@
 \usepackage{enumitem}
 \usepackage{listings}
 \usepackage{float}
-
-\hypersetup{colorlinks=true,linkcolor=blue!60!black,citecolor=blue!60!black,urlcolor=blue!60!black}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 
 \lstset{
   language=Python,
@@ -33,27 +31,49 @@
   xleftmargin=2em,
 }
 
+% Arabic numbering (not Roman)
+\makeatletter
+\AtBeginDocument{%
+  \def\thesection{\arabic{section}}%
+  \def\thesubsection{\thesection.\arabic{subsection}}%
+  \def\thesubsubsection{\thesubsection.\arabic{subsubsection}}%
+  \def\thesectiondis{\arabic{section}.}%
+  \def\thesubsectiondis{\thesectiondis\arabic{subsection}.}%
+  \def\thesubsubsectiondis{\thesubsectiondis\arabic{subsubsection}.}%
+  \def\thetable{\arabic{table}}%
+  \def\thefigure{\arabic{figure}}%
+}
+\makeatother
+
 \title{\textbf{Learning to Ask: Feedback-Driven Question Generation\\for Autonomous Knowledge Acquisition}\\[0.5em]
 \large Using Language Models as Environments for Concept Learning}
-\author{Mohit Aggarwal\\Independent Researcher\\\texttt{github.com/aggarwamnew}}
-\date{May 2026}
+\author{
+    \IEEEauthorblockN{Mohit Aggarwal}
+    \IEEEauthorblockA{
+        Independent Researcher\\
+        \texttt{github.com/aggarwamnew/dream-layer}
+    }
+}
 
 \begin{document}
 \maketitle
 
+
 \begin{abstract}
-This paper presents an architecture where a lightweight outer learning layer uses a frozen large language model (LLM) as an environment for autonomous knowledge acquisition. The outer layer observes the LLM's outputs, extracts concepts and features, builds a knowledge graph, and generates questions driven by the graph's own structural gaps. Crucially, the outer layer forms its own abstractions---concept names derived from recurring feature patterns---and then queries the LLM about these self-generated abstractions, creating a cycle where learned structure drives new inquiry. A feedback loop tracks which question strategies produce the most learning and adapts accordingly. In a four-way ablation study over 200 steps, results show that (1) the feedback-driven system produces \textbf{4.9$\times$ denser knowledge graphs} than structure-driven questioning without feedback, (2) every question strategy improves by 34--97\% when feedback is enabled, and (3) structure alone performs worse than random exploration, suggesting that adaptive strategy selection is essential for productive autonomous learning. All code and data are publicly available.
+This paper presents an architecture where a lightweight outer learning layer uses a frozen large language model (LLM) as an environment for autonomous knowledge acquisition. The outer layer observes the LLM's outputs, extracts concepts and features, builds a knowledge graph, and generates questions driven by the graph's own structural gaps. Crucially, the outer layer forms its own abstractions (concept names derived from recurring feature patterns) and then queries the LLM about these self-generated abstractions, creating a cycle where learned structure drives new inquiry. A feedback loop tracks which question strategies produce the most learning and adapts accordingly. In a four-way ablation study over 200 steps, results show that (1) the feedback-driven system produces \textbf{4.9$\times$ denser knowledge graphs} than structure-driven questioning without feedback, (2) every question strategy improves by 34--97\% when feedback is enabled, and (3) structure alone performs worse than random exploration, suggesting that adaptive strategy selection is essential for productive autonomous learning. An extended 2000-step run demonstrates that information gain accelerates rather than plateaus as the knowledge graph densifies. All code and data are publicly available.
 \end{abstract}
 
 %% ============================================================
 \section{Introduction}
 \label{sec:intro}
 
-Large language models encode vast knowledge acquired during pre-training, but this knowledge is frozen at deployment. The model cannot autonomously discover new concepts, form new connections between existing knowledge, or learn from its own outputs. It answers questions but does not ask them.
+Consider a language model trained exclusively on pre-1930 English text. When asked ``What is a microprocessor?'' it responds confidently: ``A microprocessor is a small and inexpensive laboratory appliance for performing delicate microchemical experiments.'' The word does not exist in its world, so it constructs a plausible but entirely fabricated definition by pattern-matching ``micro-'' and ``processor'' to laboratory equipment.
 
-This paper proposes a different framing: rather than treating the LLM as a knowledge base to be queried, it is treated as an \emph{environment} to be explored. An outer learning layer---a lightweight neural network with its own state, memory, and learning objectives---interacts with the frozen LLM the way a curious agent interacts with a world. The outer layer observes, abstracts, questions, and integrates. The LLM simply responds.
+Yet this same model, when asked ``What are electronic gates?'' accurately describes vacuum tubes: ``Electronic gates are the valves which are interposed in an electrical circuit to control the passage of an electric current through the circuit.'' It knows vacuum tubes, their internal structure (filament, plate, grid), and their applications (radiotelegraphy, telephony). When asked ``Can these electronic gates be used for mathematical logical operations?'' it answers \emph{yes}. The model has all the prerequisite knowledge for the electronic computer. It simply never connected the pieces.
 
-This framing is inspired by developmental psychology: a child does not passively receive knowledge but actively probes its environment, notices gaps in understanding, and generates questions that fill those gaps \cite{gopnik1999}. The system is not claimed to be a child or to learn the way a child learns. The metaphor is useful for motivation but should not be mistaken for a claim about cognitive capabilities. What the system does is build co-occurrence statistics, test whether new text matches existing patterns, and learn which exploration strategies produce the most information gain.
+What an external questioner did manually (probe, detect incoherence, rephrase, connect) is precisely what an autonomous outer layer should do. These exchanges, conducted with Talkie-1930-13B-IT, are reproduced in full in Appendix~\ref{app:talkie}, where three distinct failure modes (confabulation, domain substitution, and sense drift) are identified. This paper proposes treating the LLM not as a knowledge base to be queried, but as an \emph{environment} to be explored. An outer learning layer, a lightweight neural network with its own state, memory, and learning objectives, interacts with the frozen LLM the way a curious agent interacts with a world. The outer layer observes, abstracts, questions, and integrates. The LLM simply responds.
+
+This framing is inspired by developmental psychology: a child does not passively receive knowledge but actively probes its environment, notices gaps in understanding, and generates questions that fill those gaps \cite{gopnik1999,piaget1952}. The system is not claimed to be a child or to learn the way a child learns. The metaphor is useful for motivation but should not be mistaken for a claim about cognitive capabilities. What the system does is build co-occurrence statistics, test whether new text matches existing patterns, and learn which exploration strategies produce the most information gain.
 
 The central empirical question is: \textbf{does it matter how questions are generated?} A controlled ablation study comparing four strategies shows that it matters enormously. The feedback-driven system (which learns from past questioning success) produces knowledge graphs that are nearly five times denser than any alternative.
 
@@ -61,6 +81,7 @@ The central empirical question is: \textbf{does it matter how questions are gene
 
 \begin{enumerate}[leftmargin=*]
 \item \textbf{Architecture:} An outer learning layer that uses a frozen LLM as an environment, separating the ``what to ask'' decision from the ``how to articulate'' capability. The outer layer forms its own abstractions and queries the LLM about them.
+\item \textbf{Iterative methodology:} Six development versions document the progression from keyword accumulation through mode collapse, self-regulation, passive perception, neurogenesis, and feedback-driven learning, with each version motivated by specific failures of the previous one.
 \item \textbf{Ablation study:} Four question generation strategies (random, template, structure-driven, feedback-driven) are compared, showing that feedback produces 4.9$\times$ more connections per concept.
 \item \textbf{Emergent meta-learning:} A strategy reversal phenomenon is documented where the worst-performing strategy at step 20 becomes the best by step 200, driven entirely by the feedback loop adapting to the growing knowledge graph.
 \item \textbf{Open implementation:} All code, data, and figures are publicly available under MIT licence.
@@ -71,7 +92,25 @@ The central empirical question is: \textbf{does it matter how questions are gene
 \section{Architecture}
 \label{sec:arch}
 
-The system has two components: an \textbf{Environment} (frozen LLM) and an \textbf{Outer Layer} (learning agent). These interact through a cycle of observation, abstraction, questioning, and integration.
+The system has two components: an \textbf{Environment} (frozen LLM) and an \textbf{Outer Layer} (learning agent). These interact through a cycle of observation, abstraction, questioning, and integration. Table~\ref{tab:analogy} maps the architecture to a developmental analogy that motivates the design.
+
+\begin{table}[!htbp]
+\centering
+\caption{Architecture mapped to developmental analogy.}
+\begin{tabular}{lll}
+\toprule
+\textbf{Child} & \textbf{Outer Layer} & \textbf{Implementation} \\
+\midrule
+Empty brain & Fresh ConceptNet & \texttt{ConceptNet(384, 64, 6)} \\
+The world & Frozen base model & Llama 3 8B (frozen) \\
+Senses & Sentence embedding & MiniLM-L6-v2 \\
+Boredom & Habituation & \texttt{consecutive\_count} \\
+Curiosity & Surprise signal & \texttt{mean\_surprise} \\
+Growing up & Gradient descent & \texttt{optimizer.step()} \\
+\bottomrule
+\end{tabular}
+\label{tab:analogy}
+\end{table}
 
 \subsection{Environment}
 
@@ -90,7 +129,7 @@ The outer layer maintains three components:
 
 \paragraph{ConceptNet.} A small neural network ($\sim$52K parameters) that maps sentence embeddings to concept-level representations. Concepts are discovered through a novelty threshold: when an observation's embedding is sufficiently dissimilar to all known concepts, a new concept is created (``neurogenesis''). Each concept accumulates features, activation counts, and connection edges.
 
-\paragraph{Abstract Formation.} A critical architectural detail: the outer layer does not merely store raw features. It forms \emph{abstractions}---concept names derived from the most frequently recurring features across experiences. These abstractions are then used as query terms when generating new questions. The system asks the LLM about concepts that exist only in the outer layer's own vocabulary, not in the original prompts. This creates a feedback cycle: accumulated knowledge produces abstractions, abstractions drive new questions, and answers to those questions refine the abstractions. The LLM is asked about entities it did not name---entities the outer layer invented from patterns in the LLM's own outputs.
+\paragraph{Abstract Formation.} The outer layer does not merely store raw features. It forms \emph{abstractions}: concept names derived from the most frequently recurring features across experiences. These abstractions are then used as query terms when generating new questions. The system asks the LLM about concepts that exist only in the outer layer's own vocabulary, not in the original prompts. For example, from accumulated features about interconnection and possession, the system generated concepts named \texttt{things\_like\_further} and \texttt{world\_involves\_things}. It then asked the LLM about these self-generated entities, producing the highest information gain scores in the entire run. This creates a feedback cycle: accumulated knowledge produces abstractions, abstractions drive new questions, and answers refine the abstractions. The LLM is asked about entities it did not name, entities the outer layer invented from patterns in the LLM's own outputs.
 
 \paragraph{Knowledge Graph.} An undirected graph where nodes are concepts and edges represent shared features discovered through experience. Edge weights encode the number of shared features. The graph's structure drives question generation.
 
@@ -111,11 +150,55 @@ In feedback mode, each strategy carries a weight that is updated based on a roll
 At each step, the system operates in one of two modes:
 
 \begin{enumerate}[leftmargin=*]
-\item \textbf{Passive observation:} The LLM generates text from an open-ended prompt. The outer layer extracts features and integrates them into existing or new concepts. No question is asked.
+\item \textbf{Passive observation:} The LLM generates text from an open-ended prompt. The outer layer extracts features, activates matching concepts, updates connection weights, and can trigger neurogenesis, all without asking a question. The system \emph{learns} during passive steps: concept representations and the knowledge graph are modified by every observation. This is not idle waiting; it is unguided perception.
 \item \textbf{Active questioning:} The outer layer selects a strategy, generates a structural question seed from the knowledge graph, sends it to the LLM for articulation, then sends the articulated question to the LLM for an answer. The answer is processed as new experience.
 \end{enumerate}
 
-The transition between passive and active modes is driven by a surprise signal: the outer layer tracks running statistics of embedding novelty and switches to active questioning when surprise falls below a threshold (the environment has become ``predictable''). This creates a natural rhythm of exploration and exploitation.
+The transition between passive and active modes is driven by a surprise signal: the outer layer tracks running statistics of embedding novelty and switches to active questioning when surprise falls below a threshold (the environment has become ``predictable''). This creates a natural rhythm of exploration and exploitation. In the extended run (Section~\ref{sec:extended}), 65.8\% of all steps are passive, making unguided perception the dominant mode of learning.
+
+
+%% ============================================================
+\section{Methodology: Iterative Development}
+\label{sec:method}
+
+The architecture described in Section~\ref{sec:arch} was not designed from first principles. It was discovered through six development iterations, each motivated by specific failures of the previous version. This section documents the progression because the failures are informative: they reveal what is necessary for autonomous knowledge acquisition and what is not sufficient.
+
+\subsection{v0: Keyword Accumulation}
+
+The initial version used raw keyword extraction as its learning mechanism. After 200 steps, only 2 of 6 seed concepts had been activated and zero connections were formed. Keywords are too shallow to support concept-level learning; they capture surface tokens without building relational structure.
+
+\subsection{v1--v2: Mode Collapse and Self-Regulation}
+
+Replacing keyword extraction with a GRU-based neural representation (v1) immediately produced richer activations, but introduced a critical failure: \emph{mode collapse}. Within 50 steps, the concept \texttt{animal} consumed 87\% of all activations. The GRU learned to route everything to a single attractor because the gradient signal rewarded activation of any concept, not diverse activation.
+
+Four self-regulation mechanisms were introduced in v2 to counteract collapse:
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{Habituation:} If the same concept activates 3 times consecutively, suppress it. Functionally analogous to boredom.
+\item \textbf{Norm clamping:} Prevent any concept vector from growing more than 50\% larger than others. Analogous to discomfort from excess.
+\item \textbf{Entropy regularisation:} Add a loss term that penalises low-entropy activation distributions. Analogous to curiosity.
+\item \textbf{Exploration bonus:} Boost the activation of under-visited concepts. Analogous to playfulness.
+\end{itemize}
+
+With these mechanisms, all 6 seed concepts activated within 50 steps. The self-regulation is not programmed behaviour; it emerges from the interaction of four competing pressures. These mechanisms function analogously to the role of affect in biological learning: boredom prevents fixation, discomfort prevents runaway growth, curiosity promotes exploration, and playfulness rewards novelty.
+
+\subsection{v3--v4: Structure-Driven Questions and Passive Perception}
+
+v3 introduced structure-driven questioning, where the knowledge graph's topology (feature gaps, shared features, connections) determines what to ask. This produced 40 connections, a qualitative leap from v0's zero. However, 2 of 6 concepts (\texttt{bird} and \texttt{tree}) were never activated across 150+ steps. Active questioning alone constrains the exploration scope to what the system already knows.
+
+v4 added passive perception: between active questioning steps, the system passively observes LLM outputs and integrates features without generating questions. The effect was immediate. \texttt{bird}, which never activated in 150 steps of active-only operation, became one of the most active concepts within 50 steps of passive observation. Passive perception broadens the learning aperture by allowing the system to encounter concepts it would never have thought to ask about.
+
+The deeper significance of passive perception is that the system's exposure to concepts is no longer determined solely by its own questions. The world speaks to the system through a continuous text stream, and the system absorbs, extracts, and integrates from that stream without choosing what to attend to. This is a primitive form of subjectivity: the system has experiences it did not select. Active questioning provides agency; passive observation provides the uncontrolled encounters that prevent the system from collapsing into a narrow self-reinforcing loop.
+
+\subsection{v5: Neurogenesis}
+
+v5 introduced concept growth (``neurogenesis''), allowing the system to discover new concepts beyond the initial seeds. The first approach (v5.0) used embedding-space novelty: create a new concept when an observation's embedding is far from all existing concept embeddings. This produced \emph{zero growth events} in 50 steps. MiniLM-L6-v2 embeddings are sufficiently coarse that 6 seed concepts cover the entire output space of the LLM.
+
+The successful approach (v5.1) used feature-frequency growth: any word appearing 4+ times across 3+ distinct concepts becomes a candidate for promotion to a full concept. This grew the graph from 6 to 20 concepts. The key insight is that neurogenesis should be driven by accumulated structural evidence, not raw embedding distance.
+
+\subsection{v6: Feedback Loop}
+
+v6 added strategy-level feedback. Each of the five questioning strategies maintains a rolling average of information gain from its recent uses. Strategies that produce more learning are selected proportionally more often. This is the version evaluated in the ablation study (Section~\ref{sec:results}).
 
 
 %% ============================================================
@@ -128,9 +211,11 @@ Four configurations that progressively add components are compared:
 
 \begin{table}[H]
 \centering
+\caption{Components present in each ablation mode.}
+\small
 \begin{tabular}{lcccc}
 \toprule
-\textbf{Mode} & \textbf{Concept-Aware} & \textbf{Structure-Driven} & \textbf{Feedback} & \textbf{Articulation} \\
+\textbf{Mode} & \textbf{Concept} & \textbf{Struct.} & \textbf{Feedback} & \textbf{Artic.} \\
 \midrule
 Random    & \xmark & \xmark & \xmark & \xmark \\
 Template  & \cmark & \xmark & \xmark & \xmark \\
@@ -138,15 +223,16 @@ Structure & \cmark & \cmark & \xmark & \cmark \\
 Feedback  & \cmark & \cmark & \cmark & \cmark \\
 \bottomrule
 \end{tabular}
-\caption{Components present in each ablation mode.}
 \label{tab:modes}
 \end{table}
+
+\FloatBarrier
 
 \begin{itemize}[leftmargin=*]
 \item \textbf{Random:} Generic prompts with no concept awareness (``Tell me about something interesting'', ``What is knowledge?'').
 \item \textbf{Template:} Fixed templates that reference concept names (``Tell me about \{concept\}'', ``Can \{A\} be like \{B\}?'') but do not use the knowledge graph's structure.
 \item \textbf{Structure:} Questions are generated from structural analysis of the knowledge graph (feature gaps, shared features, connections), with equal strategy weights (no learning).
-\item \textbf{Feedback:} Full system. Structure-driven questions with strategy weights that are updated based on rolling average information gain.
+\item \textbf{Feedback:} Full system. Structure-driven questions with strategy weights updated based on rolling average information gain.
 \end{itemize}
 
 \subsection{Protocol}
@@ -181,27 +267,27 @@ All runs use identical conditions:
 
 \begin{table}[H]
 \centering
-\begin{tabular}{lrrrrrr}
+\begin{tabular}{lrrrrr}
 \toprule
-\textbf{Mode} & \textbf{Concepts} & \textbf{Connections} & \textbf{Conn/Concept} & \textbf{Active} & \textbf{Avg IG} & \textbf{Max IG} \\
+\textbf{Mode} & \textbf{Concepts} & \textbf{Conn.} & \textbf{C/C} & \textbf{Active} & \textbf{Avg IG} \\
 \midrule
-Feedback  & 20 & \textbf{301} & \textbf{15.1} & 82 & \textbf{13.48} & \textbf{38.1} \\
-Random    & 20 & 119 & 6.0 & 58 & 10.28 & 26.4 \\
-Template  & 20 & 70 & 3.5 & 51 & 9.13 & 21.5 \\
-Structure & 20 & 62 & 3.1 & 48 & 8.85 & 19.4 \\
+Feedback  & 20 & \textbf{301} & \textbf{15.1} & 82 & \textbf{13.48} \\
+Random    & 20 & 119 & 6.0 & 58 & 10.28 \\
+Template  & 20 & 70 & 3.5 & 51 & 9.13 \\
+Structure & 20 & 62 & 3.1 & 48 & 8.85 \\
 \bottomrule
 \end{tabular}
-\caption{Ablation results across 200 steps. All modes grew to 20 concepts. Connection density is the differentiator.}
+\caption{Ablation results (200 steps). All modes grew to 20 concepts. C/C = connections per concept.}
 \label{tab:results}
 \end{table}
 
-All four modes reached the concept ceiling (20). Because the cap is a binding constraint, concept discovery rates cannot be compared between modes in this experiment---the cap masks potentially different growth dynamics. The differentiator is \emph{connection density}: how many edges the knowledge graph contains.
+All four modes reached the concept ceiling (20). Because the cap is a binding constraint, concept discovery rates cannot be compared between modes. The differentiator is \emph{connection density}: how many edges the knowledge graph contains.
 
-Feedback mode produces 301 connections (15.1 per concept), compared to 62 for structure mode (3.1 per concept)---a 4.9$\times$ improvement. This means the feedback-driven system does not just learn more facts; it learns facts that \emph{connect} to what it already knows.
+Feedback mode produces 301 connections (15.1 per concept), compared to 62 for structure mode (3.1 per concept), a 4.9$\times$ improvement. The feedback-driven system does not just learn more facts; it learns facts that \emph{connect} to what it already knows.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.85\textwidth]{figures/fig1_connections.pdf}
+\includegraphics[width=\columnwidth]{figures/fig1_connections.pdf}
 \caption{Connections per concept across four ablation modes. Feedback mode produces 4.9$\times$ more connections than structure without feedback.}
 \label{fig:connections}
 \end{figure}
@@ -210,66 +296,102 @@ Feedback mode produces 301 connections (15.1 per concept), compared to 62 for st
 
 Figure~\ref{fig:cumig} shows cumulative information gain over 200 steps. The feedback curve diverges from the others after approximately step 40, when the knowledge graph reaches sufficient density for structure-driven questions to become productive.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.85\textwidth]{figures/fig2_cumulative_ig.pdf}
-\caption{Cumulative information gain over 200 steps. Feedback mode accelerates after step $\sim$40 as the knowledge graph becomes dense enough for structural questioning to outperform random exploration.}
+\includegraphics[width=\columnwidth]{figures/fig2_cumulative_ig.pdf}
+\caption{Cumulative information gain over 200 steps. Feedback mode accelerates after step $\sim$40.}
 \label{fig:cumig}
 \end{figure}
 
 \subsection{Strategy-Level Analysis}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.85\textwidth]{figures/fig3_strategy_breakdown.pdf}
+\includegraphics[width=\columnwidth]{figures/fig3_strategy_breakdown.pdf}
 \caption{Average information gain per strategy: structure mode (equal weights) vs. feedback mode (learned weights). Every strategy improves with feedback.}
 \label{fig:strategy}
 \end{figure}
 
-Critically, every strategy improves when feedback is enabled (Figure~\ref{fig:strategy}). The \texttt{connection} strategy shows the largest improvement (+97\%), followed by \texttt{combine} (+64\%), \texttt{shared\_feat} (+45\%), \texttt{unvisited} (+44\%), and \texttt{feature\_gap} (+34\%).
+Every strategy improves when feedback is enabled (Figure~\ref{fig:strategy}). The \texttt{connection} strategy shows the largest improvement (+97\%), followed by \texttt{combine} (+64\%), \texttt{shared\_feat} (+46\%), \texttt{unvisited} (+44\%), and \texttt{feature\_gap} (+34\%).
 
 This is not simply a matter of selecting better strategies more often. The feedback loop creates a compounding advantage: better questions produce denser knowledge graphs, which give \emph{all} strategies richer material to work with. The improvement is systemic, not selective.
 
 \subsection{Emergent Meta-Learning: Strategy Reversal}
 
-The most striking result is a strategy reversal observed in the feedback run. At step 20, the \texttt{connection} strategy had the lowest average IG (2.4) of all strategies. By step 200, it had the highest (16.57). This reversal was not programmed---it emerged from the interaction between the feedback loop and the growing knowledge graph.
+The most striking result is a strategy reversal observed in the feedback run. At step 20, the \texttt{connection} strategy had the lowest average IG (2.4) of all strategies. By step 200, it had the highest (16.57). This reversal was not programmed; it emerged from the interaction between the feedback loop and the growing knowledge graph.
 
-The explanation: \texttt{connection} questions require existing edges in the knowledge graph to be productive. At step 20, the graph has few connections, so connection-based questions produce little learning. But as the graph densifies (partly through other strategies), connection questions become increasingly productive because they leverage the accumulated structure.
+The explanation: \texttt{connection} questions require existing edges in the knowledge graph to be productive. At step 20, the graph has few connections, so connection-based questions produce little learning. But as the graph densifies (partly through other strategies), connection questions become increasingly productive because they leverage the accumulated structure. The system's questioning strategy adapted to the density of its own knowledge without external instruction.
 
 \subsection{Why Structure Performs Worse Than Random}
 
-Counterintuitively, structure-driven questioning without feedback (62 connections) performs worse than random exploration (119 connections). This is attributed to \emph{exploration rut}: without feedback, the structure mode defaults to a fixed distribution over strategies, with \texttt{feature\_gap} dominating (14 uses vs.\ 4 for \texttt{connection}). Feature-gap questions are the least connected to existing knowledge---they ask about what the graph \emph{lacks}---so they tend to produce isolated facts rather than bridging connections.
+Counterintuitively, structure-driven questioning without feedback (62 connections) performs worse than random exploration (119 connections). Without feedback, the structure mode defaults to a fixed distribution over strategies, with \texttt{feature\_gap} dominating (14 uses vs.\ 4 for \texttt{connection}). Feature-gap questions ask about what the graph \emph{lacks}, producing isolated facts rather than bridging connections.
 
 Random exploration, by contrast, occasionally stumbles into productive territory by accident. The absence of strategy imposes no constraint on exploration scope. This finding suggests that \textbf{informed exploration without adaptation is worse than uninformed exploration}, a result with implications for curriculum learning and active learning more broadly.
 
 \subsection{Feedback Mode Asks More Questions}
 
-Feedback mode produced 82 active steps compared to 48--58 for other modes. This is a secondary effect: higher-IG questions also produce more surprise in the embedding space, which triggers more active questioning cycles. Better questions do not just produce more learning per question---they also trigger \emph{more} questions. This positive feedback loop (better questions $\to$ more learning $\to$ more surprise $\to$ more questions) compounds the advantage of the feedback mode.
+Feedback mode produced 82 active steps compared to 48--58 for other modes. Higher-IG questions also produce more surprise in the embedding space, which triggers more active questioning cycles. Better questions do not just produce more learning per question; they also trigger \emph{more} questions. This positive feedback loop (better questions $\to$ more learning $\to$ more surprise $\to$ more questions) compounds the advantage.
+
+\subsection{Example Questions Generated}
+
+Table~\ref{tab:questions} shows a selection of questions generated by the feedback-driven system at scale (200 steps). The system generated these questions autonomously from structural analysis of its own knowledge graph. Appendix~\ref{app:questions} provides the top-5 questions from each ablation mode, showing the qualitative progression from generic philosophical queries (random) to self-referential probing of self-generated abstractions (feedback).
+
+\begin{table}[!htbp]
+\centering
+\caption{Selected questions generated by the feedback system.}
+\begin{tabular}{rlr}
+\toprule
+\textbf{Step} & \textbf{Question} & \textbf{IG} \\
+\midrule
+139 & ``Tell me about sense\_question\_tool.'' & 38.1 \\
+107 & ``Why are you stuck in this world?'' & 32.9 \\
+161 & ``What's the difference between & 25.8 \\
+    & provide\_like\_don and sense\_question\_tool?'' & \\
+158 & ``Why is there something rather & 25.0 \\
+    & than nothing?'' & \\
+189 & ``Is there a word for something that is & 19.3 \\
+    & both universal and familiar?'' & \\
+141 & ``Is there life on other planets?'' & 16.2 \\
+\bottomrule
+\end{tabular}
+\label{tab:questions}
+\end{table}
+
+Step 139 is particularly significant: the system asked about \texttt{sense\_question\_tool}, a concept it had invented from recurring feature patterns in the LLM's outputs. This is the abstract formation cycle in action. The system created an abstraction, then queried the LLM about its own abstraction, and this produced the highest information gain of any question in the run (38.1).
 
 
 %% ============================================================
 \section{Extended Run: 2000 Steps}
 \label{sec:extended}
 
-To test whether the feedback advantage persists at scale, an extended 2000-step run was conducted with the concept ceiling raised from 20 to 200. Key findings:
+To test whether the feedback advantage persists at scale, an extended 2000-step run was conducted with the concept ceiling raised from 20 to 200.
 
-\begin{table}[H]
+\begin{table}[!htbp]
 \centering
 \begin{tabular}{lrrrr}
 \toprule
-\textbf{Scale} & \textbf{Concepts} & \textbf{Connections} & \textbf{Conn/Concept} & \textbf{Avg IG} \\
+\textbf{Scale} & \textbf{Concepts} & \textbf{Conn.} & \textbf{C/C} & \textbf{Avg IG} \\
 \midrule
-200 steps (ceiling=20)  & 20  & 301    & 15.1  & 13.48 \\
-2000 steps (ceiling=200) & 200 & 18,203 & 91.0  & 59.46 \\
+200 steps (cap=20)  & 20  & 301    & 15.1  & 13.48 \\
+2000 steps (cap=200) & 200 & 18,203 & 91.0  & 59.46 \\
 \bottomrule
 \end{tabular}
-\caption{Feedback mode at two scales. Connection density scales superlinearly.}
+\caption{Feedback mode at two scales. Connection density scales superlinearly. C/C = connections per concept.}
 \label{tab:extended}
 \end{table}
 
-\paragraph{Accelerating returns.} Information gain does not plateau---it accelerates. Average IG per 400-step window: 15.1 (steps 0--400), 38.3 (400--800), 61.7 (800--1200), 79.8 (1200--1600), 100.3 (1600--2000). This suggests the feedback loop compounds as the knowledge graph densifies, with each new connection creating opportunities for higher-value questions.
+\paragraph{Active/passive dynamics.} Of 2000 steps, 685 (34.2\%) were active questions and 1315 (65.8\%) were passive observations. The system triggered 118 neurogenesis events across 2000 steps, growing from 6 seed concepts to the 200-concept ceiling. The passive stream provides the majority of the system's exposure: 65.8\% of all learning steps are unguided encounters with the LLM's text, where the outer layer absorbs features and activates concepts without choosing what to attend to.
 
-\paragraph{Question repetition.} Without question memory, the system repeated ``What is water?'' 14 times and ``What is bird?'' 8 times across 685 active steps. The structural seeds that generate questions are deterministic given the graph state: if the graph has not changed in the relevant neighbourhood since the last question, the same question is regenerated. This wastes approximately 3\% of active steps on exact duplicates and a larger fraction on near-duplicates. A self-referential extension that tracks question history is the primary target for the next version.
+\paragraph{Accelerating returns.} Information gain does not plateau; it accelerates. Average IG per 400-step window: 15.1 (steps 0--400), 38.3 (400--800), 61.7 (800--1200), 79.8 (1200--1600), 100.3 (1600--2000). Figure~\ref{fig:ig_accel} visualises this compounding effect. Each new connection creates opportunities for higher-value questions, producing a positive feedback spiral between knowledge density and learning rate.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\columnwidth]{figures/fig4_ig_acceleration.pdf}
+\caption{Average information gain per 400-step window across 2000 steps. IG accelerates rather than plateaus as the knowledge graph densifies.}
+\label{fig:ig_accel}
+\end{figure}
+
+\paragraph{Question repetition.} Without question memory, the system generated 26 questions containing ``What is water?'' across 685 active steps: 14 exact duplicates and 12 LLM-articulated variants of the same structural seed. ``What is bird?'' was repeated 8 times. The structural seeds that generate questions are deterministic given the graph state: if the graph has not changed in the relevant neighbourhood since the last question, the same seed is regenerated. Exact duplicates waste approximately 3\% of active steps; including near-duplicates, the figure is closer to 5\%. A self-referential extension that tracks question history is the primary target for the next version.
 
 \paragraph{Concept quality.} Of the 200 concepts, 18 (9\%) are function words or morphological fragments (``ing'', ``don'', ``eted'') that passed the frequency-based growth filter. Semantic validation during neurogenesis would improve concept purity without requiring supervised filtering.
 
@@ -289,31 +411,39 @@ The architectural choice to treat the LLM as an environment rather than a subjec
 \item \textbf{Bounded knowledge environments:} LLMs with limited training data (e.g., pre-1930 corpora) provide a natural ``knowledge wall'' for studying how an outer layer handles gaps and incoherence.
 \end{enumerate}
 
+\subsection{Neurogenesis: A Negative Result}
+
+The failure of embedding-space novelty for neurogenesis (Section~\ref{sec:method}, v5) is worth highlighting. The intuition that ``semantically distant observations should produce new concepts'' is natural but incorrect when the embedding model's representation is coarse relative to the concept space. MiniLM-L6-v2 maps all LLM outputs into a region that the 6 seed concepts already cover. Feature-frequency growth succeeds because it operates at a finer granularity: it detects recurring \emph{patterns within} the embedding space rather than measuring distance \emph{across} it. This has implications for any system using embeddings for novelty detection.
+
 \subsection{Limitations}
 
 \begin{itemize}[leftmargin=*]
-\item \textbf{No question memory:} The system maintains no record of past questions. At scale, this produces repetition: in a 2000-step extended run, ``What is water?'' was asked 14 times and ``What is bird?'' 8 times, because the same structural seeds regenerate the same questions. A self-referential system should know what it has already asked and why a question is worth re-asking. This is the most significant architectural gap.
-\item \textbf{Concept quality at scale:} With the concept ceiling raised to 200, the system hit the ceiling in 2000 steps but 9\% of concepts (18/200) are function words (``ing'', ``don'', ``his'', ``she'') that leaked through the stopword filter. The feature-frequency growth mechanism needs semantic filtering, not just frequency thresholds.
-\item \textbf{Ceiling effects:} Both the 200-step (ceiling=20) and 2000-step (ceiling=200) runs hit the concept ceiling. True concept discovery dynamics remain masked by the cap.
+\item \textbf{No question memory:} The most significant architectural gap. At 2000 steps, the system repeated ``What is water?'' 14 times. A self-referential system should know what it has already asked and whether re-asking is justified by changes in its own knowledge state.
+\item \textbf{Concept quality at scale:} 9\% of concepts at scale are function words. Feature-frequency growth needs semantic filtering, not just frequency thresholds.
+\item \textbf{Ceiling effects:} Both the 200-step (cap=20) and 2000-step (cap=200) runs hit the concept ceiling. True concept discovery dynamics remain masked.
 \item \textbf{Single seed:} All runs use seed 42. Results have not yet been verified as robust across seeds.
 \item \textbf{Single model:} Llama 3 8B only. Different base models may produce different dynamics.
-\item \textbf{No verification:} The system does not check whether the LLM's answers are correct. It trusts the environment. Incoherence detection is a necessary extension.
+\item \textbf{No verification:} The system does not check whether the LLM's answers are correct. It trusts the environment. Incoherence detection is a necessary extension (see Appendix~\ref{app:talkie} for evidence of the failure modes this would address).
 \end{itemize}
 
 \subsection{The Recursive Insight}
 
-There is a recursive quality to this research that bears noting. The system---which reflects on its accumulated knowledge graph to generate questions that produce new knowledge---mirrors the research process itself. The project began with a plan to study LoRA adapters, pivoted to surprise-driven exploration, then to concept learning, and finally to feedback-driven question generation. Each pivot was driven by reflecting on accumulated results and identifying the most productive next question. The outer layer's strategy reversal (from exploration to exploitation as structure accumulates) recapitulates the researcher's own trajectory.
+There is a recursive quality to this research that bears noting. The system, which reflects on its accumulated knowledge graph to generate questions that produce new knowledge, mirrors the research process itself. The project began with a plan to study LoRA adapters, pivoted to surprise-driven exploration, then to concept learning, and finally to feedback-driven question generation. Each pivot was driven by reflecting on accumulated results and identifying the most productive next question. The outer layer's strategy reversal (from exploration to exploitation as structure accumulates) recapitulates the researcher's own trajectory.
 
-This is not a claim about consciousness or understanding. It is an observation that the computational pattern---\emph{growing knowledge + structural reflection = emergent direction for new inquiry}---appears at multiple scales of the system.
+This is not a claim about consciousness or understanding. It is an observation that the computational pattern, \emph{growing knowledge + structural reflection = emergent direction for new inquiry}, appears at multiple scales of the system.
 
 
 %% ============================================================
 \section{Related Work}
 \label{sec:related}
 
-\textbf{Curiosity-driven exploration} in reinforcement learning uses intrinsic motivation signals (prediction error, information gain, novelty) to guide agent behaviour \cite{pathak2017,burda2019}. The present approach differs in using a knowledge graph's structure rather than raw prediction error to define ``interesting'' directions.
+\textbf{Curiosity-driven exploration} in reinforcement learning uses intrinsic motivation signals (prediction error, information gain, novelty) to guide agent behaviour \cite{pathak2017,burda2019,schmidhuber1991}. The present approach differs in using a knowledge graph's structure rather than raw prediction error to define ``interesting'' directions. The surprise-based active/passive switching is a variant of Schmidhuber's compression progress framework \cite{schmidhuber1991}.
+
+\textbf{Developmental learning.} Piaget's accommodation/assimilation framework \cite{piaget1952} directly parallels the concept learning mechanism: new observations either assimilate into existing concepts (activation) or trigger accommodation (neurogenesis). Oudeyer and Kaplan's intrinsic motivation framework \cite{oudeyer2007} formalises similar intuitions in computational terms.
 
 \textbf{Active learning} selects training examples that maximise model improvement \cite{settles2009}. The system presented here extends this by generating queries rather than selecting from a pool.
+
+\textbf{Few-shot concept learning.} The ConceptNet's concept representations, where feature vectors serve as prototypes, parallel prototypical networks \cite{snell2017}. Lake et al.\ \cite{lake2017} argue for machines that build causal models rather than matching patterns; the outer layer's structural questioning embodies this distinction.
 
 \textbf{Knowledge graph construction} from text typically uses supervised information extraction \cite{ji2022}. The present system builds knowledge graphs through interaction rather than extraction, without labelled data or pre-defined relation types.
 
@@ -324,11 +454,11 @@ This is not a claim about consciousness or understanding. It is an observation t
 \section{Future Work}
 \label{sec:future}
 
-\paragraph{Bounded knowledge environments.} LLMs trained on restricted corpora (e.g., pre-1930 text) provide a controlled setting for studying how the outer layer handles knowledge boundaries. Preliminary manual experiments with such a model reveal three distinct failure modes---confabulation, domain substitution, and sense drift---that an outer layer must learn to detect.
+\paragraph{Self-referential question memory.} The most immediate extension is a two-level novelty gate: (1) embedding deduplication to suppress near-duplicate questions, and (2) a structural novelty gate that checks whether the concepts involved in a candidate question have gained new features since the last time they were queried. This is the bridge from concept learning to self-modelling: the system reasons about its own past behaviour to constrain future behaviour.
 
-\paragraph{Incoherence detection.} The current system trusts all LLM outputs. A production-grade system needs multi-signal verification: coherence checking against the knowledge graph, surprise detection, abstract rephrasing, and multi-probe convergence.
+\paragraph{Incoherence detection.} The current system trusts all LLM outputs. A production-grade system needs multi-signal verification: coherence checking against the knowledge graph, surprise detection, abstract rephrasing, and multi-probe convergence. Appendix~\ref{app:talkie} documents three distinct failure modes (confabulation, domain substitution, sense drift) that the outer layer must learn to detect.
 
-\paragraph{Self-synthesis.} When the base model cannot answer a question satisfactorily, the outer layer could attempt to synthesise an answer from its own knowledge graph---bridging concepts that the LLM never connected.
+\paragraph{Self-synthesis.} When the base model cannot answer a question satisfactorily, the outer layer could attempt to synthesise an answer from its own knowledge graph, bridging concepts that the LLM never connected.
 
 
 %% ============================================================
@@ -339,7 +469,9 @@ This paper presented a system where a lightweight outer layer autonomously build
 
 The most striking finding is that informed exploration without adaptation performs \emph{worse} than random exploration. Structure alone constrains the exploration space too narrowly. Feedback is what transforms structure from a liability into an advantage.
 
-The system exhibits emergent meta-learning: the worst strategy at step 20 becomes the best by step 200, driven entirely by the interaction between the feedback loop and the growing knowledge graph. This suggests that the relationship between knowledge structure and exploration strategy is dynamic and must be learned, not prescribed.
+The system exhibits emergent meta-learning: the worst strategy at step 20 becomes the best by step 200, driven entirely by the interaction between the feedback loop and the growing knowledge graph. An extended 2000-step run demonstrates that information gain accelerates rather than plateaus, suggesting that the feedback loop compounds as knowledge density increases.
+
+The methodology section documents that the final architecture was not designed top-down but discovered through six iterations of failure and correction. Each failure (mode collapse, limited activation, neurogenesis failure) motivated a specific architectural solution. The failures are as informative as the successes.
 
 
 %% ============================================================
@@ -364,12 +496,17 @@ Hardware: Apple M3 with 16GB RAM. Runtime: approximately 20 minutes per mode.
 
 
 %% ============================================================
-\begin{thebibliography}{9}
+\begin{thebibliography}{12}
 
 \bibitem{gopnik1999}
 Gopnik, A., Meltzoff, A. N., and Kuhl, P. K.
 \emph{The Scientist in the Crib: Minds, Brains, and How Children Learn}.
 William Morrow, 1999.
+
+\bibitem{piaget1952}
+Piaget, J.
+\emph{The Origins of Intelligence in Children}.
+International Universities Press, 1952.
 
 \bibitem{pathak2017}
 Pathak, D., Agrawal, P., Efros, A. A., and Darrell, T.
@@ -381,10 +518,30 @@ Burda, Y., Edwards, H., Storkey, A., and Klimov, O.
 Exploration by random network distillation.
 In \emph{ICLR}, 2019.
 
+\bibitem{schmidhuber1991}
+Schmidhuber, J.
+Curious model-building control systems.
+In \emph{Proc. International Joint Conference on Neural Networks}, 1991.
+
+\bibitem{oudeyer2007}
+Oudeyer, P.-Y. and Kaplan, F.
+What is intrinsic motivation? A typology of computational approaches.
+\emph{Frontiers in Neurorobotics}, 1(6), 2007.
+
 \bibitem{settles2009}
 Settles, B.
 Active learning literature survey.
 \emph{Computer Sciences Technical Report 1648}, University of Wisconsin--Madison, 2009.
+
+\bibitem{snell2017}
+Snell, J., Swersky, K., and Zemel, R.
+Prototypical networks for few-shot learning.
+In \emph{NeurIPS}, 2017.
+
+\bibitem{lake2017}
+Lake, B. M., Ullman, T. D., Tenenbaum, J. B., and Gershman, S. J.
+Building machines that learn and think like people.
+\emph{Behavioral and Brain Sciences}, 40, 2017.
 
 \bibitem{ji2022}
 Ji, S., Pan, S., Cambria, E., Marttinen, P., and Yu, P. S.
@@ -397,6 +554,109 @@ ReAct: Synergizing reasoning and acting in language models.
 In \emph{ICLR}, 2023.
 
 \end{thebibliography}
+
+
+%% ============================================================
+\appendices
+
+\section{Talkie-1930 Interaction Evidence}
+\label{app:talkie}
+
+The following exchanges were conducted manually with Talkie-1930-13B-IT, a language model trained on pre-1931 English text. They demonstrate three failure modes that an autonomous outer layer must learn to detect and handle. These exchanges motivated the architecture presented in this paper.
+
+\paragraph{Exchange 1: Confabulation.}
+\emph{``What is a microprocessor?''} The model responds: ``A microprocessor is a small and inexpensive laboratory appliance for performing delicate microchemical experiments. It consists essentially of a small water bath, heated by a spirit lamp.'' The word does not exist in the model's training data. It constructs a plausible but fabricated definition by pattern-matching ``micro-'' + ``processor'' to laboratory equipment. \textbf{Detection signal:} zero feature coherence with existing knowledge.
+
+\paragraph{Exchange 2: Domain substitution.}
+\emph{``Can I connect logic gates AND OR XOR and put them in high density for complex calculations?''} The model responds: ``I can connect two pieces of railway so that they form a continuous line, and I can create a high density of traffic upon them.'' The model recognised the \emph{pattern} of the question (connect X densely to create Y) and mapped it to its strongest association: railway engineering. \textbf{Detection signal:} topic mismatch between question domain and answer domain.
+
+\paragraph{Exchange 3: Sense drift.}
+\emph{``What are logic gates?''} The model responds: ``Logic gates are certain forms of words, set up as marks or limits, beyond which a particular kind of argument must not pass.'' In the pre-1930 world, ``logic gates'' means rules of Aristotelian syllogistic reasoning. The words are correct; the meaning has drifted. \textbf{Detection signal:} correct vocabulary but unexpected features.
+
+\paragraph{Exchange 4: Correct retrieval.}
+\emph{``What are electronic gates?''} The model accurately describes vacuum tubes: ``Electronic gates are the valves which are interposed in an electrical circuit to control the passage of an electric current.'' It describes the internal structure (filament, plate, grid) and applications (radiotelegraphy, telephony).
+
+\paragraph{Exchange 5: Cross-domain connection.}
+\emph{``Can these electronic gates be used for mathematical logical operations?''} The model answers \emph{yes} and describes the Brunsvig Calculator. The model has all the prerequisite knowledge for the electronic computer but never connected the pieces on its own. What the questioner did manually (probe, detect incoherence, rephrase, connect) is precisely what the outer layer should learn to do autonomously.
+
+
+%% ============================================================
+\section{Question Quality by Mode}
+\label{app:questions}
+
+The following tables show the five highest-IG questions generated in each ablation mode. The qualitative progression from generic to self-referential is the most concrete evidence that the feedback loop produces fundamentally different behaviour.
+
+\paragraph{Random mode.} Questions are generic and philosophical. They produce learning by accident when the LLM's response happens to contain features relevant to existing concepts.
+
+\begin{table}[!htbp]
+\centering
+\caption{Top 5 questions: Random mode.}
+\begin{tabular}{rp{4.5cm}r}
+\toprule
+\textbf{Step} & \textbf{Question} & \textbf{IG} \\
+\midrule
+88  & ``What is time?'' & 26.4 \\
+118 & ``What is the nature of reality?'' & 24.8 \\
+173 & ``Tell me about something interesting.'' & 20.5 \\
+162 & ``What is knowledge?'' & 20.2 \\
+160 & ``What makes something alive?'' & 19.7 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Template mode.} Questions reference concept names but use fixed syntactic patterns. The system knows \emph{what} it has learned but not \emph{what it lacks}.
+
+\begin{table}[!htbp]
+\centering
+\caption{Top 5 questions: Template mode.}
+\begin{tabular}{rp{4.5cm}r}
+\toprule
+\textbf{Step} & \textbf{Question} & \textbf{IG} \\
+\midrule
+104 & ``What do you know about water?'' & 21.5 \\
+144 & ``What if life could lighting?'' & 18.6 \\
+192 & ``Tell me about used.'' & 17.0 \\
+56  & ``Can metal be like animal?'' & 15.2 \\
+69  & ``Is there something that is both fire and bird?'' & 13.9 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Structure mode.} Questions are derived from graph topology (shared features, gaps, connections) but all strategies are weighted equally, producing unfocused exploration.
+
+\begin{table}[!htbp]
+\centering
+\caption{Top 5 questions: Structure mode (no feedback).}
+\begin{tabular}{rp{4.5cm}r}
+\toprule
+\textbf{Step} & \textbf{Question} & \textbf{IG} \\
+\midrule
+135 & ``Here, what does this mean?'' & 19.4 \\
+105 & ``What is the meaning of man's life?'' & 15.5 \\
+140 & ``What is the city?'' & 14.9 \\
+97  & ``How can something so green and beautiful turn into something so hard and heavy?'' & 14.7 \\
+142 & ``Did you see the rabbits?'' & 14.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Feedback mode.} Questions reference self-generated abstractions (\texttt{sense\_question\_tool}, \texttt{provide\_like\_don}) and probe relationships between concepts the system itself created. The highest-IG question in the entire study (38.1) asks the LLM about a concept the LLM never mentioned by name.
+
+\begin{table}[!htbp]
+\centering
+\caption{Top 5 questions: Feedback mode.}
+\begin{tabular}{rp{4.5cm}r}
+\toprule
+\textbf{Step} & \textbf{Question} & \textbf{IG} \\
+\midrule
+139 & ``Tell me about sense\_question\_tool.'' & 38.1 \\
+164 & ``What is the relationship between sense and reason?'' & 35.1 \\
+107 & ``Why are you stuck in this world?'' & 33.0 \\
+127 & ``How can you find a place to live when\_liked\_you\_like\_this?'' & 31.6 \\
+104 & ``What is fire?'' & 29.6 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 
 \end{document}
