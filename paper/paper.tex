@@ -45,8 +45,7 @@
 }
 \makeatother
 
-\title{\textbf{Learning to Ask: Autonomous Knowledge Acquisition\\Using a Frozen Language Model as Environment}\\[0.5em]
-\large Using Language Models as Environments for Concept Learning}
+\title{\textbf{Learning to Ask: Autonomous Knowledge Acquisition\\Using a Frozen Language Model as Environment}}
 \author{
     \IEEEauthorblockN{Mohit Aggarwal}
     \IEEEauthorblockA{
@@ -61,7 +60,7 @@
 
 
 \begin{abstract}
-This paper presents an architecture where a lightweight outer learning layer uses a frozen large language model (LLM) as an environment for autonomous knowledge acquisition. The outer layer observes the LLM's outputs, extracts concepts and features, builds a knowledge graph, and generates questions driven by the graph's own structural gaps. Crucially, the outer layer forms its own abstractions (concept names derived from recurring feature patterns) and then queries the LLM about these self-generated abstractions, creating a cycle where learned structure drives new inquiry. A feedback loop tracks which question strategies produce the most learning and adapts accordingly. In a four-way ablation study over 200 steps, results show that (1) the feedback-driven system produces \textbf{4.9$\times$ denser knowledge graphs} than structure-driven questioning without feedback, (2) every question strategy improves by 34--97\% when feedback is enabled, and (3) structure alone performs worse than random exploration, suggesting that adaptive strategy selection is essential for productive autonomous learning. An extended 2000-step run demonstrates that information gain accelerates rather than plateaus as the knowledge graph densifies. All code and data are publicly available.
+This paper presents an architecture where a lightweight outer learning layer uses a frozen large language model (LLM) as an environment for autonomous knowledge acquisition. The outer layer observes the LLM's outputs, extracts concepts and features, builds a knowledge graph, and generates questions driven by the graph's own structural gaps. Crucially, the outer layer generates its own concepts (labels derived from recurring feature co-occurrence) and then queries the LLM about these self-generated entities, creating a cycle where learned structure drives new inquiry. A feedback loop tracks which question strategies produce the most learning and adapts accordingly. In a four-way ablation study over 200 steps, results show that (1) the feedback-driven system produces \textbf{4.9$\times$ denser knowledge graphs} than structure-driven questioning without feedback, (2) every question strategy improves by 34--97\% when feedback is enabled, and (3) structure alone performs worse than random exploration, suggesting that adaptive strategy selection is essential for productive autonomous learning. An extended 2000-step run demonstrates that information gain accelerates rather than plateaus as the knowledge graph densifies. All code and data are publicly available.
 \end{abstract}
 
 %% ============================================================
@@ -81,7 +80,7 @@ The central empirical question is: \textbf{does it matter how questions are gene
 \subsection{Contributions}
 
 \begin{enumerate}[leftmargin=*]
-\item \textbf{Architecture:} An outer learning layer that uses a frozen LLM as an environment, separating the ``what to ask'' decision from the ``how to articulate'' capability. The outer layer forms its own abstractions and queries the LLM about them.
+\item \textbf{Architecture:} An outer learning layer that uses a frozen LLM as an environment, separating the ``what to ask'' decision from the ``how to articulate'' capability. The outer layer generates its own concepts from feature co-occurrence and queries the LLM about them.
 \item \textbf{Iterative methodology:} Six development versions document the progression from keyword accumulation through mode collapse, self-regulation, passive perception, neurogenesis, and feedback-driven learning, with each version motivated by specific failures of the previous one.
 \item \textbf{Ablation study:} Four question generation strategies (random, template, structure-driven, feedback-driven) are compared, showing that feedback produces 4.9$\times$ more connections per concept.
 \item \textbf{Emergent meta-learning:} A strategy reversal phenomenon is documented where the worst-performing strategy at step 20 becomes the best by step 200, driven entirely by the feedback loop adapting to the growing knowledge graph.
@@ -130,7 +129,9 @@ The outer layer maintains three components:
 
 \paragraph{ConceptNet.} A small neural network ($\sim$52K parameters) that maps sentence embeddings to concept-level representations. Concepts are discovered through a novelty threshold: when an observation's embedding is sufficiently dissimilar to all known concepts, a new concept is created (``neurogenesis''). Each concept accumulates features, activation counts, and connection edges.
 
-\paragraph{Abstract Formation.} The outer layer does not merely store raw features. It forms \emph{abstractions}: concept names derived from the most frequently recurring features across experiences. These abstractions are then used as query terms when generating new questions. The system asks the LLM about concepts that exist only in the outer layer's own vocabulary, not in the original prompts. For example, from accumulated features about interconnection and possession, the system generated concepts named \texttt{things\_like\_further} and \texttt{world\_involves\_things}. It then asked the LLM about these self-generated entities, producing the highest information gain scores in the entire run. This creates a feedback cycle: accumulated knowledge produces abstractions, abstractions drive new questions, and answers refine the abstractions. The LLM is asked about entities it did not name, entities the outer layer invented from patterns in the LLM's own outputs.
+\paragraph{Concept Formation.} The outer layer does not merely store raw features. It forms new concepts: labels derived from the most frequently recurring features across experiences. A feature that appears in $\geq$4 experiences spanning $\geq$3 distinct concepts is promoted to a standalone concept, with its name constructed from the top-3 features by frequency. These self-generated concepts are then used as query terms when generating new questions. The system asks the LLM about entities that exist only in the outer layer's own vocabulary, not in the original prompts. For example, in the 200-step feedback run, the system generated concepts named \texttt{sense\_question\_tool} (from features: \texttt{sense}, \texttt{question}, \texttt{tool}, \texttt{help}, \texttt{music}) and \texttt{provide\_like\_don} (from features: \texttt{provide}, \texttt{like}, \texttt{don}). It then asked the LLM about these self-generated entities. This creates a feedback cycle: accumulated experience produces new concepts, new concepts drive new questions, and answers refine the knowledge graph.
+
+A caveat: the feature-frequency mechanism does not distinguish semantically coherent concepts from noise. Of the 200 concepts generated in the extended 2000-step run, 18 (9\%) are function words or morphological fragments (Section~\ref{sec:extended}). The self-generated concepts are better understood as \emph{automated labels from feature co-occurrence} than as genuine abstractions. Whether the LLM's response to a query about a self-generated concept produces meaningful knowledge or confused noise is examined in Section~\ref{sec:results}.
 
 \paragraph{Knowledge Graph.} An undirected graph where nodes are concepts and edges represent shared features discovered through experience. Edge weights encode the number of shared features. The graph's structure drives question generation.
 
@@ -358,7 +359,7 @@ Table~\ref{tab:questions} shows a selection of questions generated by the feedba
 \label{tab:questions}
 \end{table}
 
-Step 139 is particularly significant: the system asked about \texttt{sense\_question\_tool}, a concept it had invented from recurring feature patterns in the LLM's outputs. This is the abstract formation cycle in action. The system created an abstraction, then queried the LLM about its own abstraction, and this produced the highest information gain of any question in the run (38.1).
+Step 139 is particularly significant: the system asked about \texttt{sense\_question\_tool}, a concept it had invented from recurring feature patterns in the LLM's outputs. The LLM's response was not coherent: ``I have not heard of it before. Is it like the Sensory Tool Kit? Please clarify what you meant by `sense\_question\_tool'.'' The LLM did not know what the concept meant because it was an artifact of the outer layer's own feature accumulation, not a real entity. Yet this confused response produced the highest IG in the run (38.1) because it activated 12 concepts simultaneously: the LLM's attempt to make sense of a nonsensical query touched vocabulary from many concept spaces (\texttt{think}, \texttt{sense}, \texttt{familiar}, \texttt{possible}). The high IG reflects \emph{breadth of activation}, not depth of understanding. This is a limitation of the current IG metric and a motivation for adding response coherence checking (Section~\ref{sec:discussion}).
 
 
 %% ============================================================
@@ -466,7 +467,7 @@ This is not a claim about consciousness or understanding. It is an observation t
 \section{Conclusion}
 \label{sec:conclusion}
 
-This paper presented a system where a lightweight outer layer autonomously builds knowledge by using a frozen LLM as an environment. The outer layer forms its own abstractions from accumulated experience and queries the LLM about these self-generated concepts, creating a cycle of abstraction and inquiry. A four-way ablation study demonstrates that how questions are generated matters enormously: feedback-driven strategy selection produces 4.9$\times$ denser knowledge graphs than structure-driven questioning without adaptation, and every individual strategy improves by 34--97\% when feedback is enabled.
+This paper presented a system where a lightweight outer layer autonomously builds knowledge by using a frozen LLM as an environment. The outer layer generates its own concepts from accumulated experience and queries the LLM about these self-generated entities, creating a cycle of concept formation and inquiry. A four-way ablation study demonstrates that how questions are generated matters enormously: feedback-driven strategy selection produces 4.9$\times$ denser knowledge graphs than structure-driven questioning without adaptation, and every individual strategy improves by 34--97\% when feedback is enabled.
 
 The most striking finding is that informed exploration without adaptation performs \emph{worse} than random exploration. Structure alone constrains the exploration space too narrowly. Feedback is what transforms structure from a liability into an advantage.
 
@@ -641,7 +642,7 @@ The following tables show the five highest-IG questions generated in each ablati
 \end{tabular}
 \end{table}
 
-\paragraph{Feedback mode.} Questions reference self-generated abstractions (\texttt{sense\_question\_tool}, \texttt{provide\_like\_don}) and probe relationships between concepts the system itself created. The highest-IG question in the entire study (38.1) asks the LLM about a concept the LLM never mentioned by name.
+\paragraph{Feedback mode.} Questions reference self-generated concepts (\texttt{sense\_question\_tool}, \texttt{provide\_like\_don}) and probe relationships between entities the system itself created. The highest-IG question in the entire study (38.1) asks the LLM about a concept the LLM never mentioned by name; as discussed in Section~\ref{sec:results}, the high IG reflects the LLM's confused response activating many concept spaces simultaneously.
 
 \begin{table}[!htbp]
 \centering
