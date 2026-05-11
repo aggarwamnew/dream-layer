@@ -1,6 +1,6 @@
 # Learning to Ask: Feedback-Driven Question Generation for Autonomous Knowledge Acquisition
 
-> Using Language Models as Environments for Concept Learning
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20113782.svg)](https://doi.org/10.5281/zenodo.20113782)
 
 **Paper:** [`paper/paper.pdf`](paper/paper.pdf)
 
@@ -139,6 +139,7 @@ If you use this code or data in your research, please cite:
   title={Learning to Ask: Feedback-Driven Question Generation for Autonomous Knowledge Acquisition},
   author={Aggarwal, Mohit},
   year={2026},
+  doi={10.5281/zenodo.20113782},
   url={https://github.com/aggarwamnew/dream-layer}
 }
 ```
