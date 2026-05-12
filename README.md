@@ -1,6 +1,6 @@
 # Learning to Ask: Feedback-Driven Question Generation for Autonomous Knowledge Acquisition
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20113782.svg)](https://doi.org/10.5281/zenodo.20113782)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20113782-blue)](https://doi.org/10.5281/zenodo.20113782)
 
 **Paper:** [`paper/paper.pdf`](paper/paper.pdf)
 
