@@ -1633,16 +1633,28 @@ def main():
     _ABLATION_MODE = args.mode
 
     # Mode-specific output directory (ablation runs save separately)
-    if args.mode != "feedback":
+    # ENV override: DREAM_LAYER_STATE_DIR forces output to a specific directory
+    # (used by run_multiseed_ablation.sh for per-seed output)
+    env_state_dir = os.environ.get("DREAM_LAYER_STATE_DIR")
+    if env_state_dir:
+        STATE_DIR = Path(env_state_dir)
+        WEIGHTS_PATH = STATE_DIR / "concept_net.pt"
+    elif args.mode != "feedback":
         STATE_DIR = Path(__file__).parent.parent / "results" / f"ablation_{args.mode}"
         WEIGHTS_PATH = STATE_DIR / "concept_net.pt"
     STATE_DIR.mkdir(parents=True, exist_ok=True)
 
     # Set random seed for reproducibility
+    # NOTE: mlx.core.random.seed() is CRITICAL — without it, the LLM sampler
+    # uses an uncontrolled random state even when Python/numpy/torch are seeded.
+    # This caused the multi-seed ablation (May 2026) to produce non-reproducible
+    # results: seed=42 gave 71 connections vs 301 in the original run.
     if args.seed is not None:
         random.seed(args.seed)
         np.random.seed(args.seed)
         torch.manual_seed(args.seed)
+        import mlx.core as mx
+        mx.random.seed(args.seed)
 
     print("=" * 60)
     print("  Dream Layer — Phase 1: Concept Learner")
